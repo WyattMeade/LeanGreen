@@ -462,6 +462,18 @@ section.homeTwo p {
 .colorGreen {
 	color: #707928;
 }
+.colorPurple {
+	color: #764968;
+}
+.colorGold {
+	color: #d1ab5c;
+}
+.colorLtGreen {
+	color: #98aa33;
+}
+.colorOrange {
+	color: #e4a314;
+}
 button {
 	background: url("../design/Global Assets/btn_arrow_default2.png");
 	background-repeat: no-repeat;
@@ -482,8 +494,26 @@ button span {
 	padding: 8px 20px;
 }
 button:hover span{
-	background-color: #562d22;
+
 	color: #ffffff;
+}
+button:hover span.bgOrange{
+	background-color: #E4A314;
+}
+button:hover span.bgGreen {
+	background-color: #707928;
+}
+button:hover span.bgPurple {
+	background-color: #764968;
+}
+button:hover span.bgGold {
+	background-color: #d1ab5c;
+}
+button:hover span.bgLtGreen {
+	background-color: #98aa33;
+}
+button:hover span.bgOrange {
+	background-color: #e4a314;
 }
 .rightDesk {
 	float: right;

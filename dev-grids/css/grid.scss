@@ -1,3 +1,46 @@
+/* --------------------
+   Variables
+   -------------------- */
+
+$system-width: 1200px;
+$column-width: 60px;
+$gutter-width: 20px;
+$columns: 15;
+
+/* --------------------
+   Helpers
+   -------------------- */
+
+%selfclear {
+
+	&:before,
+	&:after {
+	    content: " ";
+	    display: table;
+	}
+
+	&:after {
+	    clear: both;
+	}
+	
+	*zoom: 1;
+
+}
+
+/* --------------------
+   Grid System
+   -------------------- */
+
+.main { width: 100%; max-width: $system-width; margin-left: auto; margin-right: auto; }
+
+.row { @extend %selfclear; }
+
+.col { position: relative; float: left; margin: 0 (($gutter-width / 2) / $system-width * 100%); }
+
+.pull-right { float: right; }
+
+.pull-left { float: left; }
+
 @mixin breakpoint($point) {
 
 	@if $point == largest {
@@ -25,15 +68,6 @@
 	}
 
 }
-
-$system-width: 1200px;
-$column-width: 60px;
-$gutter-width: 20px;
-$columns: 15;
-
-.main { width: 100%; max-width: $system-width; margin-left: auto; margin-right: auto; }
-
-.col { position: relative; float: left; margin: 0 (10px / 1200px * 100%); }
 
 @for $i from 1 through $columns {
 

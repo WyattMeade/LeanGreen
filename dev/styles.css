@@ -255,7 +255,7 @@ h3 {
    -------------------- */
 
 .pull-right { float: right; }
-.pull-left { float: right; }
+.pull-left { float: left; }
 
 .clearfix:before,
 .clearfix:after {

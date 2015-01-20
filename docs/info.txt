@@ -1,0 +1,3 @@
+website: http://localhost/leangreen
+user: admin
+pass: L3anGre3n!WP

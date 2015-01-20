@@ -74,7 +74,7 @@ $columns: 15;
 	$include-margin: $gutter-width;
 	$calc-width: (($column-width * $i) + ($include-margin * ($i - 1))) / $system-width * 100%;
 
-	.grid_#{$i}_large { width: $calc-width; }
+	.large_#{$i} { width: $calc-width; }
 
 }
 
@@ -85,7 +85,7 @@ $columns: 15;
 
 	@include breakpoint(large) {
 
-		.grid_#{$i}_medium { width: $calc-width; }	
+		.medium_#{$i} { width: $calc-width; }	
 
 	}
 
@@ -98,7 +98,7 @@ $columns: 15;
 
 	@include breakpoint(medium) {
 
-		.grid_#{$i}_small { width: $calc-width; }
+		.small_#{$i} { width: $calc-width; }
 
 	}
 

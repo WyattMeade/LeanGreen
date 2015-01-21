@@ -58,6 +58,7 @@ footer {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -355,11 +356,33 @@ footer p {
   color: #B8C341;
   font-size: 18px;
 }
+footer a {
+  color: #ffffff;
+}
 footer ul li a {
   color: #D1AB5C;
   font-size: 14px;
 }
-
+footer button {
+  border-color: #B8C341;
+  background: url("../../design/Global Assets/btn_arrow_default3.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 0 18px 0 0;
+  margin: 0;
+}
+footer button span {
+  display: block;
+  padding: 8px 20px;
+}
+footer button:hover span{
+  color: #ffffff;
+}
+footer .copyright p {
+  color: #D1AB5C;
+  font-size: 14px;
+  text-align: left;
+}
 /* Mobile */
 @media (max-width:480px) {
   .pull-right {

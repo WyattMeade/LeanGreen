@@ -16,10 +16,9 @@ body {
   	font-size: 18px;
   	font-weight: 300;
   	color: #ffffff;
-  	background-image: url("../design/Global Assets/bg_texture.png");
+  	background-image: url("../../design/Global Assets/bg_texture.png");
   	background-repeat: repeat;
 }
-
 h1 {
   	margin: 0;
   	padding: 0;
@@ -38,6 +37,19 @@ h3 {
 	color: #b8c341;
 	text-transform: uppercase;
 	text-align: center;
+}
+section {
+  width: 100%;
+  margin:0 auto;
+  display: block;
+}
+section h1,
+section p{
+  text-align: center;
+}
+img {
+  border: 0;
+  margin: 0 auto;
 }
 
 /* --------------------
@@ -280,7 +292,7 @@ header {
 	padding: 20px 0 0;
 	background-color: #707928;
 	text-align: center;
-	background-image: url("../design/Home/Assets/bg_home_header_Texture.png");
+	background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
 	background-repeat: repeat;
 	height: 180px;
 }
@@ -295,10 +307,11 @@ nav {
 }
 nav.main {
 	background-color: #707928;
+  padding-top: 50px;
 }
 nav ul {
 	list-style: none;
-	padding: 45px 0 0;
+	padding: 20px 0 25px;
 }
 nav ul li {
 	float: left;
@@ -319,95 +332,6 @@ nav ul li a:hover {
 nav img {
 	float: left;
 	width: 100%;
-}
-
-/* --------------------
-   Home
-   -------------------- */
-
-section {
-	width: 100%;
-	margin:0 auto;
-	display: block;
-}
-section h1,
-section p{
-	text-align: center;
-}
-section.homeMain {
-	background-color: #707928;
-	padding-bottom: 60px;
-}
-section.homeOne {
-	background-color: #f8f2e7
-}
-section.homeOne .col,
-section.homeTwo .col {
-	height: 620px;
-	padding: 30px 0;
-
-}
-section.homeOne p,
-section.homeTwo p {
-	color: #562d22;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.colorGreen {
-	color: #707928;
-}
-.colorPurple {
-	color: #764968;
-}
-.colorGold {
-	color: #d1ab5c;
-}
-.colorLtGreen {
-	color: #98aa33;
-}
-.colorOrange {
-	color: #e4a314;
-}
-button {
-	background: url("../design/Global Assets/btn_arrow_default2.png");
-	background-repeat: no-repeat;
-	background-position: right center;
-	border-radius: 7px;
-	border: 2px solid #562d22;
-	padding: 0 36px 0 0;
-	color: #562d22;
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-family: 'Roboto Slab';
-	display: block;
-	margin: 0 auto;
-}
-button span {
-	display: block;
-	padding: 8px 20px;
-}
-button:hover span{
-
-	color: #ffffff;
-}
-button:hover span.bgOrange{
-	background-color: #E4A314;
-}
-button:hover span.bgGreen {
-	background-color: #707928;
-}
-button:hover span.bgPurple {
-	background-color: #764968;
-}
-button:hover span.bgGold {
-	background-color: #d1ab5c;
-}
-button:hover span.bgLtGreen {
-	background-color: #98aa33;
-}
-button:hover span.bgOrange {
-	background-color: #e4a314;
 }
 
 /* Mobile */

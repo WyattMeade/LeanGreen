@@ -1,0 +1,92 @@
+/* --------------------
+   Home
+   -------------------- */
+
+section.homeMain {
+	background-color: #707928;
+	padding-bottom: 60px;
+}
+section.homeOne {
+	background-color: #f8f2e7
+}
+section.homeOne .col,
+section.homeTwo .col {
+	height: 620px;
+	padding: 30px 0;
+
+}
+section.homeOne p,
+section.homeTwo p {
+	color: #562d22;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.colorGreen {
+	color: #707928;
+}
+.colorPurple {
+	color: #764968;
+}
+.colorGold {
+	color: #d1ab5c;
+}
+.colorLtGreen {
+	color: #98aa33;
+}
+.colorOrange {
+	color: #e4a314;
+}
+button {
+	background: url("../../design/Global Assets/btn_arrow_default2.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	border-radius: 7px;
+	border: 2px solid #562d22;
+	padding: 0 36px 0 0;
+	color: #562d22;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab';
+	display: block;
+	margin: 0 auto;
+}
+button span {
+	display: block;
+	padding: 8px 20px;
+}
+button:hover span{
+
+	color: #ffffff;
+}
+button:hover span.bgOrange{
+	background-color: #E4A314;
+}
+button:hover span.bgGreen {
+	background-color: #707928;
+}
+button:hover span.bgPurple {
+	background-color: #764968;
+}
+button:hover span.bgGold {
+	background-color: #d1ab5c;
+}
+button:hover span.bgLtGreen {
+	background-color: #98aa33;
+}
+button:hover span.bgOrange {
+	background-color: #e4a314;
+}
+nav ul.leftNav {
+	background-image: url("../../design/Global Assets/nav_bgBorder_left.png");
+}
+nav ul.rightNav {
+	background-image: url("../../design/Global Assets/nav_bgBorder_right.png");
+}
+nav ul.leftNav,
+nav ul.rightNav {
+	background-repeat: no-repeat;
+}
+.logoHome {
+	margin-top: -45px;
+}

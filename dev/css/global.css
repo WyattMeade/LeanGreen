@@ -51,7 +51,17 @@ img {
   border: 0;
   margin: 0 auto;
 }
-
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #757E28;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /* --------------------
    Grid System
    -------------------- */
@@ -332,6 +342,22 @@ nav ul li a:hover {
 nav img {
 	float: left;
 	width: 100%;
+}
+
+/* --------------------
+   Footer
+   -------------------- */
+
+footer p {
+  text-align: center;
+}
+.footerInfo p {
+  color: #B8C341;
+  font-size: 18px;
+}
+footer ul li a {
+  color: #D1AB5C;
+  font-size: 14px;
 }
 
 /* Mobile */

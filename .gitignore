@@ -1,2 +1,5 @@
 .DS_Store
 .sass-cache
+website/wp-content/uploads
+website/wp-content/themes/leangreen/.sass-cache
+website/wp-content/themes/leangreen/css/pages/*.css

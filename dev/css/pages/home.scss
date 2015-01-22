@@ -5,11 +5,11 @@
 // --------------------
 
 section.homeMain {
-	background-color: #707928;
+	background-color: $dkgreen-01;
 	padding-bottom: 60px;
 }
 section.homeOne {
-	background-color: #f8f2e7
+	background-color: $tanned;
 }
 section.homeOne .col,
 section.homeTwo .col {
@@ -19,24 +19,24 @@ section.homeTwo .col {
 }
 section.homeOne p,
 section.homeTwo p {
-	color: #562d22;
+	color: $dkred;
 	text-align: center;
 	margin-bottom: 40px;
 }
 .colorGreen {
-	color: #707928;
+	color: $dkgreen-01;
 }
 .colorPurple {
-	color: #764968;
+	color: $purple;
 }
 .colorGold {
-	color: #d1ab5c;
+	color: $golden;
 }
 .colorLtGreen {
-	color: #98aa33;
+	color: $ltgreen-02;
 }
 .colorOrange {
-	color: #e4a314;
+	color: $orange;
 }
 button {
 	@include border-radius(7px);
@@ -44,41 +44,43 @@ button {
 	background: url("../../images/btn_arrow_default2.png");
 	background-repeat: no-repeat;
 	background-position: right center;
-	
-	border: 2px solid #562d22;
+	border: 2px solid $dkred;
 	padding: 0 36px 0 0;
-	color: #562d22;
+	color: $dkred;
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Roboto Slab';
+	font-family: $roboto;
 	display: block;
-	margin: 0 auto;
+	margin: $m-auto;
 }
 button span {
 	display: block;
 	padding: 8px 20px;
 }
+button:hover {
+	cursor: pointer;
+}
 button:hover span{
-	color: #ffffff;
+	color: $white-01;
 }
 button:hover span.bgOrange{
-	background-color: #E4A314;
+	background-color: $orange;
 }
 button:hover span.bgGreen {
-	background-color: #707928;
+	background-color: $dkgreen-01;
 }
 button:hover span.bgPurple {
-	background-color: #764968;
+	background-color: $purple;
 }
 button:hover span.bgGold {
-	background-color: #d1ab5c;
+	background-color: $golden;
 }
 button:hover span.bgLtGreen {
-	background-color: #98aa33;
+	background-color: $ltgreen-02;
 }
 button:hover span.bgOrange {
-	background-color: #e4a314;
+	background-color: $orange;
 }
 nav ul.leftNav {
 	background-image: url("../../images/nav_bgBorder_left.png");

@@ -14,21 +14,21 @@ body {
   	background-repeat: repeat;
 }
 h1 {
-  	margin: 0;
+  	margin: 0 0 40px;
   	padding: 0;
-  	font-family: 'Amatic SC';
+  	font-family: $amatic;
   	font-size: 60px;
   	letter-spacing: 1px;
-  	weight: 700;
+  	font-weight: 700;
   	text-transform: uppercase;
   	text-align: center;
 }
 h3 {
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto Slab';
+	font-family: $roboto;
 	font-weight: 700;
-	color: #b8c341;
+	color: $ltgreen-01;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -40,30 +40,30 @@ header {
 }
 
 section {
-  width: 100%;
-  margin:0 auto;
-  display: block;
+    width: 100%;
+    margin: $m-auto;
+    display: block;
 }
 section h1,
 section p{
-  text-align: center;
+    text-align: center;
 }
 img {
-  border: 0;
-  margin: 0 auto;
+    border: 0;
+    margin: $m-auto;
 }
 footer {
-  width: 100%;
-  padding: 40px 0;
-  background-color: #757E28;
+    width: 100%;
+    padding: 40px 0;
+    background-color: $dkgreen-02;
 }
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .table { display: table; }
@@ -73,5 +73,29 @@ a {
 footer {
 
 	@extend %footer;
+
+}
+
+i {
+
+    @extend %icon;
+
+}
+
+.icon-pinterest {
+
+    @extend %icon-pinterest;
+
+}
+
+.icon-twitter {
+
+    @extend %icon-twitter;
+
+}
+
+.icon-facebook-alt {
+
+    @extend %icon-facebook-alt;
 
 }

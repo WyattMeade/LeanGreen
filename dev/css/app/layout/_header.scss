@@ -5,26 +5,26 @@
 %header {
 
 	width: 100%;
-	margin: 0 auto;
+	margin: $m-auto;
 	padding: 20px 0 0;
-	background-color: #707928;
+	background-color: $dkgreen-01;
 	text-align: center;
 	background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
 	background-repeat: repeat;
 	height: 180px;
 		
 	nav {
-		font-family: 'Amatic SC';
+		font-family: $amatic;
 		font-size: 30px;
 		letter-spacing: 1px;
-		weight: 700;
+		font-weight: 700;
 		display: inline-block;
 		text-align: center;
 		position: relative;
 	}
 	nav.main {
-		background-color: #707928;
-	  padding-top: 50px;
+		background-color: $dkgreen-01;
+	  	padding-top: 50px;
 	}
 	nav ul {
 		list-style: none;
@@ -33,18 +33,18 @@
 	nav ul li {
 		float: left;
 		font-weight: 700;
-		color: #ffffff;
+		color: $white-01;
 		text-align: center;
 		padding: 0 25px;
 
 	}
 	nav ul li a {
 		text-decoration: none;
-		color: #ffffff;
+		color: $white-01;
 		width: 33%;
 	}
 	nav ul li a:hover {
-		color: #98aa33;
+		color: $ltgreen-02;
 	}
 	nav img {
 		float: left;

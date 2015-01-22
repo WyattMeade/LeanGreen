@@ -1,0 +1,77 @@
+// --------------------
+// Wrapper
+// --------------------
+
+
+body {
+	width: 100%;
+  	margin: 0;
+  	font-family: $roboto;
+  	font-size: 18px;
+  	font-weight: 300;
+  	color: $white-01;
+  	background-image: url("../images/bg_texture.png");
+  	background-repeat: repeat;
+}
+h1 {
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Amatic SC';
+  	font-size: 60px;
+  	letter-spacing: 1px;
+  	weight: 700;
+  	text-transform: uppercase;
+  	text-align: center;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab';
+	font-weight: 700;
+	color: #b8c341;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+header {
+
+	@extend %header;
+
+}
+
+section {
+  width: 100%;
+  margin:0 auto;
+  display: block;
+}
+section h1,
+section p{
+  text-align: center;
+}
+img {
+  border: 0;
+  margin: 0 auto;
+}
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #757E28;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.table { display: table; }
+
+.table-cell { display: table-cell; vertical-align: middle; }
+
+footer {
+
+	@extend %footer;
+
+}

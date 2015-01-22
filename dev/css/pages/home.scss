@@ -1,6 +1,8 @@
-/* --------------------
-   Home
-   -------------------- */
+@import "app/base/core";
+
+// --------------------
+// Home
+// --------------------
 
 section.homeMain {
 	background-color: #707928;
@@ -37,10 +39,12 @@ section.homeTwo p {
 	color: #e4a314;
 }
 button {
-	background: url("../../design/Global Assets/btn_arrow_default2.png");
+	@include border-radius(7px);
+
+	background: url("../../images/btn_arrow_default2.png");
 	background-repeat: no-repeat;
 	background-position: right center;
-	border-radius: 7px;
+	
 	border: 2px solid #562d22;
 	padding: 0 36px 0 0;
 	color: #562d22;
@@ -77,10 +81,10 @@ button:hover span.bgOrange {
 	background-color: #e4a314;
 }
 nav ul.leftNav {
-	background-image: url("../../design/Global Assets/nav_bgBorder_left.png");
+	background-image: url("../../images/nav_bgBorder_left.png");
 }
 nav ul.rightNav {
-	background-image: url("../../design/Global Assets/nav_bgBorder_right.png");
+	background-image: url("../../images/nav_bgBorder_right.png");
 }
 nav ul.leftNav,
 nav ul.rightNav {

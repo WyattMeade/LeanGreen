@@ -1,0 +1,8 @@
+// --------------------
+// Inline Block
+// --------------------
+
+%inline-block {
+	@include inline-block;
+	vertical-align: top;
+}

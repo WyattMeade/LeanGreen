@@ -1,0 +1,57 @@
+// --------------------
+// Footer
+// --------------------
+
+%footer {
+
+	p {
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+	.footerInfo p {
+	  color: #B8C341;
+	  font-size: 18px;
+	}
+	a {
+	  color: #ffffff;
+	}
+	.copyright,
+	ul li,
+	ul li a {
+	  color: #D1AB5C;
+	  font-size: 14px;
+	}
+	.copyright {
+	  margin-top: 20px;
+	}
+	button {
+	  @include border-radius(3px);
+	  border-color: #B8C341;
+	  background: url("../images/btn_arrow_default3.png");
+	  background-repeat: no-repeat;
+	  background-position: right center;
+	  padding: 0 18px 0 0;
+	  margin: 20px 15px 0 0;
+	  float: left;
+	}
+	button span {
+	  display: block;
+	  padding: 4px 10px 0;
+	  font-size: 20px;
+	  color: #757E28;
+	  background-color: #B8C341;
+	}
+	button:hover span{
+	  color: #ffffff;
+	  text-align: center;
+	}
+	.copyright p {
+	  color: #D1AB5C;
+	  font-size: 14px;
+	  text-align: left;
+	}
+	span.copyright {
+	  margin-top: 20px;
+	}
+
+}

@@ -13,3 +13,6 @@ Text Domain: twentyfifteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* Import the app */
+@import url('css/global.css');

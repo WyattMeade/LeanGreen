@@ -59,6 +59,7 @@ footer {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -351,6 +352,8 @@ nav img {
 
 footer p {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .footerInfo p {
   color: #B8C341;
@@ -359,24 +362,31 @@ footer p {
 footer a {
   color: #ffffff;
 }
+footer ul li,
 footer ul li a {
   color: #D1AB5C;
   font-size: 14px;
 }
 footer button {
   border-color: #B8C341;
+  border-radius: 3px;
   background: url("../../design/Global Assets/btn_arrow_default3.png");
   background-repeat: no-repeat;
   background-position: right center;
   padding: 0 18px 0 0;
-  margin: 0;
+  margin: 0 15px 0 0;
+  float: left;
 }
 footer button span {
   display: block;
-  padding: 8px 20px;
+  padding: 4px 10px 0;
+  font-size: 20px;
+  color: #757E28;
+  background-color: #B8C341;
 }
 footer button:hover span{
   color: #ffffff;
+  text-align: center;
 }
 footer .copyright p {
   color: #D1AB5C;

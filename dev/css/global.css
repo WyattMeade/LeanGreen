@@ -362,10 +362,14 @@ footer p {
 footer a {
   color: #ffffff;
 }
+footer .copyright,
 footer ul li,
 footer ul li a {
   color: #D1AB5C;
   font-size: 14px;
+}
+footer .copyright {
+  margin-top: 20px;
 }
 footer button {
   border-color: #B8C341;
@@ -374,7 +378,7 @@ footer button {
   background-repeat: no-repeat;
   background-position: right center;
   padding: 0 18px 0 0;
-  margin: 0 15px 0 0;
+  margin: 20px 15px 0 0;
   float: left;
 }
 footer button span {
@@ -392,6 +396,9 @@ footer .copyright p {
   color: #D1AB5C;
   font-size: 14px;
   text-align: left;
+}
+footer span.copyright {
+  margin-top: 20px;
 }
 /* Mobile */
 @media (max-width:480px) {

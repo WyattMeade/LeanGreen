@@ -6,13 +6,18 @@
 
 	width: 100%;
 	margin: $m-auto;
-	padding: 20px 0 0;
+	padding: 10px 0 0;
 	background-color: $dkgreen-01;
 	text-align: center;
-	background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
-	background-repeat: repeat;
-	height: 180px;
-		
+	background: #707928; /* Old browsers */
+	background: -moz-linear-gradient(top,  #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707928), color-stop(60%,#707928), color-stop(60%,#f8f2e7), color-stop(100%,#f8f2e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #707928 0%,#707928 60%,#f8f2e7 60%,#f8f2e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #707928 0%,#707928 60%,#f8f2e7 60%,#f8f2e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #707928 0%,#707928 60%,#f8f2e7 60%,#f8f2e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #707928 0%,#707928 60%,#f8f2e7 60%,#f8f2e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 ); /* IE6-9 */
+
 	nav {
 		font-family: $amatic;
 		font-size: 30px;
@@ -22,16 +27,12 @@
 		text-align: center;
 		position: relative;
 	}
-	nav.main {
-		background-color: $dkgreen-01;
-	  	padding-top: 50px;
-	}
 	nav ul {
 		list-style: none;
-		padding: 20px 0 25px;
+		padding-top: 10px;
 	}
 	nav ul li {
-		float: left;
+		display: inline-block;
 		font-weight: 700;
 		color: $white-01;
 		text-align: center;
@@ -45,6 +46,12 @@
 	}
 	nav ul li a:hover {
 		color: $ltgreen-02;
+	}
+	nav .logo {
+		background-color: $dkgreen-01;
+		border-radius: 50%;
+		padding: 0 10px;
+		border-bottom: 20px solid $dkgreen-01;
 	}
 	nav img {
 		float: left;

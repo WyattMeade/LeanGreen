@@ -403,14 +403,27 @@ i {
 header {
   width: 100%;
   margin: 0 auto;
-  padding: 20px 0 0;
+  padding: 10px 0 0;
   background-color: #707928;
   text-align: center;
-  background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
-  background-repeat: repeat;
-  height: 180px;
+  background: #707928;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #707928), color-stop(60%, #707928), color-stop(60%, #f8f2e7), color-stop(100%, #f8f2e7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #707928 0%, #707928 60%, #f8f2e7 60%, #f8f2e7 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 );
+  /* IE6-9 */
 }
-/* line 16, app/layout/_header.scss */
+/* line 21, app/layout/_header.scss */
 header nav {
   font-family: "Amatic SC";
   font-size: 30px;
@@ -420,35 +433,37 @@ header nav {
   text-align: center;
   position: relative;
 }
-/* line 25, app/layout/_header.scss */
-header nav.main {
-  background-color: #707928;
-  padding-top: 50px;
-}
-/* line 29, app/layout/_header.scss */
+/* line 30, app/layout/_header.scss */
 header nav ul {
   list-style: none;
-  padding: 20px 0 25px;
+  padding-top: 10px;
 }
-/* line 33, app/layout/_header.scss */
+/* line 34, app/layout/_header.scss */
 header nav ul li {
-  float: left;
+  display: inline-block;
   font-weight: 700;
   color: white;
   text-align: center;
   padding: 0 25px;
 }
-/* line 41, app/layout/_header.scss */
+/* line 42, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: white;
   width: 33%;
 }
-/* line 46, app/layout/_header.scss */
+/* line 47, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98aa33;
 }
-/* line 49, app/layout/_header.scss */
+/* line 50, app/layout/_header.scss */
+header nav .logo {
+  background-color: #707928;
+  border-radius: 50%;
+  padding: 0 10px;
+  border-bottom: 20px solid #707928;
+}
+/* line 56, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;

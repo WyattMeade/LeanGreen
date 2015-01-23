@@ -3,6 +3,21 @@
 // --------------------
 // Home
 // --------------------
+.home {
+	header {
+		background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
+		background-repeat: repeat;
+		height: 180px;
+		padding-top: 20px;
+	}
+	nav.main {
+		padding-top: 50px;
+		background-color: $dkgreen-01;
+	}
+	nav.main ul {
+		padding: 20px 0 25px;
+	}
+}
 
 section.homeMain {
 	background-color: $dkgreen-01;
@@ -40,7 +55,6 @@ section.homeTwo p {
 }
 button {
 	@include border-radius(7px);
-
 	background: url("../../images/btn_arrow_default2.png");
 	background-repeat: no-repeat;
 	background-position: right center;

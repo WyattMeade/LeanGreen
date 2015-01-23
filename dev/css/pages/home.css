@@ -30,40 +30,42 @@
 
 /* line 7, home.scss */
 .home header {
-  background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
+  background-image: url("../../images/bg_home_header_Texture.png");
   background-repeat: repeat;
+  background-color: #707928;
   height: 180px;
   padding-top: 20px;
+  margin-bottom: 0;
 }
-/* line 13, home.scss */
+/* line 15, home.scss */
 .home nav.main {
   padding-top: 50px;
   background-color: #707928;
 }
-/* line 17, home.scss */
+/* line 19, home.scss */
 .home nav.main ul {
   padding: 20px 0 25px;
 }
 
-/* line 22, home.scss */
+/* line 24, home.scss */
 section.homeMain {
   background-color: #707928;
   padding-bottom: 60px;
 }
 
-/* line 26, home.scss */
+/* line 28, home.scss */
 section.homeOne {
   background-color: #f8f2e7;
 }
 
-/* line 30, home.scss */
+/* line 32, home.scss */
 section.homeOne .col,
 section.homeTwo .col {
   height: 620px;
   padding: 30px 0;
 }
 
-/* line 36, home.scss */
+/* line 38, home.scss */
 section.homeOne p,
 section.homeTwo p {
   color: #562d22;
@@ -71,32 +73,7 @@ section.homeTwo p {
   margin-bottom: 40px;
 }
 
-/* line 41, home.scss */
-.colorGreen {
-  color: #707928;
-}
-
-/* line 44, home.scss */
-.colorPurple {
-  color: #764968;
-}
-
-/* line 47, home.scss */
-.colorGold {
-  color: #d1ab5c;
-}
-
-/* line 50, home.scss */
-.colorLtGreen {
-  color: #98aa33;
-}
-
-/* line 53, home.scss */
-.colorOrange {
-  color: #e4a314;
-}
-
-/* line 56, home.scss */
+/* line 43, home.scss */
 button {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -117,69 +94,69 @@ button {
   margin: 0 auto;
 }
 
-/* line 71, home.scss */
+/* line 58, home.scss */
 button span {
   display: block;
   padding: 8px 20px;
 }
 
-/* line 75, home.scss */
+/* line 62, home.scss */
 button:hover {
   cursor: pointer;
 }
 
-/* line 78, home.scss */
+/* line 65, home.scss */
 button:hover span {
   color: white;
 }
 
-/* line 81, home.scss */
+/* line 68, home.scss */
 button:hover span.bgOrange {
   background-color: #e4a314;
 }
 
-/* line 84, home.scss */
+/* line 71, home.scss */
 button:hover span.bgGreen {
   background-color: #707928;
 }
 
-/* line 87, home.scss */
+/* line 74, home.scss */
 button:hover span.bgPurple {
   background-color: #764968;
 }
 
-/* line 90, home.scss */
+/* line 77, home.scss */
 button:hover span.bgGold {
   background-color: #d1ab5c;
 }
 
-/* line 93, home.scss */
+/* line 80, home.scss */
 button:hover span.bgLtGreen {
   background-color: #98aa33;
 }
 
-/* line 96, home.scss */
+/* line 83, home.scss */
 button:hover span.bgOrange {
   background-color: #e4a314;
 }
 
-/* line 99, home.scss */
+/* line 86, home.scss */
 nav ul.leftNav {
   background-image: url("../../images/nav_bgBorder_left.png");
 }
 
-/* line 102, home.scss */
+/* line 89, home.scss */
 nav ul.rightNav {
   background-image: url("../../images/nav_bgBorder_right.png");
 }
 
-/* line 106, home.scss */
+/* line 93, home.scss */
 nav ul.leftNav,
 nav ul.rightNav {
   background-repeat: no-repeat;
 }
 
-/* line 109, home.scss */
+/* line 96, home.scss */
 .logoHome {
   margin-top: -45px;
 }

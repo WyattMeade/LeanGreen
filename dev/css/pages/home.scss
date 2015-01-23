@@ -5,10 +5,12 @@
 // --------------------
 .home {
 	header {
-		background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
+		background-image: url("../../images/bg_home_header_Texture.png");
 		background-repeat: repeat;
+		background-color: $dkgreen-01;
 		height: 180px;
 		padding-top: 20px;
+		margin-bottom: 0;
 	}
 	nav.main {
 		padding-top: 50px;
@@ -37,21 +39,6 @@ section.homeTwo p {
 	color: $dkred;
 	text-align: center;
 	margin-bottom: 40px;
-}
-.colorGreen {
-	color: $dkgreen-01;
-}
-.colorPurple {
-	color: $purple;
-}
-.colorGold {
-	color: $golden;
-}
-.colorLtGreen {
-	color: $ltgreen-02;
-}
-.colorOrange {
-	color: $orange;
 }
 button {
 	@include border-radius(7px);

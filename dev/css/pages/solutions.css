@@ -27,3 +27,22 @@
 .clearfix:after {
   clear: both;
 }
+
+/* line 7, solutions.scss */
+.vending-solutions {
+  background-color: #f8f2e7;
+}
+/* line 10, solutions.scss */
+.vending-solutions section {
+  margin-bottom: 40px;
+}
+/* line 13, solutions.scss */
+.vending-solutions section p {
+  color: #562d22;
+  font-size: 16px;
+  padding: 0 10%;
+}
+/* line 18, solutions.scss */
+.vending-solutions section img {
+  width: 100%;
+}

@@ -88,6 +88,50 @@ i {
 
 }
 
+button {
+    @include border-radius(7px);
+    background: url("../images/btn_arrow_default2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 2px solid $dkred;
+    padding: 0 36px 0 0;
+    color: $dkred;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $roboto;
+    display: block;
+    margin: $m-auto;
+}
+button span {
+    display: block;
+    padding: 8px 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+button:hover span{
+    color: $white-01;
+}
+button:hover span.bgOrange{
+    background-color: $orange;
+}
+button:hover span.bgGreen {
+    background-color: $dkgreen-01;
+}
+button:hover span.bgPurple {
+    background-color: $purple;
+}
+button:hover span.bgGold {
+    background-color: $golden;
+}
+button:hover span.bgLtGreen {
+    background-color: $ltgreen-02;
+}
+button:hover span.bgOrange {
+    background-color: $orange;
+}
+
 .icon-pinterest {
 
     @extend %icon-pinterest;
@@ -119,4 +163,11 @@ i {
 }
 .colorOrange {
     color: $orange;
+}
+.social {
+    div {
+        float: left;
+        padding-top: 20px;
+        color: $white-01;
+    }
 }

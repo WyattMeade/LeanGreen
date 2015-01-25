@@ -28,67 +28,62 @@
   clear: both;
 }
 
-/* line 7, home.scss */
-.home header {
-  background-image: url("../../images/bg_home_header_Texture.png");
-  background-repeat: repeat;
-  background-color: #707928;
-  height: 180px;
-  padding-top: 20px;
-  margin-bottom: 0;
-}
-/* line 15, home.scss */
-.home nav.main {
-  padding-top: 50px;
-  background-color: #707928;
-}
-/* line 19, home.scss */
-.home nav.main ul {
-  padding: 20px 0 25px;
-}
-/* line 24, home.scss */
-.home section.homeMain {
-  background-color: #707928;
-  color: white;
-  padding-bottom: 60px;
-}
-/* line 29, home.scss */
-.home section.homeMain img {
-  margin: 0 auto;
-}
-/* line 34, home.scss */
-.home section.homeOne {
+/* line 7, about.scss */
+.about {
   background-color: #f8f2e7;
 }
-/* line 40, home.scss */
-.home section.homeOne .col, .home section.homeTwo .col {
-  height: 620px;
-  padding: 30px 0;
+/* line 10, about.scss */
+.about section {
+  padding-bottom: 40px;
 }
-/* line 45, home.scss */
-.home section.homeOne p, .home section.homeTwo p {
-  color: #562d22;
+/* line 14, about.scss */
+.about section h1,
+.about section h6 {
+  color: #b8c341;
+}
+/* line 18, about.scss */
+.about section p {
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+/* line 25, about.scss */
+.about section h6 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px 15%;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-/* line 54, home.scss */
-nav ul.leftNav {
-  background-image: url("../../images/nav_bgBorder_left.png");
-}
-
-/* line 57, home.scss */
-nav ul.rightNav {
-  background-image: url("../../images/nav_bgBorder_right.png");
-}
-
-/* line 61, home.scss */
-nav ul.leftNav,
-nav ul.rightNav {
+  background-image: url("../../images/bg_imgCaption.png");
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  margin-top: 0;
 }
-
-/* line 64, home.scss */
-.logoHome {
-  margin-top: -45px;
+/* line 37, about.scss */
+.about section h6 span {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 44, about.scss */
+.about section.history img {
+  width: 80%;
+}
+/* line 49, about.scss */
+.about section.aboutUs {
+  background-color: white;
+  padding-top: 40px;
+}
+/* line 53, about.scss */
+.about section.aboutUs h6 {
+  padding: 30px 10%;
+}
+/* line 57, about.scss */
+.about section.aboutUs button {
+  float: left;
+}
+/* line 63, about.scss */
+.about img {
+  margin: 0 auto;
 }

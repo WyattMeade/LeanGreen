@@ -502,6 +502,12 @@ footer .copyright {
   margin-top: 20px;
 }
 /* line 28, app/layout/_footer.scss */
+footer .copyright p {
+  color: #d1ab5c;
+  font-size: 14px;
+  text-align: left;
+}
+/* line 34, app/layout/_footer.scss */
 footer button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -516,7 +522,7 @@ footer button {
   margin: 20px 15px 0 0;
   float: left;
 }
-/* line 38, app/layout/_footer.scss */
+/* line 44, app/layout/_footer.scss */
 footer button span {
   display: block;
   padding: 4px 5px 0;
@@ -524,24 +530,14 @@ footer button span {
   color: #757e28;
   background-color: #b8c341;
 }
-/* line 45, app/layout/_footer.scss */
+/* line 52, app/layout/_footer.scss */
 footer button:hover {
   cursor: pointer;
 }
-/* line 48, app/layout/_footer.scss */
+/* line 55, app/layout/_footer.scss */
 footer button:hover span {
   color: white;
   text-align: center;
-}
-/* line 52, app/layout/_footer.scss */
-footer .copyright p {
-  color: #d1ab5c;
-  font-size: 14px;
-  text-align: left;
-}
-/* line 57, app/layout/_footer.scss */
-footer span.copyright {
-  margin-top: 20px;
 }
 
 /* line 6, app/layout/_wrapper.scss */
@@ -634,27 +630,101 @@ a {
   vertical-align: middle;
 }
 
-/* line 108, app/layout/_wrapper.scss */
+/* line 91, app/layout/_wrapper.scss */
+button {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background: url("../images/btn_arrow_default2.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: 2px solid #562d22;
+  padding: 0 36px 0 0;
+  color: #562d22;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Roboto Slab";
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 106, app/layout/_wrapper.scss */
+button span {
+  display: block;
+  padding: 8px 20px;
+}
+
+/* line 110, app/layout/_wrapper.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 113, app/layout/_wrapper.scss */
+button:hover span {
+  color: white;
+}
+
+/* line 116, app/layout/_wrapper.scss */
+button:hover span.bgOrange {
+  background-color: #e4a314;
+}
+
+/* line 119, app/layout/_wrapper.scss */
+button:hover span.bgGreen {
+  background-color: #707928;
+}
+
+/* line 122, app/layout/_wrapper.scss */
+button:hover span.bgPurple {
+  background-color: #764968;
+}
+
+/* line 125, app/layout/_wrapper.scss */
+button:hover span.bgGold {
+  background-color: #d1ab5c;
+}
+
+/* line 128, app/layout/_wrapper.scss */
+button:hover span.bgLtGreen {
+  background-color: #98aa33;
+}
+
+/* line 131, app/layout/_wrapper.scss */
+button:hover span.bgOrange {
+  background-color: #e4a314;
+}
+
+/* line 152, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 111, app/layout/_wrapper.scss */
+/* line 155, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 114, app/layout/_wrapper.scss */
+/* line 158, app/layout/_wrapper.scss */
 .colorGold {
   color: #d1ab5c;
 }
 
-/* line 117, app/layout/_wrapper.scss */
+/* line 161, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98aa33;
 }
 
-/* line 120, app/layout/_wrapper.scss */
+/* line 164, app/layout/_wrapper.scss */
 .colorOrange {
   color: #e4a314;
+}
+
+/* line 168, app/layout/_wrapper.scss */
+.social div {
+  float: left;
+  padding-top: 20px;
+  color: white;
 }

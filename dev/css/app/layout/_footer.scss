@@ -24,6 +24,12 @@
 	}
 	.copyright {
 	  margin-top: 20px;
+
+	  p {
+	  	color: $golden;
+		font-size: 14px;
+		text-align: left;
+	  }
 	}
 	button {
 	  @include border-radius(3px);
@@ -34,28 +40,22 @@
 	  padding: 0 18px 0 0;
 	  margin: 20px 15px 0 0;
 	  float: left;
-	}
-	button span {
-	  display: block;
-	  padding: 4px 5px 0;
-	  font-size: 20px;
-	  color: $dkgreen-02;
-	  background-color: $ltgreen-01;
-	}
-	button:hover {
-		cursor: pointer;
-	}
-	button:hover span{
-	  color: $white-01;
-	  text-align: center;
-	}
-	.copyright p {
-	  color: $golden;
-	  font-size: 14px;
-	  text-align: left;
-	}
-	span.copyright {
-	  margin-top: 20px;
-	}
 
+	  span {
+	  	display: block;
+		padding: 4px 5px 0;
+		font-size: 20px;
+		color: $dkgreen-02;
+		background-color: $ltgreen-01;
+	  }
+
+	  &:hover {
+	  	cursor:pointer;
+
+	  	span {
+	  		color: $white-01;
+			text-align: center;
+	  	}
+	  }
+	}
 }

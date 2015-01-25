@@ -9,9 +9,7 @@ body {
   	font-family: $roboto;
   	font-size: 18px;
   	font-weight: 300;
-  	color: $white-01;
-  	background-image: url("../images/bg_texture.png");
-  	background-repeat: repeat;
+  	color: $dkred;
 }
 h1 {
   	margin: 0 0 40px;
@@ -53,14 +51,12 @@ section {
     width: 100%;
     margin: $m-auto;
     display: block;
+    background-image: url("../images/bg_texture.png");
+    background-repeat: repeat;
 }
 section h1,
 section p{
     text-align: center;
-}
-img {
-    border: 0;
-    margin: $m-auto;
 }
 footer {
     width: 100%;

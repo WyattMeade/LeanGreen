@@ -479,28 +479,29 @@ header nav img {
 footer p {
   margin-top: 0;
   margin-bottom: 0;
+  color: white;
 }
-/* line 11, app/layout/_footer.scss */
+/* line 12, app/layout/_footer.scss */
 footer .footerInfo p {
   color: #b8c341;
   font-size: 18px;
 }
-/* line 15, app/layout/_footer.scss */
+/* line 16, app/layout/_footer.scss */
 footer a {
   color: white;
 }
-/* line 20, app/layout/_footer.scss */
+/* line 21, app/layout/_footer.scss */
 footer .copyright,
 footer ul li,
 footer ul li a {
   color: #d1ab5c;
   font-size: 14px;
 }
-/* line 24, app/layout/_footer.scss */
+/* line 25, app/layout/_footer.scss */
 footer .copyright {
   margin-top: 20px;
 }
-/* line 27, app/layout/_footer.scss */
+/* line 28, app/layout/_footer.scss */
 footer button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -515,7 +516,7 @@ footer button {
   margin: 20px 15px 0 0;
   float: left;
 }
-/* line 37, app/layout/_footer.scss */
+/* line 38, app/layout/_footer.scss */
 footer button span {
   display: block;
   padding: 4px 5px 0;
@@ -523,22 +524,22 @@ footer button span {
   color: #757e28;
   background-color: #b8c341;
 }
-/* line 44, app/layout/_footer.scss */
+/* line 45, app/layout/_footer.scss */
 footer button:hover {
   cursor: pointer;
 }
-/* line 47, app/layout/_footer.scss */
+/* line 48, app/layout/_footer.scss */
 footer button:hover span {
   color: white;
   text-align: center;
 }
-/* line 51, app/layout/_footer.scss */
+/* line 52, app/layout/_footer.scss */
 footer .copyright p {
   color: #d1ab5c;
   font-size: 14px;
   text-align: left;
 }
-/* line 56, app/layout/_footer.scss */
+/* line 57, app/layout/_footer.scss */
 footer span.copyright {
   margin-top: 20px;
 }
@@ -550,12 +551,10 @@ body {
   font-family: "Roboto Slab";
   font-size: 18px;
   font-weight: 300;
-  color: white;
-  background-image: url("../images/bg_texture.png");
-  background-repeat: repeat;
+  color: #562d22;
 }
 
-/* line 16, app/layout/_wrapper.scss */
+/* line 14, app/layout/_wrapper.scss */
 h1 {
   margin: 0 0 40px;
   padding: 0;
@@ -567,7 +566,7 @@ h1 {
   text-align: center;
 }
 
-/* line 26, app/layout/_wrapper.scss */
+/* line 24, app/layout/_wrapper.scss */
 h3 {
   margin: 0 0 10px;
   padding: 0;
@@ -578,7 +577,7 @@ h3 {
   text-align: center;
 }
 
-/* line 35, app/layout/_wrapper.scss */
+/* line 33, app/layout/_wrapper.scss */
 h4 {
   margin: 0;
   padding: 0;
@@ -590,11 +589,13 @@ h4 {
   text-align: center;
 }
 
-/* line 52, app/layout/_wrapper.scss */
+/* line 50, app/layout/_wrapper.scss */
 section {
   width: 100%;
   margin: 0 auto;
   display: block;
+  background-image: url("../images/bg_texture.png");
+  background-repeat: repeat;
 }
 
 /* line 58, app/layout/_wrapper.scss */
@@ -604,62 +605,56 @@ section p {
 }
 
 /* line 61, app/layout/_wrapper.scss */
-img {
-  border: 0;
-  margin: 0 auto;
-}
-
-/* line 65, app/layout/_wrapper.scss */
 footer {
   width: 100%;
   padding: 40px 0;
   background-color: #757e28;
 }
 
-/* line 70, app/layout/_wrapper.scss */
+/* line 66, app/layout/_wrapper.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 75, app/layout/_wrapper.scss */
+/* line 71, app/layout/_wrapper.scss */
 a {
   text-decoration: none;
 }
 
-/* line 79, app/layout/_wrapper.scss */
+/* line 75, app/layout/_wrapper.scss */
 .table {
   display: table;
 }
 
-/* line 81, app/layout/_wrapper.scss */
+/* line 77, app/layout/_wrapper.scss */
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 112, app/layout/_wrapper.scss */
+/* line 108, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 115, app/layout/_wrapper.scss */
+/* line 111, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 118, app/layout/_wrapper.scss */
+/* line 114, app/layout/_wrapper.scss */
 .colorGold {
   color: #d1ab5c;
 }
 
-/* line 121, app/layout/_wrapper.scss */
+/* line 117, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98aa33;
 }
 
-/* line 124, app/layout/_wrapper.scss */
+/* line 120, app/layout/_wrapper.scss */
 .colorOrange {
   color: #e4a314;
 }

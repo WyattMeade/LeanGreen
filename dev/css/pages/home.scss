@@ -19,26 +19,36 @@
 	nav.main ul {
 		padding: 20px 0 25px;
 	}
-}
 
-section.homeMain {
-	background-color: $dkgreen-01;
-	padding-bottom: 60px;
-}
-section.homeOne {
-	background-color: $tanned;
-}
-section.homeOne .col,
-section.homeTwo .col {
-	height: 620px;
-	padding: 30px 0;
+	section {
+		&.homeMain {	
+			background-color: $dkgreen-01;
+			color: $white-01;
+			padding-bottom: 60px;
 
-}
-section.homeOne p,
-section.homeTwo p {
-	color: $dkred;
-	text-align: center;
-	margin-bottom: 40px;
+			img {
+				margin: $m-auto;
+			}
+		}
+		
+		&.homeOne {
+			background-color: $tanned;
+		}
+
+		&.homeOne,
+		&.homeTwo {
+			.col {
+				height: 620px;
+				padding: 30px 0;
+			}
+
+			p {
+				color: $dkred;
+				text-align: center;
+				margin-bottom: 40px;	
+			}
+		}
+	}		
 }
 button {
 	@include border-radius(7px);

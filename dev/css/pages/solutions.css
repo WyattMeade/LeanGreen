@@ -37,12 +37,17 @@
   margin-bottom: 40px;
 }
 /* line 13, solutions.scss */
+.vending-solutions section h1 {
+  color: #d1ab5c;
+}
+/* line 17, solutions.scss */
 .vending-solutions section p {
   color: #562d22;
   font-size: 16px;
   padding: 0 10%;
+  text-align: justify;
 }
-/* line 18, solutions.scss */
+/* line 24, solutions.scss */
 .vending-solutions section img {
   width: 100%;
 }

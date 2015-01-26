@@ -53,6 +53,8 @@ section {
     display: block;
     background-image: url("../images/bg_texture.png");
     background-repeat: repeat;
+
+    @extend %clear-fix;
 }
 section h1,
 section p{

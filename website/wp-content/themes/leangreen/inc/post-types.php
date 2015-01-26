@@ -92,7 +92,8 @@ function my_custom_post_clients() {
 		'description'   => 'Holds our Clients and Client specific data',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'hierarchical' => true,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'page-attributes' ),
 		'has_archive'   => true,
 	);
 	register_post_type( 'clients', $args );	

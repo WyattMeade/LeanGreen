@@ -337,3 +337,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/post-types.php';
 
+/**
+ * Shortcodes
+ *
+ * @since Twenty Fifteen 1.0
+ */
+require get_template_directory() . '/inc/shortcodes.php';
+

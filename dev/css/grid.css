@@ -8,7 +8,7 @@
 .row {
   *zoom: 1;
 }
-/* line 16, grid.scss */
+/* line 17, grid.scss */
 .row:before, .row:after {
   content: " ";
   display: table;

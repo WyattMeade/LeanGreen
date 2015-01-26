@@ -9,7 +9,10 @@
 	margin-right: auto;
 }
 
-.row { @extend %clear-fix; }
+.row { 
+	@extend %clear-fix;
+	margin-bottom: 40px;
+}
 
 .col {
 	position: relative;

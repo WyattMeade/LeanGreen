@@ -1,75 +1,3 @@
-/* line 6, app/base/_reset.scss */
-html, body, h1, h2, h3, p, ul, ol, li, img, figure, form, date,
-fieldset, header, nav, section, article, aside, footer {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 11, app/base/_reset.scss */
-html, body {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/* line 17, app/base/_reset.scss */
-html {
-  -webkit-text-size-adjust: none;
-}
-
-/* line 19, app/base/_reset.scss */
-article, aside, footer, header, nav, section, figure {
-  display: block;
-  position: relative;
-}
-
-/* line 24, app/base/_reset.scss */
-img {
-  border: none;
-  display: block;
-}
-
-/* line 29, app/base/_reset.scss */
-a {
-  cursor: pointer;
-}
-
-/* line 5, app/base/gouda/_helpers.scss */
-i {
-  vertical-align: top;
-  text-align: center;
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  speak: none;
-}
-
-/* line 20, app/base/gouda/_helpers.scss */
-.icon-facebook-alt:before, .icon-pinterest:before, .icon-twitter:before {
-  font-family: "Genericons";
-}
-
-/* line 205, app/base/gouda/_icons.scss */
-.icon-facebook-alt:before {
-  content: "\f204";
-}
-
-/* line 403, app/base/gouda/_icons.scss */
-.icon-pinterest:before {
-  content: "\f209";
-}
-
-/* line 678, app/base/gouda/_icons.scss */
-.icon-twitter:before {
-  content: "\f202";
-}
-
 @font-face {
   font-family: "Glyphicons Halflings";
   src: url("../fonts/glyphicons-halflings-regular.eot");
@@ -90,641 +18,149 @@ i {
     src: url("../fonts/Genericons.svg#Genericons") format("svg");
 }
 }
-/* line 8, app/widgets/_clear-fix.scss */
-.clearfix:before, .row:before, .clearfix:after, .row:after {
+/* line 8, ../app/widgets/_clear-fix.scss */
+.clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 15, app/widgets/_clear-fix.scss */
-.clearfix:after, .row:after {
+/* line 15, ../app/widgets/_clear-fix.scss */
+.clearfix:after {
   clear: both;
 }
 
-/* line 5, app/layout/helpers/_grids.scss */
-.main {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+/* line 7, contact.scss */
+.contact {
+  background-color: white;
 }
-
-/* line 12, app/layout/helpers/_grids.scss */
-.row {
-  margin-bottom: 40px;
-}
-
-/* line 17, app/layout/helpers/_grids.scss */
-.col {
-  position: relative;
-  float: left;
-  margin: 0 0.83333%;
-}
-
-/* line 23, app/layout/helpers/_grids.scss */
-.pull-right {
-  float: right;
-}
-@media (max-width: 640px) {
-  /* line 23, app/layout/helpers/_grids.scss */
-  .pull-right {
-    float: none;
-  }
-}
-
-/* line 28, app/layout/helpers/_grids.scss */
-.pull-left {
-  float: left;
-}
-@media (max-width: 640px) {
-  /* line 28, app/layout/helpers/_grids.scss */
-  .pull-left {
-    float: none;
-  }
-}
-
-/* line 38, app/layout/helpers/_grids.scss */
-.large_1 {
-  width: 5%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_1 {
-    width: 5%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_1 {
-    width: 5%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_2 {
-  width: 11.66667%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_2 {
-    width: 11.66667%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_2 {
-    width: 11.66667%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_3 {
-  width: 18.33333%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_3 {
-    width: 18.33333%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_3 {
-    width: 18.33333%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_4 {
-  width: 25%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_4 {
-    width: 25%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_4 {
-    width: 25%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_5 {
-  width: 31.66667%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_5 {
-    width: 31.66667%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_5 {
-    width: 31.66667%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_6 {
-  width: 38.33333%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_6 {
-    width: 38.33333%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_6 {
-    width: 38.33333%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_7 {
-  width: 45%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_7 {
-    width: 45%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_7 {
-    width: 45%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_8 {
-  width: 51.66667%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_8 {
-    width: 51.66667%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_8 {
-    width: 51.66667%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_9 {
-  width: 58.33333%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_9 {
-    width: 58.33333%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_9 {
-    width: 58.33333%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_10 {
-  width: 65%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_10 {
-    width: 65%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_10 {
-    width: 65%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_11 {
-  width: 71.66667%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_11 {
-    width: 71.66667%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_11 {
-    width: 71.66667%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_12 {
-  width: 78.33333%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_12 {
-    width: 78.33333%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_12 {
-    width: 78.33333%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_13 {
-  width: 85%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_13 {
-    width: 85%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_13 {
-    width: 85%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_14 {
-  width: 91.66667%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_14 {
-    width: 91.66667%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_14 {
-    width: 91.66667%;
-  }
-}
-/* line 38, app/layout/helpers/_grids.scss */
-.large_15 {
-  width: 98.33333%;
-}
-
-@media (max-width: 1019px) {
-  /* line 42, app/layout/helpers/_grids.scss */
-  .medium_15 {
-    width: 98.33333%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 48, app/layout/helpers/_grids.scss */
-  .small_15 {
-    width: 98.33333%;
-  }
-}
-/* line 54, app/layout/helpers/_grids.scss */
-.centered {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 5, app/layout/_header.scss */
-header {
-  width: 100%;
-  margin: 0 auto 40px;
-  padding: 10px 0 0;
-  background-color: #707928;
-  text-align: center;
+/* line 10, contact.scss */
+.contact header {
   background: #707928;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
+  background: -moz-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #707928), color-stop(40%, #707928), color-stop(40%, #f8f2e7), color-stop(100%, #f8f2e7));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #707928), color-stop(40%, #707928), color-stop(40%, white), color-stop(100%, white));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
+  background: -webkit-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
+  background: -o-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
+  background: -ms-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
+  background: linear-gradient(to bottom, #707928 0%, #707928 40%, #ffffff 40%, #ffffff 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707928', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */
 }
-/* line 21, app/layout/_header.scss */
-header nav {
-  font-family: "Amatic SC";
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  display: inline-block;
-  text-align: center;
-  position: relative;
+/* line 21, contact.scss */
+.contact section {
+  padding-bottom: 40px;
 }
-/* line 30, app/layout/_header.scss */
-header nav ul {
-  list-style: none;
-  padding-top: 10px;
-}
-/* line 34, app/layout/_header.scss */
-header nav ul li {
-  display: inline-block;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  padding: 0 25px;
-}
-/* line 42, app/layout/_header.scss */
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  width: 33%;
-}
-/* line 47, app/layout/_header.scss */
-header nav ul li a:hover {
-  color: #98aa33;
-}
-/* line 50, app/layout/_header.scss */
-header nav .logo {
-  background-color: #707928;
-  border-radius: 51%;
-  padding: 30px 20px;
-  position: relative;
-  top: -30px;
-}
-/* line 57, app/layout/_header.scss */
-header nav img {
-  float: left;
-  width: 100%;
-}
-
-/* line 7, app/layout/_footer.scss */
-footer p {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: white;
-}
-/* line 12, app/layout/_footer.scss */
-footer .footerInfo p {
-  color: #b8c341;
-  font-size: 18px;
-}
-/* line 16, app/layout/_footer.scss */
-footer a {
-  color: white;
-}
-/* line 21, app/layout/_footer.scss */
-footer .copyright,
-footer ul li,
-footer ul li a {
-  color: #d1ab5c;
-  font-size: 14px;
-}
-/* line 25, app/layout/_footer.scss */
-footer .copyright {
-  margin-top: 20px;
-}
-/* line 28, app/layout/_footer.scss */
-footer .copyright p {
-  color: #d1ab5c;
-  font-size: 14px;
-  text-align: left;
-}
-/* line 34, app/layout/_footer.scss */
-footer button {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  border: 2px solid #b8c341;
-  background: url("../images/btn_arrow_default3.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding: 0 18px 0 0;
-  margin: 20px 15px 0 0;
-  float: left;
-}
-/* line 44, app/layout/_footer.scss */
-footer button span {
-  display: block;
-  padding: 4px 5px 0;
-  font-size: 20px;
-  color: #757e28;
-  background-color: #b8c341;
-}
-/* line 52, app/layout/_footer.scss */
-footer button:hover {
-  cursor: pointer;
-}
-/* line 55, app/layout/_footer.scss */
-footer button:hover span {
-  color: white;
-  text-align: center;
-}
-
-/* line 6, app/layout/_wrapper.scss */
-body {
-  width: 100%;
-  margin: 0;
-  font-family: "Roboto Slab";
-  font-size: 18px;
-  font-weight: 300;
-  color: #562d22;
-}
-
-/* line 14, app/layout/_wrapper.scss */
-h1 {
-  margin: 0 0 40px;
-  padding: 0;
-  font-family: "Amatic SC";
-  font-size: 60px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 24, app/layout/_wrapper.scss */
-h3 {
-  margin: 0 0 10px;
-  padding: 0;
-  font-family: "Roboto Slab";
-  font-weight: 700;
-  color: #b8c341;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 33, app/layout/_wrapper.scss */
-h4 {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: "Roboto Slab";
-  font-weight: 700;
-  color: #d1ab5c;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 50, app/layout/_wrapper.scss */
-section {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  background-image: url("../images/bg_texture.png");
-  background-repeat: repeat;
-}
-
-/* line 58, app/layout/_wrapper.scss */
-section h1,
-section p {
-  text-align: center;
-}
-
-/* line 61, app/layout/_wrapper.scss */
-footer {
-  width: 100%;
-  padding: 40px 0;
-  background-color: #757e28;
-}
-
-/* line 66, app/layout/_wrapper.scss */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 71, app/layout/_wrapper.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 75, app/layout/_wrapper.scss */
-.table {
-  display: table;
-}
-
-/* line 77, app/layout/_wrapper.scss */
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 91, app/layout/_wrapper.scss */
-button {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  border-radius: 7px;
-  background: url("../images/btn_arrow_default2.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  border: 2px solid #562d22;
-  padding: 0 36px 0 0;
-  color: #562d22;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Roboto Slab";
-  display: block;
-  margin: 0 auto;
-}
-
-/* line 106, app/layout/_wrapper.scss */
-button span {
-  display: block;
-  padding: 8px 20px;
-}
-
-/* line 110, app/layout/_wrapper.scss */
-button:hover {
-  cursor: pointer;
-}
-
-/* line 113, app/layout/_wrapper.scss */
-button:hover span {
-  color: white;
-}
-
-/* line 116, app/layout/_wrapper.scss */
-button:hover span.bgOrange {
-  background-color: #e4a314;
-}
-
-/* line 119, app/layout/_wrapper.scss */
-button:hover span.bgGreen {
-  background-color: #707928;
-}
-
-/* line 122, app/layout/_wrapper.scss */
-button:hover span.bgPurple {
-  background-color: #764968;
-}
-
-/* line 125, app/layout/_wrapper.scss */
-button:hover span.bgGold {
-  background-color: #d1ab5c;
-}
-
-/* line 128, app/layout/_wrapper.scss */
-button:hover span.bgLtGreen {
-  background-color: #98aa33;
-}
-
-/* line 131, app/layout/_wrapper.scss */
-button:hover span.bgOrange {
-  background-color: #e4a314;
-}
-
-/* line 152, app/layout/_wrapper.scss */
-.colorGreen {
-  color: #707928;
-}
-
-/* line 155, app/layout/_wrapper.scss */
-.colorPurple {
-  color: #764968;
-}
-
-/* line 158, app/layout/_wrapper.scss */
-.colorGold {
-  color: #d1ab5c;
-}
-
-/* line 161, app/layout/_wrapper.scss */
-.colorLtGreen {
-  color: #98aa33;
-}
-
-/* line 164, app/layout/_wrapper.scss */
-.colorOrange {
+/* line 24, contact.scss */
+.contact section h1 {
   color: #e4a314;
 }
-
-/* line 168, app/layout/_wrapper.scss */
-.social div {
-  float: left;
-  padding-top: 20px;
+/* line 28, contact.scss */
+.contact section p {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+/* line 35, contact.scss */
+.contact section h5 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #e4a314;
+  text-align: center;
+}
+/* line 42, contact.scss */
+.contact section h6 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+/* line 50, contact.scss */
+.contact section h6 span {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 56, contact.scss */
+.contact section.contactForm {
+  background-color: #f8f2e7;
+  padding-top: 40px;
+}
+/* line 60, contact.scss */
+.contact section.contactForm p {
+  padding: 0;
+  margin: 0;
+}
+/* line 65, contact.scss */
+.contact section.contactForm span {
+  color: #e4a314;
+}
+/* line 69, contact.scss */
+.contact section.contactForm a {
+  color: #562d22;
+}
+/* line 73, contact.scss */
+.contact section.contactForm button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  float: right;
+}
+/* line 78, contact.scss */
+.contact section.contactForm button span {
+  color: #562d22;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+/* line 83, contact.scss */
+.contact section.contactForm button span:hover {
   color: white;
+}
+/* line 89, contact.scss */
+.contact section.contactForm form {
+  text-align: center;
+}
+/* line 92, contact.scss */
+.contact section.contactForm form p {
+  text-align: left;
+  margin: 0 0 15px;
+}
+/* line 98, contact.scss */
+.contact section.contactForm input {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  width: 100%;
+  border: 2px solid #d1ab5c;
+  margin-top: 10px;
+  padding: 5px;
+  color: #562d22;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "Roboto Slab";
+}
+/* line 111, contact.scss */
+.contact section.contactForm h6 {
+  color: #e4a314;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: initial;
+}
+/* line 119, contact.scss */
+.contact section.contactForm .large_6 {
+  float: none;
+  display: inline-block;
+}
+/* line 126, contact.scss */
+.contact img {
+  margin: 0 auto;
 }

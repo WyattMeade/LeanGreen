@@ -3,6 +3,7 @@
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
+
 @font-face {
   font-family: "Genericons";
   src: url("../fonts/Genericons.eot");
@@ -10,13 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Genericons";
     src: url("../fonts/Genericons.svg#Genericons") format("svg");
-  }
 }
-/* line 7, ../app/widgets/_clear-fix.scss */
+}
+/* line 8, ../app/widgets/_clear-fix.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -27,133 +29,66 @@
 }
 
 /* line 7, home.scss */
-section.homeMain {
+.home header {
+  background-image: url("../../images/bg_home_header_Texture.png");
+  background-repeat: repeat;
   background-color: #707928;
+  height: 180px;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+/* line 16, home.scss */
+.home nav.main {
+  padding-top: 50px;
+  background-color: #707928;
+}
+/* line 20, home.scss */
+.home nav.main ul {
+  padding: 20px 0 25px;
+}
+/* line 27, home.scss */
+.home section.homeMain {
+  background-color: #707928;
+  color: white;
   padding-bottom: 60px;
 }
-
-/* line 11, home.scss */
-section.homeOne {
+/* line 32, home.scss */
+.home section.homeMain img {
+  margin: 0 auto;
+}
+/* line 37, home.scss */
+.home section.homeOne {
   background-color: #f8f2e7;
 }
-
-/* line 14, home.scss */
-section.homeOne .col,
-section.homeTwo .col {
+/* line 43, home.scss */
+.home section.homeOne .col, .home section.homeTwo .col {
   height: 620px;
   padding: 30px 0;
 }
-
-/* line 20, home.scss */
-section.homeOne p,
-section.homeTwo p {
+/* line 48, home.scss */
+.home section.homeOne p, .home section.homeTwo p {
   color: #562d22;
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* line 26, home.scss */
-.colorGreen {
-  color: #707928;
-}
-
-/* line 29, home.scss */
-.colorPurple {
-  color: #764968;
-}
-
-/* line 32, home.scss */
-.colorGold {
-  color: #d1ab5c;
-}
-
-/* line 35, home.scss */
-.colorLtGreen {
-  color: #98aa33;
-}
-
-/* line 38, home.scss */
-.colorOrange {
-  color: #e4a314;
-}
-
-/* line 41, home.scss */
-button {
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  background: url("../../images/btn_arrow_default2.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  border: 2px solid #562d22;
-  padding: 0 36px 0 0;
-  color: #562d22;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Roboto Slab';
-  display: block;
-  margin: 0 auto;
-}
-
-/* line 58, home.scss */
-button span {
-  display: block;
-  padding: 8px 20px;
-}
-
-/* line 62, home.scss */
-button:hover span {
-  color: #ffffff;
-}
-
-/* line 65, home.scss */
-button:hover span.bgOrange {
-  background-color: #E4A314;
-}
-
-/* line 68, home.scss */
-button:hover span.bgGreen {
-  background-color: #707928;
-}
-
-/* line 71, home.scss */
-button:hover span.bgPurple {
-  background-color: #764968;
-}
-
-/* line 74, home.scss */
-button:hover span.bgGold {
-  background-color: #d1ab5c;
-}
-
-/* line 77, home.scss */
-button:hover span.bgLtGreen {
-  background-color: #98aa33;
-}
-
-/* line 80, home.scss */
-button:hover span.bgOrange {
-  background-color: #e4a314;
-}
-
-/* line 83, home.scss */
+/* line 57, home.scss */
 nav ul.leftNav {
   background-image: url("../../images/nav_bgBorder_left.png");
 }
 
-/* line 86, home.scss */
+/* line 60, home.scss */
 nav ul.rightNav {
   background-image: url("../../images/nav_bgBorder_right.png");
 }
 
-/* line 89, home.scss */
+/* line 64, home.scss */
 nav ul.leftNav,
 nav ul.rightNav {
   background-repeat: no-repeat;
 }
 
-/* line 93, home.scss */
+/* line 67, home.scss */
 .logoHome {
   margin-top: -45px;
 }

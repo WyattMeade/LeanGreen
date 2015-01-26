@@ -5,46 +5,54 @@
 %header {
 
 	width: 100%;
-	margin: 0 auto;
-	padding: 20px 0 0;
-	background-color: #707928;
+	margin: $m-auto 40px;
+	padding: 10px 0 0;
+	background-color: $dkgreen-01;
 	text-align: center;
-	background-image: url("../../design/Home/Assets/bg_home_header_Texture.png");
-	background-repeat: repeat;
-	height: 180px;
-		
+	background: #707928; /* Old browsers */
+	background: -moz-linear-gradient(top,  #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707928), color-stop(40%,#707928), color-stop(40%,#f8f2e7), color-stop(100%,#f8f2e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 ); /* IE6-9 */
+
 	nav {
-		font-family: 'Amatic SC';
+		font-family: $amatic;
 		font-size: 30px;
 		letter-spacing: 1px;
-		weight: 700;
+		font-weight: 700;
 		display: inline-block;
 		text-align: center;
 		position: relative;
 	}
-	nav.main {
-		background-color: #707928;
-	  padding-top: 50px;
-	}
 	nav ul {
 		list-style: none;
-		padding: 20px 0 25px;
+		padding-top: 10px;
 	}
 	nav ul li {
-		float: left;
+		display: inline-block;
 		font-weight: 700;
-		color: #ffffff;
+		color: $white-01;
 		text-align: center;
 		padding: 0 25px;
 
 	}
 	nav ul li a {
 		text-decoration: none;
-		color: #ffffff;
+		color: $white-01;
 		width: 33%;
 	}
 	nav ul li a:hover {
-		color: #98aa33;
+		color: $ltgreen-02;
+	}
+	nav .logo {
+		background-color: $dkgreen-01;
+		border-radius: 51%;
+		padding: 30px 20px;
+		position: relative;
+		top: -30px;
 	}
 	nav img {
 		float: left;

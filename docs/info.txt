@@ -1,3 +1,9 @@
 website: http://localhost/leangreen
 user: admin
 pass: L3anGre3n!WP
+
+
+define('DB_NAME', 'leangreenwp');
+define('DB_USER', 'leangreenwp');
+define('DB_PASSWORD', 'L3anGre3n!WP');
+define('DB_HOST', 'leangreenwp.db.5985714.hostedresource.com');

@@ -12,12 +12,15 @@
 		padding-top: 20px;
 		margin-bottom: 0;
 	}
-	nav.main {
-		padding-top: 50px;
-		background-color: $dkgreen-01;
-	}
-	nav.main ul {
-		padding: 20px 0 25px;
+	nav {
+		&.main {
+			padding-top: 50px;
+			background-color: $dkgreen-01;
+
+			ul {
+				padding: 20px 0 25px;
+			}
+		}
 	}
 
 	section {

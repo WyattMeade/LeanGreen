@@ -28,67 +28,139 @@
   clear: both;
 }
 
-/* line 7, home.scss */
-.home header {
-  background-image: url("../../images/bg_home_header_Texture.png");
-  background-repeat: repeat;
-  background-color: #707928;
-  height: 180px;
-  padding-top: 20px;
+/* line 7, contact.scss */
+.contact {
+  background-color: white;
+}
+/* line 10, contact.scss */
+.contact header {
+  background: #707928;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #707928), color-stop(40%, #707928), color-stop(40%, white), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #707928 0%, #707928 40%, white 40%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #707928 0%, #707928 40%, #ffffff 40%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707928', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 21, contact.scss */
+.contact section {
+  padding-bottom: 40px;
+}
+/* line 24, contact.scss */
+.contact section h1 {
+  color: #e4a314;
+}
+/* line 28, contact.scss */
+.contact section p {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+/* line 35, contact.scss */
+.contact section h5 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #e4a314;
+  text-align: center;
+}
+/* line 42, contact.scss */
+.contact section h6 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
   margin-bottom: 0;
 }
-/* line 16, home.scss */
-.home nav.main {
-  padding-top: 50px;
-  background-color: #707928;
+/* line 50, contact.scss */
+.contact section h6 span {
+  font-size: 18px;
+  font-weight: 300;
 }
-/* line 20, home.scss */
-.home nav.main ul {
-  padding: 20px 0 25px;
-}
-/* line 27, home.scss */
-.home section.homeMain {
-  background-color: #707928;
-  color: white;
-  padding-bottom: 60px;
-}
-/* line 32, home.scss */
-.home section.homeMain img {
-  margin: 0 auto;
-}
-/* line 37, home.scss */
-.home section.homeOne {
+/* line 56, contact.scss */
+.contact section.contactForm {
   background-color: #f8f2e7;
+  padding-top: 40px;
 }
-/* line 43, home.scss */
-.home section.homeOne .col, .home section.homeTwo .col {
-  height: 620px;
-  padding: 30px 0;
+/* line 60, contact.scss */
+.contact section.contactForm p {
+  padding: 0;
+  margin: 0;
 }
-/* line 48, home.scss */
-.home section.homeOne p, .home section.homeTwo p {
+/* line 65, contact.scss */
+.contact section.contactForm span {
+  color: #e4a314;
+}
+/* line 69, contact.scss */
+.contact section.contactForm a {
   color: #562d22;
+}
+/* line 73, contact.scss */
+.contact section.contactForm button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  float: right;
+}
+/* line 78, contact.scss */
+.contact section.contactForm button span {
+  color: #562d22;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+/* line 83, contact.scss */
+.contact section.contactForm button span:hover {
+  color: white;
+}
+/* line 89, contact.scss */
+.contact section.contactForm form {
   text-align: center;
-  margin-bottom: 40px;
 }
-
-/* line 57, home.scss */
-nav ul.leftNav {
-  background-image: url("../../images/nav_bgBorder_left.png");
+/* line 92, contact.scss */
+.contact section.contactForm form p {
+  text-align: left;
+  margin: 0 0 15px;
 }
-
-/* line 60, home.scss */
-nav ul.rightNav {
-  background-image: url("../../images/nav_bgBorder_right.png");
+/* line 98, contact.scss */
+.contact section.contactForm input {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  width: 100%;
+  border: 2px solid #d1ab5c;
+  margin-top: 10px;
+  padding: 5px;
+  color: #562d22;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "Roboto Slab";
 }
-
-/* line 64, home.scss */
-nav ul.leftNav,
-nav ul.rightNav {
-  background-repeat: no-repeat;
+/* line 111, contact.scss */
+.contact section.contactForm h6 {
+  color: #e4a314;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: initial;
 }
-
-/* line 67, home.scss */
-.logoHome {
-  margin-top: -45px;
+/* line 119, contact.scss */
+.contact section.contactForm .large_6 {
+  float: none;
+  display: inline-block;
+}
+/* line 126, contact.scss */
+.contact img {
+  margin: 0 auto;
 }

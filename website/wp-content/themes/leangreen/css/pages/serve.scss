@@ -1,0 +1,122 @@
+@import "app/base/core";
+
+// --------------------
+// Who We Serve
+// --------------------
+
+.serve {
+	background-color: $white-01;
+		
+	header {
+		background: #707928; /* Old browsers */
+		background: -moz-linear-gradient(top,  #707928 0%, #707928 40%, #ffffff 40%, #ffffff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707928), color-stop(40%,#707928), color-stop(40%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #707928 0%,#707928 40%,#ffffff 40%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #707928 0%,#707928 40%,#ffffff 40%,#ffffff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #707928 0%,#707928 40%,#ffffff 40%,#ffffff 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #707928 0%,#707928 40%,#ffffff 40%,#ffffff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	}
+
+	section {
+		padding-bottom: 40px;
+
+		h1 {
+			color: $dkgreen-02;
+		}
+
+		p,
+		h6 {
+			padding:0 8%;
+		}
+
+		p {
+			font-size: 16px;
+
+			img {
+				margin: 0 0 10px;
+				clear: both;
+			}
+		}
+
+		a {
+			color: $dkred;
+			font-weight: 700;
+		}
+
+		h6 {
+			color: $purple;
+			font-size: 15px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&:before {
+				content: '-\a';
+			}
+		}
+
+		button {
+			background: url("../../images/btn_arrow_down.png");
+			background-repeat: no-repeat;
+			background-position: right center;
+			padding: 0 47px 0 0;
+			margin-top: 5px;
+
+			&:hover span{
+    			background-color: $dkgreen-02;
+			}
+		}
+
+		&.clients {
+			background-image: url("../../images/bg_roads.png");
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			height: 1015px;
+			margin-bottom: 40px;
+
+			.clientContainer {
+				position: relative;
+
+				p {
+					padding: 0;
+				}
+			}
+
+			.corp {
+				top: 75px;
+				left: 90px;
+			}
+
+			.school {
+				top: 130px;
+				right: 50px;
+			}
+
+			.club {
+				top: 90px;
+				right: 20px;
+			}
+
+			.park {
+				top: 190px;
+				left: 25px;
+			}
+
+			.hospital {
+				top: 155px;
+				left: 120px;
+			}
+
+			.loc {
+				top: 265px;
+				right: 20px;
+			}
+		}
+
+	}
+
+	img {
+		margin: $m-auto;
+	}
+
+}

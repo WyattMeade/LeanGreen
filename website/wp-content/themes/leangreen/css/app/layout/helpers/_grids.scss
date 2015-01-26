@@ -9,7 +9,10 @@
 	margin-right: auto;
 }
 
-.row { @extend %clear-fix; }
+.row { 
+	@extend %clear-fix;
+	margin-bottom: 40px;
+}
 
 .col {
 	position: relative;
@@ -17,9 +20,15 @@
 	margin: 0 (($gutter-width / 2) / $system-width * 100%);
 }
 
-.pull-right { float: right; }
+.pull-right {
+	float: right;
+	@include breakpoint(small) { float: none; }
+}
 
-.pull-left { float: left; }
+.pull-left {
+	float: left;
+	@include breakpoint(small) { float: none; }
+}
 
 @for $i from 1 through $columns {
 

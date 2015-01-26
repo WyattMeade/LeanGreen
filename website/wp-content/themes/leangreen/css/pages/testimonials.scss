@@ -1,0 +1,54 @@
+@import "app/base/core";
+
+// --------------------
+// Testimonials
+// --------------------
+
+.testimonials {
+	background-color: $tanned;
+		
+	section {
+		padding-bottom: 40px;
+
+		h1 {
+			color: $purple;
+		}
+
+		p,
+		h6 {
+			padding:0 10%;
+		}
+
+		p {
+			font-size: 16px;
+			text-align: justify;
+
+			img {
+				margin: 0 0 10px;
+				clear: both;
+			}
+		}
+
+		h6 {
+			color: $purple;
+			font-size: 15px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&:before {
+				content: '-\a';
+			}
+		}
+
+		&.clientContainer {
+			padding-top: 40px;
+			background-color: $white-01;
+		}
+
+	}
+
+	img {
+		margin: $m-auto;
+	}
+
+}

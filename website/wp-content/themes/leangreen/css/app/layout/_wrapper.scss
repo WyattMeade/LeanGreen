@@ -2,14 +2,174 @@
 // Wrapper
 // --------------------
 
+
+body {
+	width: 100%;
+  	margin: 0;
+  	font-family: $roboto;
+  	font-size: 18px;
+  	font-weight: 300;
+  	color: $dkred;
+}
+h1 {
+  	margin: 0 0 40px;
+  	padding: 0;
+  	font-family: $amatic;
+  	font-size: 60px;
+  	letter-spacing: 1px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	text-align: center;
+}
+h3 {
+	margin: 0 0 10px;
+	padding: 0;
+	font-family: $roboto;
+	font-weight: 700;
+	color: $ltgreen-01;
+	text-transform: uppercase;
+	text-align: center;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: $roboto;
+    font-weight: 700;
+    color: $golden;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 header {
 
 	@extend %header;
 
 }
 
+section {
+    width: 100%;
+    margin: $m-auto;
+    display: block;
+    background-image: url("../images/bg_texture.png");
+    background-repeat: repeat;
+
+    @extend %clear-fix;
+}
+section h1,
+section p{
+    text-align: center;
+}
+footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: $dkgreen-02;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.table { display: table; }
+
+.table-cell { display: table-cell; vertical-align: middle; }
+
 footer {
 
 	@extend %footer;
 
+}
+
+i {
+
+    @extend %icon;
+
+}
+
+button {
+    @include border-radius(7px);
+    background: url("../images/btn_arrow_default2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 2px solid $dkred;
+    padding: 0 36px 0 0;
+    color: $dkred;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $roboto;
+    display: block;
+    margin: $m-auto;
+}
+button span {
+    display: block;
+    padding: 8px 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+button:hover span{
+    color: $white-01;
+}
+button:hover span.bgOrange{
+    background-color: $orange;
+}
+button:hover span.bgGreen {
+    background-color: $dkgreen-01;
+}
+button:hover span.bgPurple {
+    background-color: $purple;
+}
+button:hover span.bgGold {
+    background-color: $golden;
+}
+button:hover span.bgLtGreen {
+    background-color: $ltgreen-02;
+}
+button:hover span.bgOrange {
+    background-color: $orange;
+}
+
+.icon-pinterest {
+
+    @extend %icon-pinterest;
+
+}
+
+.icon-twitter {
+
+    @extend %icon-twitter;
+
+}
+
+.icon-facebook-alt {
+
+    @extend %icon-facebook-alt;
+
+}
+.colorGreen {
+    color: $dkgreen-01;
+}
+.colorPurple {
+    color: $purple;
+}
+.colorGold {
+    color: $golden;
+}
+.colorLtGreen {
+    color: $ltgreen-02;
+}
+.colorOrange {
+    color: $orange;
+}
+.social {
+    div {
+        float: left;
+        padding-top: 20px;
+        color: $white-01;
+    }
 }

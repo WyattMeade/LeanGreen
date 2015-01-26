@@ -344,3 +344,17 @@ require get_template_directory() . '/inc/post-types.php';
  */
 require get_template_directory() . '/inc/shortcodes.php';
 
+/**
+ * Page Specific CSS
+ *
+ * @since Twenty Fifteen 1.0
+ */
+require get_template_directory() . '/inc/page-css.php';
+
+/**
+ * Page Specific JS
+ *
+ * @since Twenty Fifteen 1.0
+ */
+require get_template_directory() . '/inc/page-js.php';
+

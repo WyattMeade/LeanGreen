@@ -4,64 +4,65 @@
 // About Us
 // --------------------
 
-.about {
+body {
+
 	background-color: $tanned;
-		
-	section {
-		padding-bottom: 40px;
+	
+}
+	
+section {
+	padding-bottom: 40px;
 
-		h1,
-		h6 {
-			color: $ltgreen-01;
-		}
+	h1,
+	h6 {
+		color: $ltgreen-01;
+	}
 
-		p {
-			font-size: 16px;
-			text-align: justify;
-			padding: 0 10%;
-			margin-bottom: 20px;
-		}
+	p {
+		font-size: 16px;
+		text-align: justify;
+		padding: 0 10%;
+		margin-bottom: 20px;
+	}
 
-		h6 {
-			font-size: 15px;
-			font-weight: 700;
-			text-transform: uppercase;
-			padding: 30px 15%;
-			text-align: center;
-			background-image: url("../../images/bg_imgCaption.png");
-			background-repeat: no-repeat;
-			background-position: top center;
-			background-size: contain;
-			margin-top: 0;
+	h6 {
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 30px 15%;
+		text-align: center;
+		background-image: url("../../images/bg_imgCaption.png");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		margin-top: 0;
 
-			span {
-				font-size: 18px;
-				font-weight: 300;
-			}
-		}
-
-		&.history {
-			img {
-				width: 80%;
-			}
-		}
-
-		&.aboutUs {
-			background-color: $white-01;
-			padding-top: 40px;
-
-			h6 {
-				padding: 30px 10%;
-			}
-
-			button {
-				float: left;
-			}
+		span {
+			font-size: 18px;
+			font-weight: 300;
 		}
 	}
 
-	img {
-		margin: $m-auto;
+	&.history {
+		img {
+			width: 80%;
+		}
 	}
 
+	&.aboutUs {
+		background-color: $white-01;
+		padding-top: 40px;
+
+		h6 {
+			padding: 30px 10%;
+		}
+
+		button {
+			float: left;
+		}
+	}
+}
+
+img {
+	margin: $m-auto;
 }

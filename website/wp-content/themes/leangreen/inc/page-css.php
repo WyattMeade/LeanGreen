@@ -27,7 +27,7 @@ function page_specific_css() {
     }
 
     if ( is_page( 'contact-us' ) ) {
-        wp_register_style( 'contact_css', get_template_directory_uri().'/css/pages/contact-us.css' );
+        wp_register_style( 'contact_css', get_template_directory_uri().'/css/pages/contact.css' );
         wp_enqueue_style( 'contact_css' );
     }
 

@@ -6,3 +6,8 @@
 	@include inline-block;
 	vertical-align: top;
 }
+
+.inline-block {
+	@extend %inline-block;
+	float: none;
+}

@@ -17,8 +17,11 @@ get_header(); ?>
 	</section>
 	<section class="clearfix">
 
-	<?php $query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1'); ?>
-	<?php $num_of_posts = $wp_query->post_count; ?>
+	<?php 
+		$query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1');
+		$num_of_posts = $wp_query->post_count;
+		$current_count = 0;
+	?>
 
 	<?php if ( have_posts() ) : ?> 
 
@@ -30,7 +33,10 @@ get_header(); ?>
 
 			<?php } ?>
 
-			<?php $count++; ?>
+			<?php
+				$count++;
+				$current_count++;
+			?>
 
 			<div class="large_5 col">
 
@@ -39,7 +45,7 @@ get_header(); ?>
 
 			</div>
 
-			<?php if($count == 3 || $count == $num_of_posts) { ?>
+			<?php if($count == 3 || $current_count == $num_of_posts) { ?>
 
 				<?php $count = 0; ?>
 			

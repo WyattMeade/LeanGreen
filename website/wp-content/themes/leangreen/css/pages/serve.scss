@@ -56,7 +56,7 @@
 		}
 
 		button {
-			background: url("../../images/btn_arrow_down.png");
+			background: url("#{$path}/images/btn_arrow_down.png");
 			background-repeat: no-repeat;
 			background-position: right center;
 			padding: 0 47px 0 0;
@@ -68,7 +68,7 @@
 		}
 
 		&.clients {
-			background-image: url("../../images/bg_roads.png");
+			background-image: url("#{$path}/images/bg_roads.png");
 			background-repeat: no-repeat;
 			background-position: bottom center;
 			height: 1015px;

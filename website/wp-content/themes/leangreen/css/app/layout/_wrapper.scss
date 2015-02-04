@@ -51,7 +51,7 @@ section {
     width: 100%;
     margin: $m-auto;
     display: block;
-    background-image: url("../images/bg_texture.png");
+    background-image: url("#{$path}/images/bg_texture.png");
     background-repeat: repeat;
 
     @extend %clear-fix;
@@ -92,7 +92,7 @@ i {
 
 button {
     @include border-radius(7px);
-    background: url("../images/btn_arrow_default2.png");
+    background: url("#{$path}/images/btn_arrow_default2.png");
     background-repeat: no-repeat;
     background-position: right center;
     border: 2px solid $dkred;

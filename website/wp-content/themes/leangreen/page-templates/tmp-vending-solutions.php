@@ -11,11 +11,44 @@ get_header(); ?>
 
 	<section class="clearfix">
 		<div class="large_7 col centered">
-			<h1>Vending Solutions</h1>
-			<p>No matter your location, tastes, needs, and cravings, we've got the right vending equipment and products for you.</p>
+			<h1><?php the_title(); ?></h1>
+			<p><?php the_content(); ?></p>
 		</div>
 	</section>
 	<section class="clearfix">
+
+	<?php $query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1'); ?>
+
+	<?php if ( have_posts() ) : ?> 
+
+		<?php while ($query_vs->have_posts()) : $query_vs->the_post(); ?>
+
+			<?php if($count == 0) { ?>
+
+				<div class="row">
+
+			<?php } ?>
+
+			<?php $count++; ?>
+
+			<div class="large_5 col">
+
+				<?php the_title(); ?>
+
+			</div>
+
+			<?php if($count == 3) { ?>
+
+				<?php $count = 0; ?>
+			
+				</div>
+
+			<?php } ?>
+		<?php endwhile; ?>
+
+	<?php endif; ?>
+
+
 		<div class="row">
 			<div class="large_5 col">
 				<h4>Healthy Snacks</h4>

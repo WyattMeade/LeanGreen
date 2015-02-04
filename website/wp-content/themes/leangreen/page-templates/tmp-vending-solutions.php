@@ -18,6 +18,7 @@ get_header(); ?>
 	<section class="clearfix">
 
 	<?php $query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1'); ?>
+	<?php $num_of_posts = $wp_query->post_count; ?>
 
 	<?php if ( have_posts() ) : ?> 
 
@@ -38,16 +39,18 @@ get_header(); ?>
 
 			</div>
 
-			<?php if($count == 3) { ?>
+			<?php if($count == 3 || $count == $num_of_posts) { ?>
 
 				<?php $count = 0; ?>
 			
 				</div>
 
 			<?php } ?>
+
 		<?php endwhile; ?>
 
 	<?php endif; ?>
+	<?php wp_reset_query(); ?>
 
 		<div class="row">
 			<div class="large_12 col centered">

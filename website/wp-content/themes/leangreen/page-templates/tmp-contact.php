@@ -12,17 +12,17 @@ get_header(); ?>
 	<section class="clearfix">
 		<div class="row">
 			<div class="large_5 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Contact_One.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_contact_one.png">
 				<h6>Chat</h6>
 				<p>You call or email and tell us what kind of vending you're looking for.</p>
 			</div>
 			<div class="large_5 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Contact_Two.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_contact_two.png">
 				<h6>Meet</h6>
 				<p>We come out to see your location and to describe how we can meet all of your needs.</p>
 			</div>
 			<div class="large_5 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Contact_Three.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_contact_three.png">
 				<h6>Agree</h6>
 				<p>We sign a standard agreement basically stating that we have to live up to our promises or you can boot us to the curb.</p>
 			</div>

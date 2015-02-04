@@ -20,7 +20,7 @@ get_header(); ?>
 			<p>He finally decided he was ready for something different; both in a professional and personal respect. Having an innate entrepreneurial sense, Brian decided to</p>	
 		</div>
 		<div class="large_5 col">
-			<img src="<?php bloginfo( 'template_url' ); ?>/images/AboutUs_Animation.gif">
+			<img src="<?php bloginfo( 'template_url' ); ?>/images/aboutus_animation.gif">
 			<h6>Brian continues to scour the area, ridding environments of their once sad vending options and putting new life into people's daily snack choices.</h6>
 		</div>
 		<div class="large_5 col">
@@ -30,7 +30,7 @@ get_header(); ?>
 	</section>
 	<section class="clearfix aboutUs">
 		<div class="large_5 col">
-			<img src="<?php bloginfo( 'template_url' ); ?>/images/img_MissionSnacks.png">
+			<img src="<?php bloginfo( 'template_url' ); ?>/images/img_missionsnacks.png">
 			<h6>Our Mission Is Simple:<br><span>to make healthier snacks &amp; drinks much more available to people throughout Chicago.</span></p>
 		</div>
 		<div class="large_10 col">

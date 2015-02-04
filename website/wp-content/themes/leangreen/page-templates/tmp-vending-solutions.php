@@ -52,7 +52,7 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="large_12 col centered">
-			<img src="<?php bloginfo( 'template_url' ); ?>/images/img_DreamMachine.png">
+			<img src="<?php bloginfo( 'template_url' ); ?>/images/img_dreammachine.png">
 			</div>
 		</div>
 	</section>

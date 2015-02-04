@@ -5,7 +5,7 @@
 // --------------------
 .home {
 	header {
-		background-image: url("#{$path}/images/bg_home_header_Texture.png");
+		background-image: url("#{$path}/images/bg_home_header_texture.png");
 		background-repeat: repeat;
 		background-color: $dkgreen-01;
 		height: 180px;
@@ -55,10 +55,10 @@
 }
 
 nav ul.leftNav {
-	background-image: url("#{$path}/images/nav_bgBorder_left.png");
+	background-image: url("#{$path}/images/nav_bgborder_left.png");
 }
 nav ul.rightNav {
-	background-image: url("#{$path}/images/nav_bgBorder_right.png");
+	background-image: url("#{$path}/images/nav_bgborder_right.png");
 }
 nav ul.leftNav,
 nav ul.rightNav {

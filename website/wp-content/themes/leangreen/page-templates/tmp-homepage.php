@@ -16,14 +16,14 @@ get_header(); ?>
 				<h1>Changing the Chicago vending landscape.</h1>
 				<p>LeanGreen Vending is Chicago's standard on how vending ought to be. We're what happens when you blend good ol' fashioned customer care with the latest and greatest vending solutions. Our laser-like focus is on customer service and product selection. When it comes to product options, Leangreen stands apart from the other companies because of our emphasis on healthier options.</p>
 				<h3>Dig a little deeper</h3>
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_Down.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_down.png">
 			</div>
 		</div>
 	</section>
 	<section class="homeOne clearfix">
 		<div class="main">
 			<div class="large_8 col pull-right">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_WhoWeServe.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_whoweserve.png">
 			</div>
 			<div class="large_7 col table">
 				<div class="table-cell">
@@ -37,7 +37,7 @@ get_header(); ?>
 	<section class="homeTwo clearfix">
 		<div class="main">
 			<div class="large_8 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_Testimonials.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_testimonials.png">
 			</div>
 			<div class="large_7 col table">
 				<div class="table-cell">
@@ -51,7 +51,7 @@ get_header(); ?>
 	<section class="homeOne clearfix">
 		<div class="main">
 			<div class="large_8 col pull-right">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_VendingSolutions.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_vendingsolutions.png">
 			</div>
 			<div class="large_7 col table">
 				<div class="table-cell">
@@ -65,7 +65,7 @@ get_header(); ?>
 	<section class="homeTwo clearfix">
 		<div class="main">
 			<div class="large_8 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_AboutUs.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_aboutus.png">
 			</div>
 			<div class="large_7 col table">
 				<div class="table-cell">
@@ -79,7 +79,7 @@ get_header(); ?>
 	<section class="homeOne clearfix">
 		<div class="main">
 			<div class="large_8 col pull-right">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_ContactUs.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_contactus.png">
 			</div>
 			<div class="large_7 col table">
 				<div class="table-cell">

@@ -34,30 +34,30 @@ get_header(); ?>
 	<section class="clientContainer">
 		<div class="row">
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_D219.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_d219.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_bswift.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_bswift.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_Elgin.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_elgin.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_HeartlandAlliance.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_heartlandalliance.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_ymca.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_ymca.png">
 			</div>
 		</div>
 		<div class="row">
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_tysonfoods.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_tysonfoods.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_rushcopley.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_rushcopley.png">
 			</div>
 			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_Client_Romeoville.png">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_Romeoville.png">
 			</div>
 		</div>
 	</section>

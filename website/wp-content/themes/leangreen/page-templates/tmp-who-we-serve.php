@@ -19,13 +19,13 @@ get_header(); ?>
 		<div class="row">
 			<div class="large_7 col">
 				<div class="clientContainer corp">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_Corporate.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoseserve_corporate.png">
 					<p><button><span>Corporate Clients</span></button></p>
 				</div>
 			</div>
 			<div class="large_7 col pull-right">
 				<div class="clientContainer school">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_Schools.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_schools.png">
 					<p><button><span>Schools / Colleges</span></button></p>
 				</div>
 			</div>
@@ -33,13 +33,13 @@ get_header(); ?>
 		<div class="row">
 			<div class="large_7 col">
 				<div class="clientContainer club">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_HealthClubs.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_healthclubs.png">
 					<p><button><span>YMCA / Health Clubs</span></button></p>
 				</div>
 			</div>
 			<div class="large_7 col pull-right">
 				<div class="clientContainer park">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_ParkDistricts.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_parkdistricts.png">
 					<p><button><span>Park Districts</span></button></p>
 				</div>
 			</div>
@@ -47,13 +47,13 @@ get_header(); ?>
 		<div class="row">
 			<div class="large_7 col">
 				<div class="clientContainer hospital">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_Hospitals.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_hospitals.png">
 					<p><button><span>YMCA / Health Clubs</span></button></p>
 				</div>
 			</div>
 			<div class="large_7 col pull-right">
 				<div class="clientContainer loc">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_WhoWeServe_YourLocation.png">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_yourlocation.png">
 					<p><button><span>Park Districts</span></button></p>
 				</div>
 			</div>

@@ -17,43 +17,43 @@ get_header(); ?>
 	</section>
 	<section class="clearfix">
 
-	<?php 
-		$query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1&order=ASC&orderby=date');
-		$num_of_posts = $query_vs->post_count;
-		$current_count = 1;
-		$count = 0;
-	?>
+		<?php 
+			$query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1&order=ASC&orderby=date');
+			$num_of_posts = $query_vs->post_count;
+			$current_count = 1;
+			$count = 0;
+		?>
 
-	<?php if ( have_posts() ) : ?> 
+		<?php if ( have_posts() ) : ?> 
 
-		<?php while ($query_vs->have_posts()) : $query_vs->the_post(); ?>
+			<?php while ($query_vs->have_posts()) : $query_vs->the_post(); ?>
 
-			<?php if($count == 0) { ?>
+				<?php if($count == 0) { ?>
 
-				<div class="row text-center">
+					<div class="row text-center">
 
-			<?php } ?>
+				<?php } ?>
 
-			<div class="large_5 col inline-block" data-numposts="<?php echo $num_of_posts; ?>">
+				<div class="large_5 col inline-block">
 
-				<h4><?php the_title(); ?></h4>
-				<?php the_content(); ?>
+					<h4><?php the_title(); ?></h4>
+					<?php the_content(); ?>
 
-			</div>
-			
-			<?php $count++; ?>
-			<?php if($count == 3 || $current_count == $num_of_posts) { ?>
-			
 				</div>
-				<?php $count = 0; ?>
+				
+				<?php $count++; ?>
+				<?php if($count == 3 || $current_count == $num_of_posts) { ?>
+				
+					</div>
+					<?php $count = 0; ?>
 
-			<?php } ?>
-			<?php $current_count++; ?>
+				<?php } ?>
+				<?php $current_count++; ?>
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-	<?php endif; ?>
-	<?php wp_reset_query(); ?>
+		<?php endif; ?>
+		<?php wp_reset_query(); ?>
 
 		<div class="row">
 			<div class="large_12 col centered">

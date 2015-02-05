@@ -11,12 +11,12 @@ get_header(); ?>
 
 	<section class="clearfix">
 		<div class="large_7 col centered">
-			<h1>Testimonials</h1>
-			<p>We pride ourselves on delivering the best customer service and vending solutions to all our customers. But as they say, don't take our word for it.</p>
+			<h1><?php the_title(); ?></h1>
+			<p><?php the_content(); ?></p>
 		</div>
 	</section>
 	<section class="clearfix">
-		<div class="row">
+		<!--<div class="row">
 			<div class="large_5 col">
 				<p><img src="<?php bloginfo( 'template_url' ); ?>/images/img_quotes.png">Brian Lucas has made healthy vending products a hit at our schools because he is customer-friendly and customer-focused. He asks our students what they want and then he delivers.</p>
 				<h6>Jim Szczepaniak, Community Relations Director, Niles Township High School District 219</h6>
@@ -29,7 +29,45 @@ get_header(); ?>
 				<p><img src="<?php bloginfo( 'template_url' ); ?>/images/img_quotes.png">I can't seem to keep the machine full! Our employees really enjoy the healthy choices provided by LeanGreen!</p>
 				<h6>Shea Prater, Ogilvy & Mather</h6>
 			</div>
-		</div>
+		</div>-->
+
+		<?php 
+			$query_testimonials = new WP_Query('post_type=testimonialspost&posts_per_page=-1&order=ASC&orderby=date');
+			$num_of_posts = $query_testimonials->post_count;
+			$current_count = 1;
+			$count = 0;
+		?>
+
+		<?php if ( have_posts() ) : ?> 
+
+			<?php while ($query_testimonials->have_posts()) : $query_testimonials->the_post(); ?>
+
+				<?php if($count == 0) { ?>
+
+					<div class="row text-center">
+
+				<?php } ?>
+
+				<div class="large_5 col inline-block">
+
+					<p><img src="<?php bloginfo( 'template_url' ); ?>/images/img_quotes.png"><?php the_content(); ?></p>
+					<h6><?php the_title(); ?></h6>
+
+				</div>
+				
+				<?php $count++; ?>
+				<?php if($count == 3 || $current_count == $num_of_posts) { ?>
+				
+					</div>
+					<?php $count = 0; ?>
+
+				<?php } ?>
+				<?php $current_count++; ?>
+
+			<?php endwhile; ?>
+
+		<?php endif; ?>
+		<?php wp_reset_query(); ?>
 	</section>
 	<section class="clientContainer">
 		<div class="row">

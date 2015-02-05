@@ -19,10 +19,13 @@ section {
 		color: $dkred;
 		font-size: 16px;
 		padding: 0 10%;
-		text-align: justify;
 	}
 
 	img {
 		width: 100%;
+	}
+
+	.large_5 p {
+		text-align: justify;
 	}
 }

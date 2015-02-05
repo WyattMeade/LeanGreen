@@ -9,13 +9,21 @@
 
 get_header(); ?>
 
-	<section class="clearfix">
-		<div class="large_7 col centered">
-			<h1><?php the_title(); ?></h1>
-			<p><?php the_content(); ?></p>
-		</div>
-	</section>
-	<section class="clearfix">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	    <section class="clearfix">
+			<div class="large_7 col centered">
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+			</div>
+		</section>
+		<section class="clearfix">
+
+	<?php endwhile; else: ?>
+
+	    <p>Sorry, this page does not exist</p>
+
+	<?php endif; ?>
 
 		<?php 
 			$query_vs = new WP_Query('post_type=vendingsolutions&posts_per_page=-1&order=ASC&orderby=date');

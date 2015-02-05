@@ -22,7 +22,6 @@ section {
 
 	p {
 		font-size: 16px;
-		text-align: justify;
 
 		img {
 			margin: 0 0 10px;
@@ -44,6 +43,10 @@ section {
 	&.clientContainer {
 		padding-top: 40px;
 		background-color: $white-01;
+	}
+
+	.large_5 p {
+		text-align: justify;
 	}
 
 }

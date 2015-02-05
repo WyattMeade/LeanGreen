@@ -65,34 +65,7 @@ get_header(); ?>
 	<?php wp_reset_query(); ?>
 	</section>
 	<section class="clientContainer">
-		<!--<div class="row">
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_d219.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_bswift.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_elgin.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_heartlandalliance.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_ymca.png">
-			</div>
-		</div>
-		<div class="row">
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_tysonfoods.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_rushcopley.png">
-			</div>
-			<div class="large_3 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_client_Romeoville.png">
-			</div>
-		</div>-->
+		<h1>Some of Our Clients</h1>
 		<?php 
 			$query_clients = new WP_Query('post_type=clients&posts_per_page=-1&order=ASC&orderby=date');
 			$num_of_posts = $query_clients->post_count;

@@ -75,19 +75,26 @@ section {
 			color: $dkred;
 		}
 
-		button {
+		.gform_footer input[type=submit] {
 			margin-top: 20px;
 			margin-bottom: 30px;
 			float: right;
+			@include border-radius(5px);
+		    background: transparent;
+		    border: 2px solid $dkred;
+		    padding: 12px 0;
+		    color: $dkred;
+		    font-size: 15px;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    font-family: $roboto;
+		    display: block;
+		    margin: $m-auto;
+		    cursor: pointer;
 
-			span {
-				color: $dkred;
-				padding-right: 50px;
-				padding-left: 50px;
-
-				&:hover {
-					color: $white-01;
-				}
+			&:hover {
+				color: $white-01;
+				background-color: $golden;
 			}
 		}
 
@@ -101,7 +108,7 @@ section {
 		}
 
 		input {
-			@include border-radius(8px);
+			@include border-radius(5px);
 			width: 100%;
 			border: 2px solid $golden;
 			margin-top: 10px;
@@ -111,6 +118,7 @@ section {
 			font-weight: 300;
 			line-height: 20px;
 			font-family: $roboto;
+			outline: none;
 		}
 
 		h6 {
@@ -125,6 +133,37 @@ section {
 			 float: none;
 			 display: inline-block;
 		}
+		
+		.gform_wrapper {
+			label.gfield_label + div.ginput_container,
+			input.large {
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+			input.large {
+				width: 95%;
+			}
+			.gfield_label {
+				margin-bottom: 5px;
+				margin-top: 0;
+				width: 95%;
+				text-align: left;
+			}
+			.gform_footer {
+				width: 10%;
+				float: right;
+				margin-right: 12.5%;
+				margin-top: 0;
+			}
+			div.validation_error {
+				width:45%;
+				margin:0 auto;
+			}
+			li.gfield.gfield_error.gfield_contains_required {
+				width: 60%;
+			}
+		}
+
 	}
 }
 

@@ -12,7 +12,7 @@
 /*
  * Creates Custom Post Type Testimonials
  */
-function my_custom_post_testimonials() {
+function my_custom_post_testimonialspost() {
 	$labels = array(
 		'name'               => _x( 'Testimonials', 'post type general name' ),
 		'singular_name'      => _x( 'Testimonial', 'post type singular name' ),
@@ -36,15 +36,15 @@ function my_custom_post_testimonials() {
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
 		'has_archive'   => true,
 	);
-	register_post_type( 'testimonials', $args );	
+	register_post_type( 'testimonialspost', $args );	
 }
-add_action( 'init', 'my_custom_post_testimonials' );
+add_action( 'init', 'my_custom_post_testimonialspost' );
 
 
 /*
  * Creates Category Taxonomy for Testimonials
  */
-function my_taxonomies_testimonials() {
+function my_taxonomies_testimonialspost() {
 	$labels = array(
 		'name'              => _x( 'Testimonials Categories', 'taxonomy general name' ),
 		'singular_name'     => _x( 'Testimonials Category', 'taxonomy singular name' ),
@@ -62,9 +62,9 @@ function my_taxonomies_testimonials() {
 		'labels' => $labels,
 		'hierarchical' => true,
 	);
-	register_taxonomy( 'testimonials_category', 'testimonials', $args );
+	register_taxonomy( 'testimonialspost_category', 'testimonialspost', $args );
 }
-add_action( 'init', 'my_taxonomies_testimonials', 0 );
+add_action( 'init', 'my_taxonomies_testimonialspost', 0 );
 
 
 

@@ -50,19 +50,3 @@
 
 		?>
 	</header>
-
-	<!-- <header>
-		<nav class="main">
-			<ul class="large_6 col leftNav">
-				<li><a href="/">Home</a></li>
-				<li><a href="/who-we-serve">Who We Serve</a></li>
-				<li><a href="/testimonials">Testimonials</a></li>
-			</ul>
-			<div class="large_3 col logoHome"><img src="<?php bloginfo( 'template_url' ); ?>/images/img_global_logo.png"></div>
-			<ul class="large_6 col rightNav">
-				<li><a href="/vending-solutions">Vending Solutions</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/contact-us">Contact</a></li>
-			</ul>
-		</nav>
-	</header> -->

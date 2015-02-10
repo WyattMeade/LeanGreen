@@ -25,6 +25,33 @@
 
 <body <?php body_class(); ?>>
 	<header>
+		<?php
+
+		$defaults = array(
+			'theme_location'  => '',
+			'menu'            => '',
+			'container'       => 'nav',
+			'container_class' => 'main',
+			'container_id'    => '',
+			'menu_class'      => 'menu large_15 col centered',
+			'menu_id'         => '',
+			'echo'            => true,
+			'fallback_cb'     => 'wp_page_menu',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			'depth'           => 0,
+			'walker'          => ''
+		);
+
+		wp_nav_menu( $defaults );
+
+		?>
+	</header>
+
+	<!-- <header>
 		<nav class="main">
 			<ul class="large_6 col leftNav">
 				<li><a href="/">Home</a></li>
@@ -38,4 +65,4 @@
 				<li><a href="/contact-us">Contact</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header> -->

@@ -59,4 +59,24 @@
 		width: 100%;
 	}
 
+	.logoHome {
+
+		position: relative;
+
+		a {
+
+			@extend %image-replace;
+
+			display: block;
+			width: 220px;
+			height: 152px;
+			background: url(#{$path}/images/img_global_logo.png) no-repeat 0 center;
+			background-size: auto 100%;
+			top: -40px;
+			position: relative;
+
+		}
+
+	}
+
 }

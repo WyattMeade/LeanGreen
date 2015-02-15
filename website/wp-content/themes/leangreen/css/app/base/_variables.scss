@@ -4,13 +4,13 @@
 
 $base-path: '/wp-content/themes/leangreen';
 $dev-path: '/leangreen/wp-content/themes/leangreen';
-$path: $base-path;
+$path: $dev-path;
 
 // --------------------
 // Grid System
 // --------------------
 
-$max-width: 1300;
+$max-dimension: 1300;
 $system-width: 1200px;
 $column-width: 60px;
 $gutter-width: 20px;
@@ -20,10 +20,10 @@ $columns: 15;
 // Breakpoint Percentages
 // --------------------
 
-$medlarge: 1189/$max-width;
-$medium: 1024/$max-width;
-$medmedium: 900/$max-width;
-$smmedium: 800/$max-width;
+$medlarge: 1189/$max-dimension;
+$medium: 1024/$max-dimension;
+$medmedium: 900/$max-dimension;
+$smmedium: 800/$max-dimension;
 
 // --------------------
 // Colors
@@ -31,13 +31,14 @@ $smmedium: 800/$max-width;
 
 $black-01: #000;
 $white-01: #fff;
-
 $ltgreen-01: #B8C341;
 $ltgreen-02: #98AA33;
 $dkgreen-01: #707928;
 $dkgreen-02: #757E28;
+$dkgreen-03: #606828;
 $golden: #D1AB5C;
-$purple: #764968;
+$purple-01: #764968;
+$purple-02: #562d22;
 $tanned: #F8F2E7;
 $dkred: #562D22;
 $orange: #E4A314;

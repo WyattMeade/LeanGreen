@@ -38,10 +38,34 @@
 			font-size: 18px;
 
 		}
+
+		@include breakpoint(small) {
+
+			font-size: 25px;
+
+		}
 	}
 	nav ul {
 		list-style: none;
 		padding-top: 10px;
+
+		@include breakpoint(small) {
+
+			padding-top: 0;
+
+		}
+
+		&.large_15 {
+
+			@include breakpoint(small) {
+
+				width: 100%;
+				margin: 0 auto;
+			
+			}
+
+		}
+
 	}
 	nav ul li {
 		display: inline-block;
@@ -68,11 +92,40 @@
 
 		}
 
+		@include breakpoint(small) {
+
+			display: block;
+			padding: 10px 25px;
+			text-align: left;
+			background: $purple-02;
+
+			&.current-menu-item {
+
+				background: $dkgreen-03;
+
+				a {
+
+					color: $ltgreen-01;
+
+				}
+
+			}
+
+		}
+
 	}
 	nav ul li a {
 		text-decoration: none;
 		color: $white-01;
 		width: 33%;
+
+		@include breakpoint(small) {
+
+			width: auto;
+			display: block;
+
+		}
+
 	}
 	nav ul li a:hover {
 		color: $ltgreen-02;
@@ -104,6 +157,12 @@
 			background-size: 100% auto;
 			top: -40px;
 			position: relative;
+
+		}
+
+		@include breakpoint(small) {
+
+			display: none;
 
 		}
 

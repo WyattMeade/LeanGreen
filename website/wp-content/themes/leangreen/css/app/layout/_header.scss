@@ -26,6 +26,18 @@
 		display: inline-block;
 		text-align: center;
 		position: relative;
+
+		@include breakpoint(medlarge) {
+
+			font-size: 23px;
+
+		}
+
+		@include breakpoint(medium) {
+
+			font-size: 18px;
+
+		}
 	}
 	nav ul {
 		list-style: none;
@@ -37,6 +49,24 @@
 		color: $white-01;
 		text-align: center;
 		padding: 0 25px;
+
+		@include breakpoint(medlarge) {
+
+			padding: 0 (25px * $medium);
+
+		}
+
+		@include breakpoint(medmedium) {
+
+			padding: 0 (25px * $medmedium);
+
+		}
+
+		@include breakpoint(smmedium) {
+
+			padding: 0 (25px * $smmedium);
+
+		}
 
 	}
 	nav ul li a {
@@ -68,10 +98,10 @@
 			@extend %image-replace;
 
 			display: block;
-			width: 220px;
+			width: 100%;
 			height: 152px;
 			background: url(#{$path}/images/img_global_logo.png) no-repeat 0 center;
-			background-size: auto 100%;
+			background-size: 100% auto;
 			top: -40px;
 			position: relative;
 

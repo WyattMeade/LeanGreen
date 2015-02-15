@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
-		<a href="#" class="menu clearfix">Menu <i class="icon-menu"></i></a>
+		<a href="#" id="menu-button" class="menu clearfix">Menu <i class="icon-menu"></i></a>
 		<?php
 
 		$defaults = array(
@@ -33,7 +33,7 @@
 			'menu'            => '',
 			'container'       => 'nav',
 			'container_class' => 'main',
-			'container_id'    => '',
+			'container_id'    => 'menu',
 			'menu_class'      => 'menu large_15 col centered',
 			'menu_id'         => '',
 			'echo'            => true,

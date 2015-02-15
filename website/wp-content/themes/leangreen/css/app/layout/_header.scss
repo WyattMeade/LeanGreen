@@ -23,6 +23,12 @@
 	background: linear-gradient(to bottom,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 ); /* IE6-9 */
 
+	@include breakpoint(small) {
+
+		overflow: visible;
+
+	}
+
 	a.menu {
 
 		display: none;
@@ -68,6 +74,16 @@
 		@include breakpoint(small) {
 
 			font-size: 25px;
+			display: none;
+
+			&.open {
+
+				display: block;
+				position: absolute;
+				top: 51px;
+				z-index: 100;
+
+			}
 
 		}
 	}

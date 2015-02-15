@@ -48,9 +48,10 @@ section {
 		background-color: $dkgreen-01;
 		color: $white-01;
 		padding-bottom: 60px;
+		@include breakpoint(small) {
+			
+			padding-top: 25px;
 
-		img {
-			margin: $m-auto;
 		}
 	}
 	
@@ -61,8 +62,14 @@ section {
 	&.homeOne,
 	&.homeTwo {
 		.col {
-			height: 620px;
+			min-height: 620px;
 			padding: 30px 0;
+
+			@include breakpoint(small) {
+
+				min-height: 0;
+
+			}
 		}
 
 		p {
@@ -70,6 +77,15 @@ section {
 			text-align: center;
 			margin-bottom: 40px;	
 		}
+	}
+
+	img {
+
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+
 	}
 }		
 

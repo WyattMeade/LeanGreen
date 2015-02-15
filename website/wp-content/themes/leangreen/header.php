@@ -25,6 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
+		<a href="#" class="menu clearfix">Menu <i class="icon-menu"></i></a>
 		<?php
 
 		$defaults = array(

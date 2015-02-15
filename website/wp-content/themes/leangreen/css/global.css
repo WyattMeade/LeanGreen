@@ -35,7 +35,7 @@ a {
 }
 
 /* line 5, app/base/gouda/_helpers.scss */
-i {
+header .icon-menu, i {
   vertical-align: top;
   text-align: center;
   display: inline-block;
@@ -51,13 +51,18 @@ i {
 }
 
 /* line 20, app/base/gouda/_helpers.scss */
-.icon-facebook-alt:before, .icon-pinterest:before, .icon-twitter:before {
+.icon-facebook-alt:before, header .icon-menu:before, .icon-pinterest:before, .icon-twitter:before {
   font-family: "Genericons";
 }
 
 /* line 205, app/base/gouda/_icons.scss */
 .icon-facebook-alt:before {
   content: "\f204";
+}
+
+/* line 370, app/base/gouda/_icons.scss */
+header .icon-menu:before {
+  content: "\f419";
 }
 
 /* line 403, app/base/gouda/_icons.scss */
@@ -432,8 +437,12 @@ header {
   width: 100%;
   margin: 0 auto 40px;
   padding: 10px 0 0;
-  background-color: #707928;
+  font-family: "Amatic SC";
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 700;
   text-align: center;
+  background-color: #707928;
   background: #707928;
   /* Old browsers */
   background: -moz-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
@@ -451,53 +460,67 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 );
   /* IE6-9 */
 }
-/* line 21, app/layout/_header.scss */
+/* line 26, app/layout/_header.scss */
+header a.menu {
+  display: none;
+  padding: 10px 25px;
+  color: #562d22;
+  font-size: 25px;
+  text-align: left;
+  background: #B8C341;
+}
+@media (max-width: 767px) {
+  /* line 26, app/layout/_header.scss */
+  header a.menu {
+    display: block;
+  }
+}
+/* line 43, app/layout/_header.scss */
+header .icon-menu {
+  float: right;
+}
+/* line 52, app/layout/_header.scss */
 header nav {
-  font-family: "Amatic SC";
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-weight: 700;
   display: inline-block;
-  text-align: center;
   position: relative;
 }
 @media (max-width: 1189px) {
-  /* line 21, app/layout/_header.scss */
+  /* line 52, app/layout/_header.scss */
   header nav {
     font-size: 23px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 21, app/layout/_header.scss */
+  /* line 52, app/layout/_header.scss */
   header nav {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 21, app/layout/_header.scss */
+  /* line 52, app/layout/_header.scss */
   header nav {
     font-size: 25px;
   }
 }
-/* line 48, app/layout/_header.scss */
+/* line 74, app/layout/_header.scss */
 header nav ul {
   list-style: none;
   padding-top: 10px;
 }
 @media (max-width: 767px) {
-  /* line 48, app/layout/_header.scss */
+  /* line 74, app/layout/_header.scss */
   header nav ul {
     padding-top: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 58, app/layout/_header.scss */
+  /* line 84, app/layout/_header.scss */
   header nav ul.large_15 {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 70, app/layout/_header.scss */
+/* line 96, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
   font-weight: 700;
@@ -506,58 +529,58 @@ header nav ul li {
   padding: 0 25px;
 }
 @media (max-width: 1189px) {
-  /* line 70, app/layout/_header.scss */
+  /* line 96, app/layout/_header.scss */
   header nav ul li {
     padding: 0 19.69231px;
   }
 }
 @media (max-width: 900px) {
-  /* line 70, app/layout/_header.scss */
+  /* line 96, app/layout/_header.scss */
   header nav ul li {
     padding: 0 17.30769px;
   }
 }
 @media (max-width: 800px) {
-  /* line 70, app/layout/_header.scss */
+  /* line 96, app/layout/_header.scss */
   header nav ul li {
     padding: 0 15.38462px;
   }
 }
 @media (max-width: 767px) {
-  /* line 70, app/layout/_header.scss */
+  /* line 96, app/layout/_header.scss */
   header nav ul li {
     display: block;
     padding: 10px 25px;
     text-align: left;
     background: #562d22;
   }
-  /* line 102, app/layout/_header.scss */
+  /* line 128, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 106, app/layout/_header.scss */
+  /* line 132, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 117, app/layout/_header.scss */
+/* line 143, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
   width: 33%;
 }
 @media (max-width: 767px) {
-  /* line 117, app/layout/_header.scss */
+  /* line 143, app/layout/_header.scss */
   header nav ul li a {
     width: auto;
     display: block;
   }
 }
-/* line 130, app/layout/_header.scss */
+/* line 156, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 133, app/layout/_header.scss */
+/* line 159, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -565,16 +588,16 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 140, app/layout/_header.scss */
+/* line 166, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 145, app/layout/_header.scss */
+/* line 171, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 149, app/layout/_header.scss */
+/* line 175, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   width: 100%;
@@ -585,7 +608,7 @@ header .logoHome a {
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 145, app/layout/_header.scss */
+  /* line 171, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

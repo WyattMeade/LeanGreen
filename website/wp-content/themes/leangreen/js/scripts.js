@@ -29,4 +29,4 @@ var toggleMenu = function() {
 
 };
 
-document.addEventListener('click', toggleMenu, false);
+menuBtn.addEventListener('click', toggleMenu, false);

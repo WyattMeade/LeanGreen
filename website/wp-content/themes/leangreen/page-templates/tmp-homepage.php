@@ -9,17 +9,26 @@
 
 get_header(); ?>
 
-	<section class="homeMain clearfix">
-		<div class="main">
-			<div class="large_11 small_15 col centered">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header.png">
-				<h1>Changing the Chicago vending landscape.</h1>
-				<p>LeanGreen Vending is Chicago's standard on how vending ought to be. We're what happens when you blend good ol' fashioned customer care with the latest and greatest vending solutions. Our laser-like focus is on customer service and product selection. When it comes to product options, Leangreen stands apart from the other companies because of our emphasis on healthier options.</p>
-				<h3>Dig a little deeper</h3>
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_down.png">
+	<?php $the_query = new WP_Query( 'page_id=6' ); while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+			<section class="homeMain clearfix">
+			<div class="main">
+				<div class="large_11 small_15 col centered">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header.png">
+					<h1><?php the_field('page_title'); ?></h1>
+					<?php the_content(); ?>
+					<h3>Dig a little deeper</h3>
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_down.png">
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+
+	<?php endwhile; ?>
+
+	<?php wp_reset_query(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 	<section class="homeOne clearfix">
 		<div class="main">
 			<div class="large_8 small_15 col pull-right table">

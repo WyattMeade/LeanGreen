@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	    <section class="clearfix">
-			<div class="large_7 col centered">
+			<div class="large_7 small_15 col centered">
 				<h1><?php the_field('page_title'); ?></h1>
 				<?php the_content(); ?>
 			</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 
 			<?php } ?>
 
-			<div class="large_5 col inline-block">
+			<div class="large_5 small_15 col inline-block">
 
 				<p><img src="<?php bloginfo( 'template_url' ); ?>/images/img_quotes.png"><?php the_content(); ?></p>
 				<h6><?php the_title(); ?></h6>
@@ -83,7 +83,7 @@ get_header(); ?>
 
 				<?php } ?>
 
-				<div class="large_3 col inline-block">
+				<div class="large_3 small_15 col inline-block">
 
 					<?php the_post_thumbnail(); ?> 					
 

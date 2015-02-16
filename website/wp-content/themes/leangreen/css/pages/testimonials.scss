@@ -43,6 +43,10 @@ section {
 	&.clientContainer {
 		padding-top: 40px;
 		background-color: $white-01;
+
+		img {
+			margin-bottom: 20px;
+		}
 	}
 
 	.large_5 p {

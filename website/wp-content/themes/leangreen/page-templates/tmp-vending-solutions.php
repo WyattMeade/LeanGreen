@@ -42,7 +42,7 @@ get_header(); ?>
 
 				<?php } ?>
 
-				<div class="large_5 col inline-block">
+				<div class="large_5 small_15 col inline-block">
 
 					<h4><?php the_title(); ?></h4>
 					<?php the_content(); ?>
@@ -64,7 +64,7 @@ get_header(); ?>
 		<?php wp_reset_query(); ?>
 
 		<div class="row">
-			<div class="large_12 col centered">
+			<div class="large_12 small_15 col centered">
 			<img src="<?php bloginfo( 'template_url' ); ?>/images/img_dreammachine.png">
 			</div>
 		</div>

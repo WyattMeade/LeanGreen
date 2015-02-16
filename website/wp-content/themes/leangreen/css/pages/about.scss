@@ -59,6 +59,14 @@ section {
 
 		button {
 			float: left;
+
+			span {
+				color: $dkred;
+			}
+
+			&:hover span {
+				color: $white-01;
+			}
 		}
 	}
 }

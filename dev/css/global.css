@@ -540,7 +540,12 @@ footer button:hover span {
   text-align: center;
 }
 
-/* line 6, app/layout/_wrapper.scss */
+/* line 5, app/layout/_wrapper.scss */
+* {
+  outline: none;
+}
+
+/* line 8, app/layout/_wrapper.scss */
 body {
   width: 100%;
   margin: 0;
@@ -550,7 +555,7 @@ body {
   color: #562d22;
 }
 
-/* line 14, app/layout/_wrapper.scss */
+/* line 16, app/layout/_wrapper.scss */
 h1 {
   margin: 0 0 40px;
   padding: 0;
@@ -562,7 +567,7 @@ h1 {
   text-align: center;
 }
 
-/* line 24, app/layout/_wrapper.scss */
+/* line 26, app/layout/_wrapper.scss */
 h3 {
   margin: 0 0 10px;
   padding: 0;
@@ -573,7 +578,7 @@ h3 {
   text-align: center;
 }
 
-/* line 33, app/layout/_wrapper.scss */
+/* line 35, app/layout/_wrapper.scss */
 h4 {
   margin: 0;
   padding: 0;
@@ -585,7 +590,7 @@ h4 {
   text-align: center;
 }
 
-/* line 50, app/layout/_wrapper.scss */
+/* line 52, app/layout/_wrapper.scss */
 section {
   width: 100%;
   margin: 0 auto;
@@ -594,43 +599,43 @@ section {
   background-repeat: repeat;
 }
 
-/* line 60, app/layout/_wrapper.scss */
+/* line 62, app/layout/_wrapper.scss */
 section h1,
 section p {
   text-align: center;
 }
 
-/* line 63, app/layout/_wrapper.scss */
+/* line 65, app/layout/_wrapper.scss */
 footer {
   width: 100%;
   padding: 40px 0;
   background-color: #757e28;
 }
 
-/* line 68, app/layout/_wrapper.scss */
+/* line 70, app/layout/_wrapper.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 73, app/layout/_wrapper.scss */
+/* line 75, app/layout/_wrapper.scss */
 a {
   text-decoration: none;
 }
 
-/* line 77, app/layout/_wrapper.scss */
+/* line 79, app/layout/_wrapper.scss */
 .table {
   display: table;
 }
 
-/* line 79, app/layout/_wrapper.scss */
+/* line 81, app/layout/_wrapper.scss */
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 93, app/layout/_wrapper.scss */
+/* line 95, app/layout/_wrapper.scss */
 button {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -651,78 +656,78 @@ button {
   margin: 0 auto;
 }
 
-/* line 108, app/layout/_wrapper.scss */
+/* line 110, app/layout/_wrapper.scss */
 button span {
   display: block;
   padding: 8px 20px;
 }
 
-/* line 112, app/layout/_wrapper.scss */
+/* line 114, app/layout/_wrapper.scss */
 button:hover {
   cursor: pointer;
 }
 
-/* line 115, app/layout/_wrapper.scss */
+/* line 117, app/layout/_wrapper.scss */
 button:hover span {
   color: white;
 }
 
-/* line 118, app/layout/_wrapper.scss */
+/* line 120, app/layout/_wrapper.scss */
 button:hover span.bgOrange {
   background-color: #e4a314;
 }
 
-/* line 121, app/layout/_wrapper.scss */
+/* line 123, app/layout/_wrapper.scss */
 button:hover span.bgGreen {
   background-color: #707928;
 }
 
-/* line 124, app/layout/_wrapper.scss */
+/* line 126, app/layout/_wrapper.scss */
 button:hover span.bgPurple {
   background-color: #764968;
 }
 
-/* line 127, app/layout/_wrapper.scss */
+/* line 129, app/layout/_wrapper.scss */
 button:hover span.bgGold {
   background-color: #d1ab5c;
 }
 
-/* line 130, app/layout/_wrapper.scss */
+/* line 132, app/layout/_wrapper.scss */
 button:hover span.bgLtGreen {
   background-color: #98aa33;
 }
 
-/* line 133, app/layout/_wrapper.scss */
+/* line 135, app/layout/_wrapper.scss */
 button:hover span.bgOrange {
   background-color: #e4a314;
 }
 
-/* line 154, app/layout/_wrapper.scss */
+/* line 156, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 157, app/layout/_wrapper.scss */
+/* line 159, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 160, app/layout/_wrapper.scss */
+/* line 162, app/layout/_wrapper.scss */
 .colorGold {
   color: #d1ab5c;
 }
 
-/* line 163, app/layout/_wrapper.scss */
+/* line 165, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98aa33;
 }
 
-/* line 166, app/layout/_wrapper.scss */
+/* line 168, app/layout/_wrapper.scss */
 .colorOrange {
   color: #e4a314;
 }
 
-/* line 170, app/layout/_wrapper.scss */
+/* line 172, app/layout/_wrapper.scss */
 .social div {
   float: left;
   padding-top: 20px;

@@ -83,7 +83,11 @@
 .about section.aboutUs button {
   float: left;
 }
-/* line 63, about.scss */
+/* line 60, about.scss */
+.about section.aboutUs button span {
+  color: #562d22;
+}
+/* line 67, about.scss */
 .about img {
   margin: 0 auto;
 }

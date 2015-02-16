@@ -9,25 +9,23 @@
 
 get_header(); ?>
 
-	<?php $the_query = new WP_Query( 'page_id=6' ); while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<?php $the_query = new WP_Query( 'page_id=6' ); while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			<section class="homeMain clearfix">
-			<div class="main">
-				<div class="large_11 small_15 col centered">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header.png">
-					<h1><?php the_field('page_title'); ?></h1>
-					<?php the_content(); ?>
-					<h3>Dig a little deeper</h3>
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_down.png">
-				</div>
+		<section class="homeMain clearfix">
+		<div class="main">
+			<div class="large_11 small_15 col centered">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header.png">
+				<h1><?php the_field('page_title'); ?></h1>
+				<?php the_content(); ?>
+				<h3>Dig a little deeper</h3>
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header_down.png">
 			</div>
-		</section>
+		</div>
+	</section>
 
 	<?php endwhile; ?>
 
 	<?php wp_reset_query(); ?>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<section class="homeOne clearfix">
 		<div class="main">

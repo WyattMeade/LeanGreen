@@ -13,7 +13,7 @@ get_header(); ?>
 
 	    <section class="clearfix">
 			<div class="large_7 col centered">
-				<h1><?php the_title(); ?></h1>
+				<h1><?php the_field('page_title'); ?></h1>
 				<?php the_content(); ?>
 			</div>
 		</section>

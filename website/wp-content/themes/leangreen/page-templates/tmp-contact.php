@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<section class="clearfix">
+			<section class="clearfix">
 			<div class="row">
 				<div class="large_5 col">
 					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_contact_one.png">
@@ -37,7 +37,7 @@ get_header(); ?>
 	    <section class="clearfix contactForm">
 			<div class="row">
 				<div class="large_7 col centered">
-					<h1><?php the_title(); ?></h1>
+					<h1><?php the_field('page_title'); ?></h1>
 					<?php the_content(); ?>
 				</div>
 			</div>

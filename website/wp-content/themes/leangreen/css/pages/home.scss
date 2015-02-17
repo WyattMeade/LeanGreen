@@ -55,12 +55,11 @@ section {
 		}
 	}
 	
-	&.homeOne {
+	&.alt-bg {
 		background-color: $tanned;
 	}
 
-	&.homeOne,
-	&.homeTwo {
+	&.section {
 		.col {
 			min-height: 620px;
 			padding: 30px 0;

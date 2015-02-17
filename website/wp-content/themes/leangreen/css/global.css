@@ -787,104 +787,39 @@ a {
   vertical-align: middle;
 }
 
-/* line 99, app/layout/_wrapper.scss */
-button {
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  background: url("/wp-content/themes/leangreen/images/btn_arrow_default2.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  border: 2px solid #562D22;
-  padding: 0 36px 0 0;
-  color: #562D22;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Roboto Slab";
-  display: block;
-  margin: 0 auto;
-}
-
-/* line 114, app/layout/_wrapper.scss */
-button span {
-  display: block;
-  padding: 8px 20px;
-}
-
-/* line 118, app/layout/_wrapper.scss */
-button:hover {
-  cursor: pointer;
-}
-
-/* line 121, app/layout/_wrapper.scss */
-button:hover span {
-  color: #fff;
-}
-
-/* line 124, app/layout/_wrapper.scss */
-button:hover span.bgOrange {
-  background-color: #E4A314;
-}
-
-/* line 127, app/layout/_wrapper.scss */
-button:hover span.bgGreen {
-  background-color: #707928;
-}
-
-/* line 130, app/layout/_wrapper.scss */
-button:hover span.bgPurple {
-  background-color: #764968;
-}
-
-/* line 133, app/layout/_wrapper.scss */
-button:hover span.bgGold {
-  background-color: #D1AB5C;
-}
-
-/* line 136, app/layout/_wrapper.scss */
-button:hover span.bgLtGreen {
-  background-color: #98AA33;
-}
-
-/* line 139, app/layout/_wrapper.scss */
-button:hover span.bgOrange {
-  background-color: #E4A314;
-}
-
-/* line 160, app/layout/_wrapper.scss */
+/* line 116, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 163, app/layout/_wrapper.scss */
+/* line 119, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 166, app/layout/_wrapper.scss */
+/* line 122, app/layout/_wrapper.scss */
 .colorGold {
   color: #D1AB5C;
 }
 
-/* line 169, app/layout/_wrapper.scss */
+/* line 125, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98AA33;
 }
 
-/* line 172, app/layout/_wrapper.scss */
+/* line 128, app/layout/_wrapper.scss */
 .colorOrange {
   color: #E4A314;
 }
 
-/* line 176, app/layout/_wrapper.scss */
+/* line 132, app/layout/_wrapper.scss */
 .social div {
   float: left;
   padding-top: 20px;
   color: #fff;
 }
 
-/* line 182, app/layout/_wrapper.scss */
+/* line 138, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;

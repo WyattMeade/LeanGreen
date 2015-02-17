@@ -4,6 +4,33 @@
 // Home
 // --------------------
 
+$colors-map: (
+	'orange': $orange,
+	'green': $dkgreen-01,
+	'purple': $purple-01,
+	'gold': $golden,
+	'ltgreen': $ltgreen-01
+);
+
+@mixin generate-themes($map) {
+
+	@each $theme, $color in $map {
+
+		.theme-#{$theme} {
+
+			h1 {
+				color: $color;
+			}
+		    a span:hover {
+		    	background-color: $color;
+		    }
+
+		}
+
+	}
+
+}
+
 header {
 	background-image: url("#{$path}/images/bg_home_header_texture.png");
 	background-repeat: repeat;
@@ -43,6 +70,10 @@ nav {
 	}
 }
 
+.logoHome {
+	margin-top: -45px;
+}
+
 section {
 	&.homeMain {	
 		background-color: $dkgreen-01;
@@ -60,6 +91,9 @@ section {
 	}
 
 	&.section {
+
+		text-align: center;
+
 		.col {
 			min-height: 620px;
 			padding: 30px 0;
@@ -86,8 +120,39 @@ section {
 		margin: 0 auto;
 
 	}
-}		
 
+	.btn {
+		@extend %inline-block;
+	    @include border-radius(7px);
+	    
+	    background: url("#{$path}/images/btn_arrow_default2.png");
+	    background-repeat: no-repeat;
+	    background-position: right center;
+	    border: 2px solid $dkred;
+	    padding: 0 36px 0 0;
+	    color: $dkred;
+	    font-size: 15px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    font-family: $roboto;
+	    margin: $m-auto;
+
+	    span {
+		    display: block;
+		    padding: 8px 20px;
+		}
+
+		&:hover span {
+
+			color: $white-01;
+
+		}
+
+	}
+
+}
+
+@include generate-themes($colors-map);
 
 nav ul.leftNav {
 	background-image: url("#{$path}/images/nav_bgborder_left.png");
@@ -98,7 +163,4 @@ nav ul.rightNav {
 nav ul.leftNav,
 nav ul.rightNav {
 	background-repeat: no-repeat;
-}
-.logoHome {
-	margin-top: -45px;
 }

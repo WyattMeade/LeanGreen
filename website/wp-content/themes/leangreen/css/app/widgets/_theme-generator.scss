@@ -1,0 +1,23 @@
+// --------------------
+// Class Generator
+// --------------------
+
+@mixin generate-themes($map) {
+
+	@each $theme, $color in $map {
+
+		.theme-#{$theme} {
+
+			h1 {
+				color: $color;
+			}
+			
+		    a span:hover {
+		    	background-color: $color;
+		    }
+
+		}
+
+	}
+
+}

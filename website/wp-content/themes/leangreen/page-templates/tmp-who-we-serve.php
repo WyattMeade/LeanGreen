@@ -39,11 +39,11 @@ get_header(); ?>
 		<?php if($count != 1) { ?>
 
 		<div class="row">
-			<div class="large_15 col">
+			<div class="large_15 col inline-block">
 
 		<?php } ?>
 			
-				<div class="clientContainer corp">
+				<div class="clientContainer <?php echo $post->post_name; ?>">
 					<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail();
 					} ?>

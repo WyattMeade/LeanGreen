@@ -20,6 +20,18 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+.btn {
+	background: url("#{$path}/images/btn_arrow_down.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding: 0 47px 0 0;
+	margin-top: 5px;
+
+	&:hover span{
+		background-color: $dkgreen-02;
+	}
+}
+
 section {
 	padding-bottom: 40px;
 
@@ -57,18 +69,6 @@ section {
 		}
 	}
 
-	.btn {
-		background: url("#{$path}/images/btn_arrow_down.png");
-		background-repeat: no-repeat;
-		background-position: right center;
-		padding: 0 47px 0 0;
-		margin-top: 5px;
-
-		&:hover span{
-			background-color: $dkgreen-02;
-		}
-	}
-
 	&.clients {
 		background-image: url("#{$path}/images/bg_roads.png");
 		background-repeat: no-repeat;
@@ -76,40 +76,46 @@ section {
 		height: 1015px;
 		margin-bottom: 40px;
 
-		.clientContainer {
+		.col {
+			float: none;
 			position: relative;
+			height: 464px;
+		}
+
+		.clientContainer {
+			position: absolute;
 
 			p {
 				padding: 0;
 			}
 		}
 
-		.corp {
+		.corporate-clients {
 			top: 75px;
 			left: 90px;
 		}
 
-		.school {
+		.schools-colleges {
 			top: 130px;
 			right: 50px;
 		}
 
-		.club {
+		.ymca-health-clubs {
 			top: 90px;
 			right: 20px;
 		}
 
-		.park {
+		.park-districts {
 			top: 190px;
 			left: 25px;
 		}
 
-		.hospital {
+		.hospitals-clinics {
 			top: 155px;
 			left: 120px;
 		}
 
-		.loc {
+		.your-location {
 			top: 265px;
 			right: 20px;
 		}

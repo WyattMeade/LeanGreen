@@ -33,7 +33,6 @@ header {
 }
 
 section {
-	padding-bottom: 40px;
 
 	h1 {
 		color: $dkgreen-02;
@@ -73,9 +72,7 @@ section {
 		background-image: url("#{$path}/images/bg_roads.png");
 		background-repeat: no-repeat;
 		background-position: bottom center;
-		height: 1015px;
 		margin-bottom: 40px;
-		padding-top: 40px;
 
 		.row {
 			margin-bottom: 0;
@@ -83,7 +80,7 @@ section {
 
 		.centered {
 			position: relative;
-			height: 300px;
+			height: 350px;
 		}
 
 		.clientContainer {
@@ -105,7 +102,7 @@ section {
 		}
 
 		.ymca-health-clubs {
-			bottom: 0%;
+			top: 0%;
 			left: 8%;
 		}
 

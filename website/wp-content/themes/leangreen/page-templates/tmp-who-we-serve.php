@@ -11,53 +11,64 @@ get_header(); ?>
 
 	<section>
 		<div class="large_7 col centered">
-			<h1>Who We Serve</h1>
-			<p>Our customers include schools, businesses and everything in between. Whatever your vending needs, chances are LeanGreen has you covered. Learn more about what we offer on our <a href="#">Vending Solutions</a> page.</p>
+			<?php if ( have_posts() ) : 
+
+				// Start the loop.
+				while ( have_posts() ) : the_post();
+
+					the_content();
+
+				// End the loop.
+				endwhile;
+
+			endif; ?>
 		</div>
 	</section>
+
+	<?php wp_reset_query(); ?>
+
+	<?php
+
+	$count = 0;
+	$homeList_query = new WP_Query( 'post_type=serve&posts_per_page=-1&order=ASC&orderby=menu_order' ); ?>
+
 	<section class="clients">
+
+	<?php while ( $homeList_query->have_posts() ) : $homeList_query->the_post(); ?>
+
+		<?php if($count != 1) { ?>
+
 		<div class="row">
+
+		<?php } ?>
+
 			<div class="large_7 col">
 				<div class="clientContainer corp">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoseserve_corporate.png">
-					<p><button><span>Corporate Clients</span></button></p>
+					<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+							the_post_thumbnail();
+					} ?>
+					<p><a href="#"><span><?php the_title(); ?></span></a></p>
 				</div>
 			</div>
-			<div class="large_7 col pull-right">
-				<div class="clientContainer school">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_schools.png">
-					<p><button><span>Schools / Colleges</span></button></p>
-				</div>
-			</div>
+
+		<?php if($count != 1) { 
+
+		$count++;
+
+		} else {
+
+		$count = 0;
+
+		?>
+
 		</div>
-		<div class="row">
-			<div class="large_7 col">
-				<div class="clientContainer club">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_healthclubs.png">
-					<p><button><span>YMCA / Health Clubs</span></button></p>
-				</div>
-			</div>
-			<div class="large_7 col pull-right">
-				<div class="clientContainer park">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_parkdistricts.png">
-					<p><button><span>Park Districts</span></button></p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large_7 col">
-				<div class="clientContainer hospital">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_hospitals.png">
-					<p><button><span>YMCA / Health Clubs</span></button></p>
-				</div>
-			</div>
-			<div class="large_7 col pull-right">
-				<div class="clientContainer loc">
-					<img src="<?php bloginfo( 'template_url' ); ?>/images/img_whoweserve_yourlocation.png">
-					<p><button><span>Park Districts</span></button></p>
-				</div>
-			</div>
-		</div>
+
+		<?php } ?>
+
+	<?php endwhile; ?>
+
 	</section>
+
+	<?php wp_reset_query(); ?>
 
 <?php get_footer(); ?>

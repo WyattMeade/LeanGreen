@@ -75,11 +75,16 @@ section {
 		background-position: bottom center;
 		height: 1015px;
 		margin-bottom: 40px;
+		padding-top: 40px;
+
+		.row {
+			margin-bottom: 0;
+		}
 
 		.col {
 			float: none;
 			position: relative;
-			height: 464px;
+			height: 300px;
 		}
 
 		.clientContainer {
@@ -91,32 +96,32 @@ section {
 		}
 
 		.corporate-clients {
-			top: 75px;
+			top:0;
 			left: 90px;
 		}
 
 		.schools-colleges {
-			top: 130px;
+			top: 0;
 			right: 50px;
 		}
 
 		.ymca-health-clubs {
-			top: 90px;
+			top:0;
 			right: 20px;
 		}
 
 		.park-districts {
-			top: 190px;
+			top: 0;
 			left: 25px;
 		}
 
 		.hospitals-clinics {
-			top: 155px;
+			top: 0;
 			left: 120px;
 		}
 
 		.your-location {
-			top: 265px;
+			top: 0;
 			right: 20px;
 		}
 	}

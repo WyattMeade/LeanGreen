@@ -74,6 +74,10 @@ section {
 		background-position: bottom center;
 		margin-bottom: 40px;
 
+		@include breakpoint(small) {
+			background-image: none;
+		}
+
 		.row {
 			margin-bottom: 0;
 		}
@@ -81,10 +85,19 @@ section {
 		.centered {
 			position: relative;
 			height: 350px;
+
+			@include breakpoint(small) {
+				height: auto;
+			}
 		}
 
 		.clientContainer {
 			position: absolute;
+
+			@include breakpoint(small) {
+				position: relative;
+				padding-bottom: 35px;
+			}
 
 			p {
 				padding: 0;
@@ -94,31 +107,61 @@ section {
 		.corporate-clients {
 			bottom: 19%;
 			left: 17%;
+			
+			@include breakpoint(small) {
+				bottom: 0;
+				left: 0;
+			}
 		}
 
 		.schools-colleges {
 			bottom: 2%;
 			right: 13%;
+
+			@include breakpoint(small) {
+				bottom: 0;
+				right: 0;
+			}
 		}
 
 		.ymca-health-clubs {
 			top: 0%;
 			left: 8%;
+
+			@include breakpoint(small) {
+				top: 0;
+				left: 0;
+			}
 		}
 
 		.park-districts {
 			top: 25%;
 			right: 7%;
+
+			@include breakpoint(small) {
+				top: 0;
+				right: 0;
+			}
 		}
 
 		.hospitals-clinics {
 			top: -12%;
 			left: 19%;
+
+			@include breakpoint(small) {
+				top: 0;
+				left: 0;
+			}
 		}
 
 		.your-location {
 			top: 18%;
 			right: 13%;
+
+			@include breakpoint(small) {
+				top: 0;
+				right: 0;
+			}
 		}
 	}
 

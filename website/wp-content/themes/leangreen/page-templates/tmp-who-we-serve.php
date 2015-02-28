@@ -39,7 +39,7 @@ get_header(); ?>
 		<?php if($count != 1) { ?>
 
 		<div class="row">
-			<div class="large_14 centered inline-block">
+			<div class="large_14 centered">
 
 		<?php } ?>
 			

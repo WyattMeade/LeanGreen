@@ -39,17 +39,16 @@ get_header(); ?>
 		<?php if($count != 1) { ?>
 
 		<div class="row">
+			<div class="large_15 col">
 
 		<?php } ?>
-
-			<div class="large_7 col">
+			
 				<div class="clientContainer corp">
 					<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail();
 					} ?>
-					<p><a href="#"><span><?php the_title(); ?></span></a></p>
+					<p><a class="btn" href="#"><span><?php the_title(); ?></span></a></p>
 				</div>
-			</div>
 
 		<?php if($count != 1) { 
 
@@ -60,7 +59,7 @@ get_header(); ?>
 		$count = 0;
 
 		?>
-
+			</div>
 		</div>
 
 		<?php } ?>

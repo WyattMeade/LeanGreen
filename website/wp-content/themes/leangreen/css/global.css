@@ -104,7 +104,7 @@ header .logoHome a {
 }
 
 /* line 5, app/widgets/_inline-block.scss */
-.inline-block {
+.inline-block, .btn {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -126,6 +126,34 @@ header .logoHome a {
 /* line 15, app/widgets/_clear-fix.scss */
 .clearfix:after, .row:after, section:after {
   clear: both;
+}
+
+/* line 5, app/widgets/_buttons.scss */
+.btn {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 0 36px 0 0;
+  color: #562D22;
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #562D22;
+  overflow: hidden;
+  background: url("/wp-content/themes/leangreen/images/btn_arrow_default2.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+/* line 23, app/widgets/_buttons.scss */
+.btn span {
+  display: block;
+  padding: 8px 20px;
+}
+/* line 28, app/widgets/_buttons.scss */
+.btn:hover span {
+  color: #fff;
 }
 
 /* line 5, app/layout/helpers/_grids.scss */

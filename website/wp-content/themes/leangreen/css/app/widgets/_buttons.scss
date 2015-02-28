@@ -1,0 +1,34 @@
+// --------------------
+// Buttons
+// --------------------
+
+.btn {
+	@extend %inline-block;
+	@include border-radius(7px);
+
+	margin: $m-auto;
+	padding: 0 36px 0 0;
+	color: $dkred;
+	font-family: $roboto;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid $dkred;
+	overflow: hidden;
+
+	background: url("#{$path}/images/btn_arrow_default2.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	span {
+		display: block;
+		padding: 8px 20px;
+	}
+
+	&:hover span {
+
+		color: $white-01;
+
+	}
+
+}

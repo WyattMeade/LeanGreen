@@ -28,4 +28,20 @@ section {
 	.large_5 p {
 		text-align: justify;
 	}
+
+	.row {
+
+		@include breakpoint(small) {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.col {
+
+		@include breakpoint(small) {
+			margin-bottom: 40px;
+		}
+
+	}
 }

@@ -5,26 +5,24 @@
 %header {
 
 	width: 100%;
-	margin: $m-auto 40px;
+	height: 70px;
+	margin: 0 0 140px;
 	padding: 10px 0 0;
 	font-family: $amatic;
-	font-size: 30px;
 	letter-spacing: 1px;
 	font-weight: 700;
 	text-align: center;
 
 	background-color: $dkgreen-01;
-	background: #707928; /* Old browsers */
-	background: -moz-linear-gradient(top,  #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707928), color-stop(40%,#707928), color-stop(40%,#f8f2e7), color-stop(100%,#f8f2e7)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #707928 0%,#707928 40%,#f8f2e7 40%,#f8f2e7 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 ); /* IE6-9 */
+
+	@include breakpoint(medium) {
+		height: 60px;
+	}
 
 	@include breakpoint(small) {
 
+		height: 50px;
+		margin: 0 0 40px;
 		overflow: visible;
 		padding-top: 0;
 
@@ -60,21 +58,8 @@
 		display: inline-block;
 		position: relative;
 
-		@include breakpoint(medlarge) {
-
-			font-size: 23px;
-
-		}
-
-		@include breakpoint(medium) {
-
-			font-size: 18px;
-
-		}
-
 		@include breakpoint(small) {
 
-			font-size: 25px;
 			display: none;
 
 			&.open {
@@ -90,13 +75,6 @@
 	}
 	nav ul {
 		list-style: none;
-		padding-top: 10px;
-
-		@include breakpoint(small) {
-
-			padding-top: 0;
-
-		}
 
 		&.large_15 {
 
@@ -161,9 +139,23 @@
 		text-decoration: none;
 		color: $white-01;
 		width: 33%;
+		font-size: 30px;
+
+		@include breakpoint(medlarge) {
+
+			font-size: 23px;
+
+		}
+
+		@include breakpoint(medium) {
+
+			font-size: 18px;
+
+		}
 
 		@include breakpoint(small) {
 
+			font-size: 25px;
 			width: auto;
 			display: block;
 
@@ -191,15 +183,42 @@
 
 		a {
 
-			@extend %image-replace;
-
 			display: block;
-			width: 100%;
-			height: 152px;
-			background: url(#{$path}/images/img_global_logo.png) no-repeat 0 center;
-			background-size: 100% auto;
-			top: -40px;
 			position: relative;
+			top: -40px;
+			width: 5.067em;
+			height: 5.067em;
+			margin: 0 auto;
+			padding: 20px;
+			color: transparent;
+			text-indent: -9999px;
+			text-shadow: none;
+			border: 0;
+			border-radius: 50%;
+
+			background: url(#{$path}/images/img_global_logo.png) $dkgreen-01 no-repeat;
+			background-size: 87% auto;
+			background-position: center 1.5em;
+
+			@include breakpoint(medlarge) {
+				
+				top: -30px;
+				background-position: center 1.75em;
+
+			}
+
+			@include breakpoint(medium) {
+
+				top: -15px;
+				background-position: center 1.5em;
+
+			}
+
+			@include breakpoint(small) {
+
+				background-position: center 1.5em;
+
+			}
 
 		}
 

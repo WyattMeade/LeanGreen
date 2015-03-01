@@ -93,16 +93,6 @@ header .icon-menu:before {
     src: url("/wp-content/themes/leangreen/fonts/Genericons.svg#Genericons") format("svg");
   }
 }
-/* line 5, app/widgets/_image-replace.scss */
-header .logoHome a {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  border: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 /* line 5, app/widgets/_inline-block.scss */
 .inline-block, .btn {
   display: inline-block;
@@ -463,39 +453,31 @@ header .logoHome a {
 /* line 5, app/layout/_header.scss */
 header {
   width: 100%;
-  margin: 0 auto 40px;
+  height: 70px;
+  margin: 0 0 140px;
   padding: 10px 0 0;
   font-family: "Amatic SC";
-  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 700;
   text-align: center;
   background-color: #707928;
-  background: #707928;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #707928), color-stop(40%, #707928), color-stop(40%, #f8f2e7), color-stop(100%, #f8f2e7));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #707928 0%, #707928 40%, #f8f2e7 40%, #f8f2e7 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707928', endColorstr='#f8f2e7',GradientType=0 );
-  /* IE6-9 */
+}
+@media (max-width: 1024px) {
+  /* line 5, app/layout/_header.scss */
+  header {
+    height: 60px;
+  }
 }
 @media (max-width: 767px) {
   /* line 5, app/layout/_header.scss */
   header {
+    height: 50px;
+    margin: 0 0 40px;
     overflow: visible;
     padding-top: 0;
   }
 }
-/* line 33, app/layout/_header.scss */
+/* line 31, app/layout/_header.scss */
 header a.menu {
   display: none;
   padding: 10px 25px;
@@ -505,39 +487,26 @@ header a.menu {
   background: #B8C341;
 }
 @media (max-width: 767px) {
-  /* line 33, app/layout/_header.scss */
+  /* line 31, app/layout/_header.scss */
   header a.menu {
     display: block;
   }
 }
-/* line 50, app/layout/_header.scss */
+/* line 48, app/layout/_header.scss */
 header .icon-menu {
   float: right;
 }
-/* line 59, app/layout/_header.scss */
+/* line 57, app/layout/_header.scss */
 header nav {
   display: inline-block;
   position: relative;
 }
-@media (max-width: 1189px) {
-  /* line 59, app/layout/_header.scss */
-  header nav {
-    font-size: 23px;
-  }
-}
-@media (max-width: 1024px) {
-  /* line 59, app/layout/_header.scss */
-  header nav {
-    font-size: 18px;
-  }
-}
 @media (max-width: 767px) {
-  /* line 59, app/layout/_header.scss */
+  /* line 57, app/layout/_header.scss */
   header nav {
-    font-size: 25px;
     display: none;
   }
-  /* line 80, app/layout/_header.scss */
+  /* line 65, app/layout/_header.scss */
   header nav.open {
     display: block;
     position: absolute;
@@ -545,25 +514,18 @@ header nav {
     z-index: 100;
   }
 }
-/* line 91, app/layout/_header.scss */
+/* line 76, app/layout/_header.scss */
 header nav ul {
   list-style: none;
-  padding-top: 10px;
 }
 @media (max-width: 767px) {
-  /* line 91, app/layout/_header.scss */
-  header nav ul {
-    padding-top: 0;
-  }
-}
-@media (max-width: 767px) {
-  /* line 101, app/layout/_header.scss */
+  /* line 79, app/layout/_header.scss */
   header nav ul.large_15 {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 113, app/layout/_header.scss */
+/* line 91, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
   font-weight: 700;
@@ -572,58 +534,72 @@ header nav ul li {
   padding: 0 25px;
 }
 @media (max-width: 1189px) {
-  /* line 113, app/layout/_header.scss */
+  /* line 91, app/layout/_header.scss */
   header nav ul li {
     padding: 0 19.69231px;
   }
 }
 @media (max-width: 900px) {
-  /* line 113, app/layout/_header.scss */
+  /* line 91, app/layout/_header.scss */
   header nav ul li {
     padding: 0 17.30769px;
   }
 }
 @media (max-width: 800px) {
-  /* line 113, app/layout/_header.scss */
+  /* line 91, app/layout/_header.scss */
   header nav ul li {
     padding: 0 15.38462px;
   }
 }
 @media (max-width: 767px) {
-  /* line 113, app/layout/_header.scss */
+  /* line 91, app/layout/_header.scss */
   header nav ul li {
     display: block;
     padding: 10px 25px;
     text-align: left;
     background: #562d22;
   }
-  /* line 145, app/layout/_header.scss */
+  /* line 123, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 149, app/layout/_header.scss */
+  /* line 127, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 160, app/layout/_header.scss */
+/* line 138, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
   width: 33%;
+  font-size: 30px;
+}
+@media (max-width: 1189px) {
+  /* line 138, app/layout/_header.scss */
+  header nav ul li a {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 138, app/layout/_header.scss */
+  header nav ul li a {
+    font-size: 18px;
+  }
 }
 @media (max-width: 767px) {
-  /* line 160, app/layout/_header.scss */
+  /* line 138, app/layout/_header.scss */
   header nav ul li a {
+    font-size: 25px;
     width: auto;
     display: block;
   }
 }
-/* line 173, app/layout/_header.scss */
+/* line 165, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 176, app/layout/_header.scss */
+/* line 168, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -631,27 +607,55 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 183, app/layout/_header.scss */
+/* line 175, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 188, app/layout/_header.scss */
+/* line 180, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 192, app/layout/_header.scss */
+/* line 184, app/layout/_header.scss */
 header .logoHome a {
   display: block;
-  width: 100%;
-  height: 152px;
-  background: url(/wp-content/themes/leangreen/images/img_global_logo.png) no-repeat 0 center;
-  background-size: 100% auto;
-  top: -40px;
   position: relative;
+  top: -40px;
+  width: 5.067em;
+  height: 5.067em;
+  margin: 0 auto;
+  padding: 20px;
+  color: transparent;
+  text-indent: -9999px;
+  text-shadow: none;
+  border: 0;
+  border-radius: 50%;
+  background: url(/wp-content/themes/leangreen/images/img_global_logo.png) #707928 no-repeat;
+  background-size: 87% auto;
+  background-position: center 1.5em;
+}
+@media (max-width: 1189px) {
+  /* line 184, app/layout/_header.scss */
+  header .logoHome a {
+    top: -30px;
+    background-position: center 1.75em;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 184, app/layout/_header.scss */
+  header .logoHome a {
+    top: -15px;
+    background-position: center 1.5em;
+  }
 }
 @media (max-width: 767px) {
-  /* line 188, app/layout/_header.scss */
+  /* line 184, app/layout/_header.scss */
+  header .logoHome a {
+    background-position: center 1.5em;
+  }
+}
+@media (max-width: 767px) {
+  /* line 180, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

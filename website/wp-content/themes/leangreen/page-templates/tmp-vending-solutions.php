@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	    <section class="clearfix">
-			<div class="large_7 col centered">
+			<div class="large_7 medium_9 small_15 col centered">
 				<h1><?php the_field('page_title'); ?></h1>
 				<?php the_content(); ?>
 			</div>

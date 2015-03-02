@@ -799,23 +799,6 @@ h4 {
 }
 
 /* line 50, app/layout/_wrapper.scss */
-.home header .logoHome a {
-  top: -65px;
-}
-@media (max-width: 1189px) {
-  /* line 50, app/layout/_wrapper.scss */
-  .home header .logoHome a {
-    top: -55px;
-  }
-}
-@media (max-width: 1024px) {
-  /* line 50, app/layout/_wrapper.scss */
-  .home header .logoHome a {
-    top: -40px;
-  }
-}
-
-/* line 66, app/layout/_wrapper.scss */
 section {
   width: 100%;
   margin: 0 auto;
@@ -824,81 +807,81 @@ section {
   background-repeat: repeat;
 }
 
-/* line 75, app/layout/_wrapper.scss */
+/* line 59, app/layout/_wrapper.scss */
 section h1,
 section p {
   text-align: center;
 }
 
-/* line 79, app/layout/_wrapper.scss */
+/* line 63, app/layout/_wrapper.scss */
 footer {
   width: 100%;
   padding: 40px 0;
   background-color: #757E28;
 }
 
-/* line 84, app/layout/_wrapper.scss */
+/* line 68, app/layout/_wrapper.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 89, app/layout/_wrapper.scss */
+/* line 73, app/layout/_wrapper.scss */
 a {
   text-decoration: none;
 }
 
-/* line 93, app/layout/_wrapper.scss */
+/* line 77, app/layout/_wrapper.scss */
 .table {
   display: table;
 }
 
-/* line 95, app/layout/_wrapper.scss */
+/* line 79, app/layout/_wrapper.scss */
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 126, app/layout/_wrapper.scss */
+/* line 110, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 129, app/layout/_wrapper.scss */
+/* line 113, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 132, app/layout/_wrapper.scss */
+/* line 116, app/layout/_wrapper.scss */
 .colorGold {
   color: #D1AB5C;
 }
 
-/* line 135, app/layout/_wrapper.scss */
+/* line 119, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98AA33;
 }
 
-/* line 138, app/layout/_wrapper.scss */
+/* line 122, app/layout/_wrapper.scss */
 .colorOrange {
   color: #E4A314;
 }
 
-/* line 142, app/layout/_wrapper.scss */
+/* line 126, app/layout/_wrapper.scss */
 .social > span {
   float: left;
   padding-top: 20px;
   color: #fff;
 }
 @media (max-width: 1024px) {
-  /* line 142, app/layout/_wrapper.scss */
+  /* line 126, app/layout/_wrapper.scss */
   .social > span {
     display: none;
   }
 }
 
-/* line 152, app/layout/_wrapper.scss */
+/* line 136, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;

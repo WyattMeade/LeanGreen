@@ -142,7 +142,7 @@ header .icon-menu:before {
   padding: 8px 20px;
 }
 /* line 28, app/widgets/_buttons.scss */
-.btn:hover span {
+span .btn:hover {
   color: #fff;
 }
 

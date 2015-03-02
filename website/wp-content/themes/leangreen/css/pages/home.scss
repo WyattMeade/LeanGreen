@@ -26,6 +26,18 @@ header {
 		padding-top: 0;
 
 	}
+
+	.logoHome a {
+		top: -65px;
+
+		@include breakpoint(medlarge) {
+			top: -55px;
+		}
+
+		@include breakpoint(medium) {
+			top: -40px;
+		}
+	}
 }
 
 nav {

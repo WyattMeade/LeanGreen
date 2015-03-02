@@ -514,18 +514,48 @@ header nav {
     z-index: 100;
   }
 }
-/* line 76, app/layout/_header.scss */
+/* line 75, app/layout/_header.scss */
+header nav button {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #B8C341;
+  background: url("/wp-content/themes/leangreen/images/btn_arrow_default3.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 0 18px 0 0;
+  margin: 20px 15px 0 0;
+  float: left;
+}
+/* line 85, app/layout/_header.scss */
+header nav button span {
+  display: block;
+  padding: 1px 5px 0;
+  font-size: 20px;
+  color: #757E28;
+  background-color: #B8C341;
+}
+/* line 93, app/layout/_header.scss */
+header nav button:hover {
+  cursor: pointer;
+}
+/* line 96, app/layout/_header.scss */
+header nav button:hover span {
+  color: #fff;
+  text-align: center;
+}
+/* line 103, app/layout/_header.scss */
 header nav ul {
   list-style: none;
 }
 @media (max-width: 767px) {
-  /* line 79, app/layout/_header.scss */
+  /* line 106, app/layout/_header.scss */
   header nav ul.large_15 {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 91, app/layout/_header.scss */
+/* line 118, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
   font-weight: 700;
@@ -534,41 +564,41 @@ header nav ul li {
   padding: 0 25px;
 }
 @media (max-width: 1189px) {
-  /* line 91, app/layout/_header.scss */
+  /* line 118, app/layout/_header.scss */
   header nav ul li {
     padding: 0 19.69231px;
   }
 }
 @media (max-width: 900px) {
-  /* line 91, app/layout/_header.scss */
+  /* line 118, app/layout/_header.scss */
   header nav ul li {
     padding: 0 17.30769px;
   }
 }
 @media (max-width: 800px) {
-  /* line 91, app/layout/_header.scss */
+  /* line 118, app/layout/_header.scss */
   header nav ul li {
     padding: 0 15.38462px;
   }
 }
 @media (max-width: 767px) {
-  /* line 91, app/layout/_header.scss */
+  /* line 118, app/layout/_header.scss */
   header nav ul li {
     display: block;
     padding: 10px 25px;
     text-align: left;
     background: #562d22;
   }
-  /* line 123, app/layout/_header.scss */
+  /* line 150, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 127, app/layout/_header.scss */
+  /* line 154, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 138, app/layout/_header.scss */
+/* line 165, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -576,30 +606,30 @@ header nav ul li a {
   font-size: 30px;
 }
 @media (max-width: 1189px) {
-  /* line 138, app/layout/_header.scss */
+  /* line 165, app/layout/_header.scss */
   header nav ul li a {
     font-size: 23px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 138, app/layout/_header.scss */
+  /* line 165, app/layout/_header.scss */
   header nav ul li a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 138, app/layout/_header.scss */
+  /* line 165, app/layout/_header.scss */
   header nav ul li a {
     font-size: 25px;
     width: auto;
     display: block;
   }
 }
-/* line 165, app/layout/_header.scss */
+/* line 192, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 168, app/layout/_header.scss */
+/* line 195, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -607,16 +637,16 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 175, app/layout/_header.scss */
+/* line 202, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 180, app/layout/_header.scss */
+/* line 207, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 184, app/layout/_header.scss */
+/* line 211, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -635,27 +665,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 184, app/layout/_header.scss */
+  /* line 211, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 184, app/layout/_header.scss */
+  /* line 211, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 184, app/layout/_header.scss */
+  /* line 211, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 180, app/layout/_header.scss */
+  /* line 207, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

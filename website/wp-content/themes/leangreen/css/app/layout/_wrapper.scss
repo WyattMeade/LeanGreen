@@ -129,10 +129,14 @@ i {
     color: $orange;
 }
 .social {
-    div {
+    > span {
         float: left;
         padding-top: 20px;
         color: $white-01;
+
+        @include breakpoint(medium) {
+            display: none;
+        }
     }
 }
 .text-center {

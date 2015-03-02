@@ -35,7 +35,8 @@ get_header(); ?>
 	<section class="clients">
 
 	<?php while ( $homeList_query->have_posts() ) : $homeList_query->the_post(); ?>
-
+		
+		<?php $content = get_the_content(); ?>
 		<?php if($count != 1) { ?>
 
 		<div class="row">
@@ -47,7 +48,7 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail();
 					} ?>
-					<p><a class="btn" href="#"><span><?php the_title(); ?></span></a></p>
+					<p><a class="btn" href="#"><span><?php the_title(); ?></span></a><span class="content"><?php echo $content; ?></span></p>
 				</div>
 
 		<?php if($count != 1) { 

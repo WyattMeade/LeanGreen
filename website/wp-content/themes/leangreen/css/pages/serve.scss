@@ -25,6 +25,10 @@ body {
 	}
 }
 
+.reveal .btn {
+	background-image: url("#{$path}/images/btn_arrow_x.png");
+}
+
 section {
 
 	h1 {

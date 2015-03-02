@@ -72,6 +72,33 @@
 			}
 
 		}
+		button {
+		  @include border-radius(3px);
+		  border: 2px solid $ltgreen-01;
+		  background: url("#{$path}/images/btn_arrow_default3.png");
+		  background-repeat: no-repeat;
+		  background-position: right center;
+		  padding: 0 18px 0 0;
+		  margin: 20px 15px 0 0;
+		  float: left;
+
+		  span {
+		  	display: block;
+			padding: 1px 5px 0;
+			font-size: 20px;
+			color: $dkgreen-02;
+			background-color: $ltgreen-01;
+		  }
+
+		  &:hover {
+		  	cursor:pointer;
+
+		  	span {
+		  		color: $white-01;
+				text-align: center;
+		  	}
+		  }
+		}
 	}
 	nav ul {
 		list-style: none;

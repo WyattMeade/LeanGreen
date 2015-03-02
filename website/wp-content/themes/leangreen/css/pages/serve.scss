@@ -94,7 +94,7 @@ section {
 		}
 
 		.corporate-clients {
-			bottom: 19%;
+			top: 19%;
 			left: 17%;
 			
 			@include breakpoint(small) {
@@ -104,7 +104,7 @@ section {
 		}
 
 		.schools-colleges {
-			bottom: 2%;
+			top: 36%;
 			right: 13%;
 
 			@include breakpoint(small) {
@@ -151,6 +151,22 @@ section {
 				top: 0;
 				right: 0;
 			}
+		}
+
+		.content {
+			position: relative;
+			display: none;
+			background: #f2d18a;
+			border: 2px solid #562D22;
+			border-top: none;
+			width: 170px;
+			margin: 0 auto;
+			padding: 15px;
+			z-index: 2;
+		}
+
+		.reveal .content {
+			display: block;
 		}
 	}
 

@@ -66,9 +66,12 @@ section {
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		margin-bottom: 40px;
+		padding-bottom: 0;
 
-		@include breakpoint(small) {
-			background-image: none;
+		@include breakpoint(medium) {
+			margin-bottom: 0;
+			padding-bottom: 284px;
+			background-image: url("#{$path}/images/bg_who_we_serve_mobile.png");
 		}
 
 		.row {
@@ -79,7 +82,7 @@ section {
 			position: relative;
 			height: 350px;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				height: auto;
 			}
 		}
@@ -87,7 +90,7 @@ section {
 		.clientContainer {
 			position: absolute;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				position: relative;
 				padding-bottom: 35px;
 			}
@@ -101,7 +104,7 @@ section {
 			top: 19%;
 			left: 17%;
 			
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				bottom: 0;
 				left: 0;
 			}
@@ -111,7 +114,7 @@ section {
 			top: 36%;
 			right: 13%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				bottom: 0;
 				right: 0;
 			}
@@ -121,7 +124,7 @@ section {
 			top: 0%;
 			left: 8%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				left: 0;
 			}
@@ -131,7 +134,7 @@ section {
 			top: 25%;
 			right: 7%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				right: 0;
 			}
@@ -141,7 +144,7 @@ section {
 			top: -12%;
 			left: 19%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				left: 0;
 			}
@@ -151,7 +154,7 @@ section {
 			top: 18%;
 			right: 13%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				right: 0;
 			}

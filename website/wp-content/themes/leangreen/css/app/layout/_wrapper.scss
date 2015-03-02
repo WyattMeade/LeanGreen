@@ -132,11 +132,8 @@ i {
     > span {
         float: left;
         padding-top: 20px;
-        color: $white-01;
-
-        @include breakpoint(medium) {
-            display: none;
-        }
+        color: $ltgreen-01;
+        font-size: 15px;
     }
 }
 .text-center {

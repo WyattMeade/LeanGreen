@@ -667,56 +667,43 @@ footer p {
   margin-bottom: 0;
   color: #fff;
 }
-@media (max-width: 767px) {
-  /* line 7, app/layout/_footer.scss */
-  footer p {
-    text-align: center;
-  }
-}
-/* line 16, app/layout/_footer.scss */
+/* line 12, app/layout/_footer.scss */
 footer .footerInfo p {
   color: #B8C341;
   font-size: 18px;
+  margin-bottom: 20px;
 }
-/* line 20, app/layout/_footer.scss */
+/* line 17, app/layout/_footer.scss */
 footer a {
   color: #fff;
 }
-@media (max-width: 767px) {
-  /* line 23, app/layout/_footer.scss */
-  footer ul {
-    text-align: center;
-  }
-}
-/* line 28, app/layout/_footer.scss */
+/* line 20, app/layout/_footer.scss */
 footer .copyright,
 footer ul li,
 footer ul li a {
   color: #D1AB5C;
   font-size: 14px;
 }
-/* line 34, app/layout/_footer.scss */
+/* line 26, app/layout/_footer.scss */
 footer .copyright {
   margin-top: 20px;
 }
-/* line 37, app/layout/_footer.scss */
+/* line 29, app/layout/_footer.scss */
 footer .copyright p {
   color: #D1AB5C;
   font-size: 14px;
   text-align: left;
 }
-@media (max-width: 767px) {
-  /* line 37, app/layout/_footer.scss */
-  footer .copyright p {
-    text-align: center;
-  }
+/* line 35, app/layout/_footer.scss */
+footer .social {
+  margin-bottom: 20px;
 }
-/* line 48, app/layout/_footer.scss */
+/* line 38, app/layout/_footer.scss */
 footer .social div {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 53, app/layout/_footer.scss */
+/* line 43, app/layout/_footer.scss */
 footer button {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -729,7 +716,7 @@ footer button {
   margin: 20px 15px 0 0;
   float: left;
 }
-/* line 63, app/layout/_footer.scss */
+/* line 53, app/layout/_footer.scss */
 footer button span {
   display: block;
   padding: 1px 5px 0;
@@ -737,20 +724,14 @@ footer button span {
   color: #757E28;
   background-color: #B8C341;
 }
-/* line 71, app/layout/_footer.scss */
+/* line 61, app/layout/_footer.scss */
 footer button:hover {
   cursor: pointer;
 }
-/* line 74, app/layout/_footer.scss */
+/* line 64, app/layout/_footer.scss */
 footer button:hover span {
   color: #fff;
   text-align: center;
-}
-@media (max-width: 767px) {
-  /* line 53, app/layout/_footer.scss */
-  footer button {
-    float: none;
-  }
 }
 
 /* line 6, app/layout/_wrapper.scss */
@@ -877,16 +858,11 @@ a {
 .social > span {
   float: left;
   padding-top: 20px;
-  color: #fff;
-}
-@media (max-width: 1024px) {
-  /* line 132, app/layout/_wrapper.scss */
-  .social > span {
-    display: none;
-  }
+  color: #B8C341;
+  font-size: 15px;
 }
 
-/* line 142, app/layout/_wrapper.scss */
+/* line 139, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;

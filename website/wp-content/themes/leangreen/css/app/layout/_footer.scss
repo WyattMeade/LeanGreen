@@ -8,22 +8,14 @@
 	  margin-top: 0;
 	  margin-bottom: 0;
 	  color: $white-01;
-
-	  @include breakpoint(small) {
-            text-align: center;
-        }
 	}
 	.footerInfo p {
 	  color: $ltgreen-01;
 	  font-size: 18px;
+	  margin-bottom: 20px;
 	}
 	a {
 	  color: $white-01;
-	}
-	ul {
-		@include breakpoint(small) {
-            text-align: center;
-        }
 	}
 	.copyright,
 	ul li,
@@ -38,13 +30,11 @@
 	  	color: $golden;
 		font-size: 14px;
 		text-align: left;
-
-		@include breakpoint(small) {
-            text-align: center;
-        }
 	  }
 	}
 	.social {
+		margin-bottom: 20px;
+		
 		div {
 			text-align: center;
 			margin-bottom: 20px;
@@ -76,9 +66,5 @@
 			text-align: center;
 	  	}
 	  }
-	  
-	  @include breakpoint(small) {
-      	float: none;
-      }
 	}
 }

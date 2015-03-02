@@ -13,12 +13,21 @@ $colors-map: (
 );
 
 header {
-	background-image: url("#{$path}/images/bg_home_header_texture.png");
-	background-repeat: repeat;
+	background-image: url("#{$path}/images/LeanGreenNav_full.png");
+	background-repeat: no-repeat;
 	background-color: $dkgreen-01;
+	background-position: center center;
 	height: 180px;
 	padding-top: 20px;
 	margin-bottom: 0;
+
+	@include breakpoint(medlarge) {
+		background-image: url("#{$path}/images/LeanGreenNav_medLarge.png");
+	}
+
+	@include breakpoint(medium) {
+		background-image: url("#{$path}/images/LeanGreenNav_med.png");		
+	}
 
 	@include breakpoint(small) {
 
@@ -43,7 +52,6 @@ header {
 nav {
 	&.main {
 		padding-top: 50px;
-		background-color: $dkgreen-01;
 
 		@include breakpoint(small) {
 

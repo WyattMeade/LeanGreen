@@ -45,7 +45,7 @@ get_header(); ?>
 			<div class="large_10 small_15 col">
 				<h1><?php the_field('page_title'); ?></h1>
 				<?php the_content(); ?>
-				<p><button><a href="/contact-us"><span class="bgLtGreen">Contact Us</span></a></button></p>
+				<p><a class="btn" href="/contact-us"><span class="bgLtGreen">Contact Us</span></a></p>
 			</div>
 		</section>
 

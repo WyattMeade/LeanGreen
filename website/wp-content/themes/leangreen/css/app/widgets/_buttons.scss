@@ -13,6 +13,7 @@
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 	border: 2px solid $dkred;
 	overflow: hidden;
 
@@ -22,7 +23,7 @@
 
 	span {
 		display: block;
-		padding: 8px 20px;
+		padding: 12px 20px;
 	}
 
 	span:hover {

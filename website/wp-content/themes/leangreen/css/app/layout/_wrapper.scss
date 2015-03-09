@@ -22,8 +22,9 @@ h1 {
   	text-align: center;
 }
 h3 {
-	margin: 0 0 10px;
+	margin: 25px 0 15px;
 	padding: 0;
+  font-size: 15px;
 	font-family: $roboto;
 	font-weight: 700;
 	color: $ltgreen-01;
@@ -125,7 +126,7 @@ i {
 .social {
     > span {
         float: left;
-        padding-top: 20px;
+        padding-top: 40px;
         color: $ltgreen-01;
         font-size: 15px;
     }
@@ -133,4 +134,24 @@ i {
 .text-center {
     text-align: center;
     font-size: 0;
+}
+
+/* Default Page Template Styles */
+.defaultPage {
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h3 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: initial;
+      list-style-position: outside;
+      margin: -30px 0 20px 5%;
+    }
 }

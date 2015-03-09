@@ -130,18 +130,19 @@ header .icon-menu:before {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
   border: 2px solid #562D22;
   overflow: hidden;
   background: url("/wp-content/themes/leangreen/images/btn_arrow_default2.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
-/* line 23, app/widgets/_buttons.scss */
+/* line 24, app/widgets/_buttons.scss */
 .btn span {
   display: block;
-  padding: 8px 20px;
+  padding: 12px 20px;
 }
-/* line 28, app/widgets/_buttons.scss */
+/* line 29, app/widgets/_buttons.scss */
 .btn span:hover {
   color: #fff;
 }
@@ -558,10 +559,15 @@ header nav ul {
 /* line 118, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   text-align: center;
   padding: 0 25px;
+  text-transform: uppercase;
+}
+/* line 126, app/layout/_header.scss */
+header nav ul li .current-menu-item a {
+  color: #98AA33;
 }
 @media (max-width: 1189px) {
   /* line 118, app/layout/_header.scss */
@@ -589,16 +595,16 @@ header nav ul li {
     text-align: left;
     background: #562d22;
   }
-  /* line 150, app/layout/_header.scss */
+  /* line 155, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 154, app/layout/_header.scss */
+  /* line 159, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 165, app/layout/_header.scss */
+/* line 170, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -606,30 +612,30 @@ header nav ul li a {
   font-size: 30px;
 }
 @media (max-width: 1189px) {
-  /* line 165, app/layout/_header.scss */
+  /* line 170, app/layout/_header.scss */
   header nav ul li a {
     font-size: 23px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 165, app/layout/_header.scss */
+  /* line 170, app/layout/_header.scss */
   header nav ul li a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 165, app/layout/_header.scss */
+  /* line 170, app/layout/_header.scss */
   header nav ul li a {
     font-size: 25px;
     width: auto;
     display: block;
   }
 }
-/* line 192, app/layout/_header.scss */
+/* line 197, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 195, app/layout/_header.scss */
+/* line 200, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -637,16 +643,16 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 202, app/layout/_header.scss */
+/* line 207, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 207, app/layout/_header.scss */
+/* line 212, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 211, app/layout/_header.scss */
+/* line 216, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -665,27 +671,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 211, app/layout/_header.scss */
+  /* line 216, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 211, app/layout/_header.scss */
+  /* line 216, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 211, app/layout/_header.scss */
+  /* line 216, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 207, app/layout/_header.scss */
+  /* line 212, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }
@@ -702,38 +708,39 @@ footer .footerInfo p {
   color: #B8C341;
   font-size: 18px;
   margin-bottom: 20px;
+  padding-right: 30px;
 }
-/* line 17, app/layout/_footer.scss */
+/* line 18, app/layout/_footer.scss */
 footer a {
   color: #fff;
 }
-/* line 20, app/layout/_footer.scss */
+/* line 21, app/layout/_footer.scss */
 footer .copyright,
 footer ul li,
 footer ul li a {
   color: #D1AB5C;
   font-size: 14px;
 }
-/* line 26, app/layout/_footer.scss */
+/* line 27, app/layout/_footer.scss */
 footer .copyright {
   margin-top: 20px;
 }
-/* line 29, app/layout/_footer.scss */
+/* line 30, app/layout/_footer.scss */
 footer .copyright p {
   color: #D1AB5C;
   font-size: 14px;
   text-align: left;
 }
-/* line 35, app/layout/_footer.scss */
+/* line 36, app/layout/_footer.scss */
 footer .social {
   margin-bottom: 20px;
 }
-/* line 38, app/layout/_footer.scss */
+/* line 39, app/layout/_footer.scss */
 footer .social div {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 43, app/layout/_footer.scss */
+/* line 44, app/layout/_footer.scss */
 footer button {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -743,10 +750,10 @@ footer button {
   background-repeat: no-repeat;
   background-position: right center;
   padding: 0 18px 0 0;
-  margin: 20px 15px 0 0;
+  margin: 38px 7px 0 8px;
   float: left;
 }
-/* line 53, app/layout/_footer.scss */
+/* line 54, app/layout/_footer.scss */
 footer button span {
   display: block;
   padding: 1px 5px 0;
@@ -754,11 +761,11 @@ footer button span {
   color: #757E28;
   background-color: #B8C341;
 }
-/* line 61, app/layout/_footer.scss */
+/* line 62, app/layout/_footer.scss */
 footer button:hover {
   cursor: pointer;
 }
-/* line 64, app/layout/_footer.scss */
+/* line 65, app/layout/_footer.scss */
 footer button:hover span {
   color: #fff;
   text-align: center;
@@ -788,8 +795,9 @@ h1 {
 
 /* line 24, app/layout/_wrapper.scss */
 h3 {
-  margin: 0 0 10px;
+  margin: 25px 0 15px;
   padding: 0;
+  font-size: 15px;
   font-family: "Roboto Slab";
   font-weight: 700;
   color: #B8C341;
@@ -797,7 +805,7 @@ h3 {
   text-align: center;
 }
 
-/* line 33, app/layout/_wrapper.scss */
+/* line 34, app/layout/_wrapper.scss */
 h4 {
   margin: 0;
   padding: 0;
@@ -809,7 +817,7 @@ h4 {
   text-align: center;
 }
 
-/* line 50, app/layout/_wrapper.scss */
+/* line 51, app/layout/_wrapper.scss */
 section {
   width: 100%;
   margin: 0 auto;
@@ -818,77 +826,99 @@ section {
   background-repeat: repeat;
 }
 
-/* line 59, app/layout/_wrapper.scss */
+/* line 60, app/layout/_wrapper.scss */
 section h1,
 section p {
   text-align: center;
 }
 
-/* line 63, app/layout/_wrapper.scss */
+/* line 64, app/layout/_wrapper.scss */
 footer {
   width: 100%;
   padding: 40px 0;
   background-color: #757E28;
 }
 
-/* line 68, app/layout/_wrapper.scss */
+/* line 69, app/layout/_wrapper.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 73, app/layout/_wrapper.scss */
+/* line 74, app/layout/_wrapper.scss */
 a {
   text-decoration: none;
 }
 
-/* line 77, app/layout/_wrapper.scss */
+/* line 78, app/layout/_wrapper.scss */
 .table {
   display: table;
 }
 
-/* line 79, app/layout/_wrapper.scss */
+/* line 80, app/layout/_wrapper.scss */
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 110, app/layout/_wrapper.scss */
+/* line 111, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 113, app/layout/_wrapper.scss */
+/* line 114, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 116, app/layout/_wrapper.scss */
+/* line 117, app/layout/_wrapper.scss */
 .colorGold {
   color: #D1AB5C;
 }
 
-/* line 119, app/layout/_wrapper.scss */
+/* line 120, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98AA33;
 }
 
-/* line 122, app/layout/_wrapper.scss */
+/* line 123, app/layout/_wrapper.scss */
 .colorOrange {
   color: #E4A314;
 }
 
-/* line 126, app/layout/_wrapper.scss */
+/* line 127, app/layout/_wrapper.scss */
 .social > span {
   float: left;
-  padding-top: 20px;
+  padding-top: 40px;
   color: #B8C341;
   font-size: 15px;
 }
 
-/* line 133, app/layout/_wrapper.scss */
+/* line 134, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;
+}
+
+/* Default Page Template Styles */
+/* line 141, app/layout/_wrapper.scss */
+.defaultPage h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 145, app/layout/_wrapper.scss */
+.defaultPage h3 {
+  text-align: left;
+}
+/* line 148, app/layout/_wrapper.scss */
+.defaultPage p {
+  text-align: left;
+  margin-bottom: 40px;
+}
+/* line 152, app/layout/_wrapper.scss */
+.defaultPage ul {
+  list-style: initial;
+  list-style-position: outside;
+  margin: -30px 0 20px 5%;
 }

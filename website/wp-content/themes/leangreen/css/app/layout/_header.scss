@@ -117,10 +117,15 @@
 	}
 	nav ul li {
 		display: inline-block;
-		font-weight: 700;
+		font-weight:400;
 		color: $white-01;
 		text-align: center;
 		padding: 0 25px;
+		text-transform: uppercase;
+
+		.current-menu-item a {
+			color: $ltgreen-02;
+		}
 
 		@include breakpoint(medlarge) {
 

@@ -566,8 +566,8 @@ header nav ul li {
   text-transform: uppercase;
 }
 /* line 126, app/layout/_header.scss */
-header nav ul li .current-menu-item a {
-  color: #98AA33;
+header nav ul li.current-menu-item a {
+  color: #B8C341;
 }
 @media (max-width: 1189px) {
   /* line 118, app/layout/_header.scss */

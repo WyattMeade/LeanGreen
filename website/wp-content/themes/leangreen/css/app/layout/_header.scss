@@ -123,8 +123,8 @@
 		padding: 0 25px;
 		text-transform: uppercase;
 
-		.current-menu-item a {
-			color: $ltgreen-02;
+		&.current-menu-item a {
+			color: $ltgreen-01;
 		}
 
 		@include breakpoint(medlarge) {

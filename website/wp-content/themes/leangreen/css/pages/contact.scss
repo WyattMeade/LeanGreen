@@ -66,6 +66,7 @@ section {
 			margin-top: 20px;
 			margin-bottom: 30px;
 			float: right;
+			width: 175px;
 			@include border-radius(5px);
 		    background: transparent;
 		    border: 2px solid $dkred;

@@ -649,10 +649,17 @@ header nav img {
   width: 100%;
 }
 /* line 212, app/layout/_header.scss */
+header nav div.socialHeader {
+  position: absolute;
+  z-index: 99999;
+  top: -20px;
+  right: 0px;
+}
+/* line 219, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 216, app/layout/_header.scss */
+/* line 223, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -671,27 +678,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 216, app/layout/_header.scss */
+  /* line 223, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 216, app/layout/_header.scss */
+  /* line 223, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 216, app/layout/_header.scss */
+  /* line 223, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 212, app/layout/_header.scss */
+  /* line 219, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

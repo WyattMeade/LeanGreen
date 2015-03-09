@@ -22,7 +22,9 @@ get_header(); ?>
 			</div>
 			<div class="large_5 small_15 col">
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/aboutus_animation.gif">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_top.png">
 				<h6>Brian continues to scour the area, ridding environments of their once sad vending options and putting new life into people's daily snack choices.</h6>
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_bot.png">
 			</div>
 			<div class="large_5 small_15 col">
 				<p><?php the_field('right_column_about'); ?></p>

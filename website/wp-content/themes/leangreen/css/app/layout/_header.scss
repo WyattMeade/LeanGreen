@@ -209,6 +209,13 @@
 		width: 100%;
 	}
 
+	nav div.socialHeader{
+		position: absolute;
+		z-index: 99999;
+		top: -20px;
+		right: 0px;
+	}
+
 	.logoHome {
 
 		position: relative;

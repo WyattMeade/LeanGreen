@@ -30,12 +30,8 @@ section {
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		padding: 30px 15%;
+		padding: 20px 15% 0;
 		text-align: center;
-		background-image: url("#{$path}/images/bg_imgcaption.png");
-		background-repeat: no-repeat;
-		background-position: top center;
-		background-size: contain;
 		margin-top: 0;
 
 		span {
@@ -47,7 +43,7 @@ section {
 
 	&.history {
 		img {
-			width: 80%;
+			width: 55%;
 		}
 	}
 
@@ -63,6 +59,10 @@ section {
 
 		h6 {
 			padding: 30px 20%;
+			background-image: url("#{$path}/images/bg_imgcaption.png");
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: contain;
 		}
 
 		.btn {

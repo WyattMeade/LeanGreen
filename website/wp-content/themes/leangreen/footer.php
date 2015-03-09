@@ -27,10 +27,10 @@
 			</div>
 			<div class="large_4 small_15 col">
 				<ul>
-					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="/about/terms-conditions">Terms & Conditions</a></li>
 					<li><a href="#">Sitemap</a></li>
 				</ul>
-				<p class="copyright">&copy; Copyright Leangreen Healthy Vending 2014</p>
+				<p class="copyright">&copy; Copyright Leangreen Healthy Vending <?php the_date('Y'); ?></p>
 			</div>
 		</div>
 	</footer>

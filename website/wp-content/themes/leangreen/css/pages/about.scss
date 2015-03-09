@@ -20,7 +20,7 @@ section {
 
 	p {
 		font-size: 16px;
-		text-align: justify;
+		text-align: left;
 		padding: 0 10%;
 		margin-bottom: 20px;
 	}
@@ -29,6 +29,7 @@ section {
 		font-size: 15px;
 		font-weight: 700;
 		text-transform: uppercase;
+		letter-spacing: 1px;
 		padding: 30px 15%;
 		text-align: center;
 		background-image: url("#{$path}/images/bg_imgcaption.png");
@@ -38,8 +39,9 @@ section {
 		margin-top: 0;
 
 		span {
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 300;
+			text-transform: none;
 		}
 	}
 
@@ -51,10 +53,16 @@ section {
 
 	&.aboutUs {
 		background-color: $white-01;
-		padding-top: 40px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		h1 {
+			padding: 0 10%;
+			text-align: left;
+		}
 
 		h6 {
-			padding: 30px 10%;
+			padding: 30px 20%;
 		}
 
 		.btn {

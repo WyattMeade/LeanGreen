@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section>
-		<div class="large_7 col centered">
+		<div class="large_7 small_15 col centered">
 			<?php if ( have_posts() ) : 
 
 				// Start the loop.
@@ -40,7 +40,7 @@ get_header(); ?>
 		<?php if($count != 1) { ?>
 
 		<div class="row">
-			<div class="large_14 centered">
+			<div class="large_14 small_15 centered">
 
 		<?php } ?>
 			

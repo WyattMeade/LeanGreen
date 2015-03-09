@@ -15,9 +15,18 @@ body {
 	background-position: right center;
 	padding: 0 47px 0 0;
 	margin-top: 5px;
+	width: 235px;
+
+	@include breakpoint(small) {
+		width: 225px;
+	}
 
 	span {
 		background-color: $white-01;
+
+		@include breakpoint(medium) {
+			font-size: 13px;
+		}
 	}
 	&:hover span{
 		background-color: $dkgreen-02;
@@ -71,8 +80,11 @@ section {
 		background-position: bottom center;
 		margin-bottom: 40px;
 
-		@include breakpoint(small) {
-			background-image: none;
+		@include breakpoint(medium) {
+			background-image: url("/wp-content/themes/leangreen/images/img_Road_Middle.png");
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			padding-bottom: 220px;
 		}
 
 		.row {
@@ -82,8 +94,9 @@ section {
 		.centered {
 			position: relative;
 			height: 350px;
+			max-width: 1290px;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				height: auto;
 			}
 		}
@@ -91,7 +104,7 @@ section {
 		.clientContainer {
 			position: absolute;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				position: relative;
 				padding-bottom: 35px;
 			}
@@ -105,7 +118,7 @@ section {
 			top: 19%;
 			left: 17%;
 			
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				bottom: 0;
 				left: 0;
 			}
@@ -115,7 +128,7 @@ section {
 			top: 36%;
 			right: 13%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				bottom: 0;
 				right: 0;
 			}
@@ -125,7 +138,7 @@ section {
 			top: 0%;
 			left: 8%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				left: 0;
 			}
@@ -135,7 +148,7 @@ section {
 			top: 25%;
 			right: 7%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				right: 0;
 			}
@@ -145,7 +158,7 @@ section {
 			top: -12%;
 			left: 19%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				left: 0;
 			}
@@ -155,7 +168,7 @@ section {
 			top: 18%;
 			right: 13%;
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				top: 0;
 				right: 0;
 			}
@@ -163,14 +176,19 @@ section {
 
 		.content {
 			position: relative;
+			font-size: 14px;
 			display: none;
 			background: #f2d18a;
 			border: 2px solid #562D22;
 			border-top: none;
-			width: 170px;
+			width: 235px;
 			margin: 0 auto;
 			padding: 15px;
 			z-index: 2;
+
+			@include breakpoint(small) {
+				width: 225px;
+			}
 		}
 
 		.reveal .content {

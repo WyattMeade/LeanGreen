@@ -50,4 +50,9 @@
 		wp_nav_menu( $defaults );
 
 		?>
+		<div class="headerSocial">
+			<button><a href="http://facebook.com" target="_blank" alt="Facebook"><span><i class="icon-facebook-alt"></i></span></a></button>
+			<button><a href="http://twitter.com" target="_blank" alt="Twitter"><span><i class="icon-twitter"></i></span></a></button>
+			<button><a href="http://pinterest.com" target="_blank" alt="Pinterest"><span><i class="icon-pinterest"></i></span></a></button>
+		</div>
 	</header>

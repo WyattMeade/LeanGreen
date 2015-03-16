@@ -78,6 +78,13 @@ nav {
 		width: 6.7em !important;
 	}
 }
+.mobileHome {
+	display: none;
+
+	@include breakpoint(small) {
+		display: block;
+	}
+}
 
 // Generate Theme Classes
 @include generate-themes($colors-map);

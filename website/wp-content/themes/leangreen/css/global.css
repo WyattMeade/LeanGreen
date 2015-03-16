@@ -486,6 +486,7 @@ header a.menu {
   font-size: 25px;
   text-align: left;
   background: #B8C341;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   /* line 31, app/layout/_header.scss */
@@ -493,30 +494,30 @@ header a.menu {
     display: block;
   }
 }
-/* line 48, app/layout/_header.scss */
+/* line 49, app/layout/_header.scss */
 header .icon-menu {
   float: right;
 }
 /* line 57, app/layout/_header.scss */
-header nav {
-  display: inline-block;
-  position: relative;
+header .headerSocial {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+@media (max-width: 900px) {
+  /* line 57, app/layout/_header.scss */
+  header .headerSocial {
+    right: 50px;
+  }
 }
 @media (max-width: 767px) {
   /* line 57, app/layout/_header.scss */
-  header nav {
+  header .headerSocial {
     display: none;
   }
-  /* line 65, app/layout/_header.scss */
-  header nav.open {
-    display: block;
-    position: absolute;
-    top: 51px;
-    z-index: 100;
-  }
 }
-/* line 75, app/layout/_header.scss */
-header nav button {
+/* line 70, app/layout/_header.scss */
+header button {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -528,35 +529,53 @@ header nav button {
   margin: 20px 15px 0 0;
   float: left;
 }
-/* line 85, app/layout/_header.scss */
-header nav button span {
+/* line 80, app/layout/_header.scss */
+header button span {
   display: block;
   padding: 1px 5px 0;
   font-size: 20px;
-  color: #757E28;
+  color: #fff;
   background-color: #B8C341;
 }
-/* line 93, app/layout/_header.scss */
-header nav button:hover {
+/* line 88, app/layout/_header.scss */
+header button:hover {
   cursor: pointer;
 }
-/* line 96, app/layout/_header.scss */
-header nav button:hover span {
-  color: #fff;
+/* line 91, app/layout/_header.scss */
+header button:hover span {
+  color: #757E28;
   text-align: center;
 }
-/* line 103, app/layout/_header.scss */
+/* line 97, app/layout/_header.scss */
+header nav {
+  display: inline-block;
+  position: relative;
+}
+@media (max-width: 767px) {
+  /* line 97, app/layout/_header.scss */
+  header nav {
+    display: none;
+  }
+  /* line 105, app/layout/_header.scss */
+  header nav.open {
+    display: block;
+    position: absolute;
+    top: 51px;
+    z-index: 100;
+  }
+}
+/* line 116, app/layout/_header.scss */
 header nav ul {
   list-style: none;
 }
 @media (max-width: 767px) {
-  /* line 106, app/layout/_header.scss */
+  /* line 119, app/layout/_header.scss */
   header nav ul.large_15 {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 118, app/layout/_header.scss */
+/* line 131, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
   font-weight: 400;
@@ -565,46 +584,46 @@ header nav ul li {
   padding: 0 25px;
   text-transform: uppercase;
 }
-/* line 126, app/layout/_header.scss */
+/* line 139, app/layout/_header.scss */
 header nav ul li.current-menu-item a {
   color: #B8C341;
 }
 @media (max-width: 1189px) {
-  /* line 118, app/layout/_header.scss */
+  /* line 131, app/layout/_header.scss */
   header nav ul li {
     padding: 0 19.69231px;
   }
 }
 @media (max-width: 900px) {
-  /* line 118, app/layout/_header.scss */
+  /* line 131, app/layout/_header.scss */
   header nav ul li {
     padding: 0 17.30769px;
   }
 }
 @media (max-width: 800px) {
-  /* line 118, app/layout/_header.scss */
+  /* line 131, app/layout/_header.scss */
   header nav ul li {
     padding: 0 15.38462px;
   }
 }
 @media (max-width: 767px) {
-  /* line 118, app/layout/_header.scss */
+  /* line 131, app/layout/_header.scss */
   header nav ul li {
     display: block;
     padding: 10px 25px;
     text-align: left;
     background: #562d22;
   }
-  /* line 155, app/layout/_header.scss */
+  /* line 168, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 159, app/layout/_header.scss */
+  /* line 172, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 170, app/layout/_header.scss */
+/* line 183, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -612,30 +631,30 @@ header nav ul li a {
   font-size: 30px;
 }
 @media (max-width: 1189px) {
-  /* line 170, app/layout/_header.scss */
+  /* line 183, app/layout/_header.scss */
   header nav ul li a {
     font-size: 23px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 170, app/layout/_header.scss */
+  /* line 183, app/layout/_header.scss */
   header nav ul li a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 170, app/layout/_header.scss */
+  /* line 183, app/layout/_header.scss */
   header nav ul li a {
     font-size: 25px;
     width: auto;
     display: block;
   }
 }
-/* line 197, app/layout/_header.scss */
+/* line 210, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 200, app/layout/_header.scss */
+/* line 213, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -643,23 +662,23 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 207, app/layout/_header.scss */
+/* line 220, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 212, app/layout/_header.scss */
+/* line 225, app/layout/_header.scss */
 header nav div.socialHeader {
   position: absolute;
   z-index: 99999;
   top: -20px;
   right: 0px;
 }
-/* line 219, app/layout/_header.scss */
+/* line 232, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 223, app/layout/_header.scss */
+/* line 236, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -678,27 +697,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 223, app/layout/_header.scss */
+  /* line 236, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 223, app/layout/_header.scss */
+  /* line 236, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 223, app/layout/_header.scss */
+  /* line 236, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 219, app/layout/_header.scss */
+  /* line 232, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }
@@ -795,7 +814,7 @@ h1 {
   font-family: "Amatic SC";
   font-size: 60px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -810,9 +829,10 @@ h3 {
   color: #B8C341;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-/* line 34, app/layout/_wrapper.scss */
+/* line 35, app/layout/_wrapper.scss */
 h4 {
   margin: 0;
   padding: 0;
@@ -824,7 +844,7 @@ h4 {
   text-align: center;
 }
 
-/* line 51, app/layout/_wrapper.scss */
+/* line 52, app/layout/_wrapper.scss */
 section {
   width: 100%;
   margin: 0 auto;
@@ -833,97 +853,109 @@ section {
   background-repeat: repeat;
 }
 
-/* line 60, app/layout/_wrapper.scss */
+/* line 61, app/layout/_wrapper.scss */
 section h1,
 section p {
   text-align: center;
 }
 
-/* line 64, app/layout/_wrapper.scss */
+/* line 65, app/layout/_wrapper.scss */
 footer {
-  width: 100%;
   padding: 40px 0;
   background-color: #757E28;
 }
+@media (max-width: 767px) {
+  /* line 65, app/layout/_wrapper.scss */
+  footer {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
 
-/* line 69, app/layout/_wrapper.scss */
+/* line 74, app/layout/_wrapper.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 74, app/layout/_wrapper.scss */
+/* line 79, app/layout/_wrapper.scss */
 a {
   text-decoration: none;
 }
 
-/* line 78, app/layout/_wrapper.scss */
+/* line 83, app/layout/_wrapper.scss */
 .table {
   display: table;
 }
 
-/* line 80, app/layout/_wrapper.scss */
+/* line 85, app/layout/_wrapper.scss */
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 111, app/layout/_wrapper.scss */
+/* line 116, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 114, app/layout/_wrapper.scss */
+/* line 119, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 117, app/layout/_wrapper.scss */
+/* line 122, app/layout/_wrapper.scss */
 .colorGold {
   color: #D1AB5C;
 }
 
-/* line 120, app/layout/_wrapper.scss */
+/* line 125, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98AA33;
 }
 
-/* line 123, app/layout/_wrapper.scss */
+/* line 128, app/layout/_wrapper.scss */
 .colorOrange {
   color: #E4A314;
 }
 
-/* line 127, app/layout/_wrapper.scss */
+/* line 132, app/layout/_wrapper.scss */
 .social > span {
   float: left;
   padding-top: 40px;
   color: #B8C341;
   font-size: 15px;
 }
+@media (max-width: 767px) {
+  /* line 132, app/layout/_wrapper.scss */
+  .social > span {
+    display: none;
+  }
+}
 
-/* line 134, app/layout/_wrapper.scss */
+/* line 143, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;
 }
 
 /* Default Page Template Styles */
-/* line 141, app/layout/_wrapper.scss */
+/* line 150, app/layout/_wrapper.scss */
 .defaultPage h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 145, app/layout/_wrapper.scss */
+/* line 154, app/layout/_wrapper.scss */
 .defaultPage h3 {
   text-align: left;
 }
-/* line 148, app/layout/_wrapper.scss */
+/* line 157, app/layout/_wrapper.scss */
 .defaultPage p {
   text-align: left;
   margin-bottom: 40px;
 }
-/* line 152, app/layout/_wrapper.scss */
+/* line 161, app/layout/_wrapper.scss */
 .defaultPage ul {
   list-style: initial;
   list-style-position: outside;

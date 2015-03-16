@@ -36,6 +36,7 @@
 		font-size: 25px;
 		text-align: left;
 		background: $ltgreen-01;
+		text-transform: uppercase;
 
 		@include breakpoint(small) {
 
@@ -53,7 +54,46 @@
 		float: right;
 
 	}
+	.headerSocial {
+		position: absolute;
+		right: 100px;
+		top: 100px;
 
+		@include breakpoint(medmedium) {
+			right: 50px;
+		}
+
+		@include breakpoint(small) {
+			display: none;
+		}
+	}
+	button {
+		  @include border-radius(3px);
+		  border: 2px solid $ltgreen-01;
+		  background: url("#{$path}/images/btn_arrow_default3.png");
+		  background-repeat: no-repeat;
+		  background-position: right center;
+		  padding: 0 18px 0 0;
+		  margin: 20px 15px 0 0;
+		  float: left;
+
+		  span {
+		  	display: block;
+			padding: 1px 5px 0;
+			font-size: 20px;
+			color: $white-01;
+			background-color: $ltgreen-01;
+		  }
+
+		  &:hover {
+		  	cursor:pointer;
+
+		  	span {
+		  		color: $dkgreen-02;
+				text-align: center;
+		  	}
+		  }
+	}
 	nav {
 		display: inline-block;
 		position: relative;
@@ -71,33 +111,6 @@
 
 			}
 
-		}
-		button {
-		  @include border-radius(3px);
-		  border: 2px solid $ltgreen-01;
-		  background: url("#{$path}/images/btn_arrow_default3.png");
-		  background-repeat: no-repeat;
-		  background-position: right center;
-		  padding: 0 18px 0 0;
-		  margin: 20px 15px 0 0;
-		  float: left;
-
-		  span {
-		  	display: block;
-			padding: 1px 5px 0;
-			font-size: 20px;
-			color: $dkgreen-02;
-			background-color: $ltgreen-01;
-		  }
-
-		  &:hover {
-		  	cursor:pointer;
-
-		  	span {
-		  		color: $white-01;
-				text-align: center;
-		  	}
-		  }
 		}
 	}
 	nav ul {

@@ -14,6 +14,7 @@ get_header(); ?>
 	<section class="homeMain clearfix">
 		<div class="main">
 			<div class="large_11 small_15 col centered">
+				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_global_logo.png" class="mobileHome">
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_home_header.png">
 
 				<?php if ( have_posts() ) : 

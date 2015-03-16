@@ -17,7 +17,7 @@ h1 {
   	font-family: $amatic;
   	font-size: 60px;
   	letter-spacing: 1px;
-  	font-weight: 700;
+  	font-weight: 400;
   	text-transform: uppercase;
   	text-align: center;
 }
@@ -30,6 +30,7 @@ h3 {
 	color: $ltgreen-01;
 	text-transform: uppercase;
 	text-align: center;
+  letter-spacing: 1px;
 }
 h4 {
     margin: 0;
@@ -62,9 +63,13 @@ section p{
     text-align: center;
 }
 footer {
-    width: 100%;
     padding: 40px 0;
     background-color: $dkgreen-02;
+
+    @include breakpoint(small) {
+      padding-right: 5%;
+      padding-left: 5%;
+    }
 }
 ul {
     list-style: none;
@@ -129,6 +134,10 @@ i {
         padding-top: 40px;
         color: $ltgreen-01;
         font-size: 15px;
+
+        @include breakpoint(small) {
+          display: none;
+        }
     }
 }
 .text-center {

@@ -23,6 +23,11 @@ section {
 		text-align: left;
 		padding: 0 10%;
 		margin-bottom: 20px;
+
+		@include breakpoint(small) {
+			margin-top: 40px;
+			margin-bottom: 0;
+		}
 	}
 
 	h6 {
@@ -45,6 +50,19 @@ section {
 		img {
 			width: 55%;
 		}
+
+		.historyImageLg {
+			@include breakpoint(small) {
+				display: none;
+			}
+		}
+		.historyImageSm {
+			display: none;
+
+			@include breakpoint(small) {
+				display: block;
+			}
+		}
 	}
 
 	&.aboutUs {
@@ -55,14 +73,20 @@ section {
 		h1 {
 			padding: 0 10%;
 			text-align: left;
+
+			@include breakpoint(small) {
+				text-align: center;
+				margin-top: 40px;
+			}
 		}
 
 		h6 {
-			padding: 30px 20%;
-			background-image: url("#{$path}/images/bg_imgcaption.png");
-			background-repeat: no-repeat;
-			background-position: top center;
-			background-size: contain;
+			padding: 30px 20% 0;
+		}
+		img {
+			@include breakpoint(smaller) {
+				width: 75%;
+			}
 		}
 
 		.btn {

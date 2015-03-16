@@ -115,6 +115,13 @@ section {
 			font-weight: 300;
 			text-align: left;
 			text-transform: initial;
+			padding-right: 2%;
+			padding-left: 2%;
+
+			@include breakpoint(small) {
+				padding-left: 5%;
+				padding-right: 5%;
+			}
 		}
 
 		.large_6 {

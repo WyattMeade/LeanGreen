@@ -532,31 +532,32 @@ header button {
 /* line 80, app/layout/_header.scss */
 header button span {
   display: block;
-  padding: 1px 5px 0;
+  padding: 4px 10px 0;
+  margin: -1px -5px;
   font-size: 20px;
   color: #fff;
   background-color: #B8C341;
 }
-/* line 88, app/layout/_header.scss */
+/* line 89, app/layout/_header.scss */
 header button:hover {
   cursor: pointer;
 }
-/* line 91, app/layout/_header.scss */
+/* line 92, app/layout/_header.scss */
 header button:hover span {
   color: #757E28;
   text-align: center;
 }
-/* line 97, app/layout/_header.scss */
+/* line 98, app/layout/_header.scss */
 header nav {
   display: inline-block;
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 97, app/layout/_header.scss */
+  /* line 98, app/layout/_header.scss */
   header nav {
     display: none;
   }
-  /* line 105, app/layout/_header.scss */
+  /* line 106, app/layout/_header.scss */
   header nav.open {
     display: block;
     position: absolute;
@@ -564,18 +565,18 @@ header nav {
     z-index: 100;
   }
 }
-/* line 116, app/layout/_header.scss */
+/* line 117, app/layout/_header.scss */
 header nav ul {
   list-style: none;
 }
 @media (max-width: 767px) {
-  /* line 119, app/layout/_header.scss */
+  /* line 120, app/layout/_header.scss */
   header nav ul.large_15 {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 131, app/layout/_header.scss */
+/* line 132, app/layout/_header.scss */
 header nav ul li {
   display: inline-block;
   font-weight: 400;
@@ -584,46 +585,46 @@ header nav ul li {
   padding: 0 25px;
   text-transform: uppercase;
 }
-/* line 139, app/layout/_header.scss */
+/* line 140, app/layout/_header.scss */
 header nav ul li.current-menu-item a {
   color: #B8C341;
 }
 @media (max-width: 1189px) {
-  /* line 131, app/layout/_header.scss */
+  /* line 132, app/layout/_header.scss */
   header nav ul li {
     padding: 0 19.69231px;
   }
 }
 @media (max-width: 900px) {
-  /* line 131, app/layout/_header.scss */
+  /* line 132, app/layout/_header.scss */
   header nav ul li {
     padding: 0 17.30769px;
   }
 }
 @media (max-width: 800px) {
-  /* line 131, app/layout/_header.scss */
+  /* line 132, app/layout/_header.scss */
   header nav ul li {
     padding: 0 15.38462px;
   }
 }
 @media (max-width: 767px) {
-  /* line 131, app/layout/_header.scss */
+  /* line 132, app/layout/_header.scss */
   header nav ul li {
     display: block;
     padding: 10px 25px;
     text-align: left;
     background: #562d22;
   }
-  /* line 168, app/layout/_header.scss */
+  /* line 169, app/layout/_header.scss */
   header nav ul li.current-menu-item {
     background: #606828;
   }
-  /* line 172, app/layout/_header.scss */
+  /* line 173, app/layout/_header.scss */
   header nav ul li.current-menu-item a {
     color: #B8C341;
   }
 }
-/* line 183, app/layout/_header.scss */
+/* line 184, app/layout/_header.scss */
 header nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -631,30 +632,30 @@ header nav ul li a {
   font-size: 30px;
 }
 @media (max-width: 1189px) {
-  /* line 183, app/layout/_header.scss */
+  /* line 184, app/layout/_header.scss */
   header nav ul li a {
     font-size: 23px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 183, app/layout/_header.scss */
+  /* line 184, app/layout/_header.scss */
   header nav ul li a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 183, app/layout/_header.scss */
+  /* line 184, app/layout/_header.scss */
   header nav ul li a {
     font-size: 25px;
     width: auto;
     display: block;
   }
 }
-/* line 210, app/layout/_header.scss */
+/* line 211, app/layout/_header.scss */
 header nav ul li a:hover {
   color: #98AA33;
 }
-/* line 213, app/layout/_header.scss */
+/* line 214, app/layout/_header.scss */
 header nav .logo {
   background-color: #707928;
   border-radius: 51%;
@@ -662,23 +663,23 @@ header nav .logo {
   position: relative;
   top: -30px;
 }
-/* line 220, app/layout/_header.scss */
+/* line 221, app/layout/_header.scss */
 header nav img {
   float: left;
   width: 100%;
 }
-/* line 225, app/layout/_header.scss */
+/* line 226, app/layout/_header.scss */
 header nav div.socialHeader {
   position: absolute;
   z-index: 99999;
   top: -20px;
   right: 0px;
 }
-/* line 232, app/layout/_header.scss */
+/* line 233, app/layout/_header.scss */
 header .logoHome {
   position: relative;
 }
-/* line 236, app/layout/_header.scss */
+/* line 237, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -697,27 +698,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 236, app/layout/_header.scss */
+  /* line 237, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 236, app/layout/_header.scss */
+  /* line 237, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 236, app/layout/_header.scss */
+  /* line 237, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 232, app/layout/_header.scss */
+  /* line 233, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

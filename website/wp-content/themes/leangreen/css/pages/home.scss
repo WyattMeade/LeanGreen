@@ -47,6 +47,10 @@ header {
 			top: -40px;
 		}
 	}
+
+	.headerSocial {
+		top: 0;
+	}
 }
 
 nav {
@@ -112,6 +116,7 @@ section {
 
 		.col {
 			min-height: 620px;
+			height: 620px;
 			padding: 30px 0;
 
 			@include breakpoint(small) {

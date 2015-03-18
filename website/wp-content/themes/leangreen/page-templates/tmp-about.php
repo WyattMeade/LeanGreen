@@ -18,18 +18,18 @@ get_header(); ?>
 		</section>
 		<section class="clearfix history">
 			<div class="large_5 small_15 col historyImageSm">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/aboutus_animation.gif">
+				<img src="<?php the_field('top_img_about'); ?>">
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_top.png">
-				<h6>Brian continues to scour the area, ridding environments of their once sad vending options and putting new life into people's daily snack choices.</h6>
+				<h6><?php the_field('top_img_cap'); ?></h6>
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_bot.png">
 			</div>
 			<div class="large_5 small_15 col">
 				<p><?php the_field('left_column_about'); ?></p>
 			</div>
 			<div class="large_5 small_15 col historyImageLg">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/aboutus_animation.gif">
+				<img src="<?php the_field('top_img_about'); ?>">
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_top.png">
-				<h6>Brian continues to scour the area, ridding environments of their once sad vending options and putting new life into people's daily snack choices.</h6>
+				<h6><?php the_field('top_img_cap'); ?></h6>
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_bot.png">
 			</div>
 			<div class="large_5 small_15 col">
@@ -47,9 +47,9 @@ get_header(); ?>
 
 		<section class="clearfix aboutUs">
 			<div class="large_5 small_15 col">
-				<img src="<?php bloginfo( 'template_url' ); ?>/images/img_missionsnacks.png">
+				<img src="<?php the_field('bot_img_about'); ?>">
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_top.png">
-				<h6>Our Mission Is Simple:<br><span>to make healthier snacks &amp; drinks much more available to people throughout Chicago.</span></h6>
+				<h6>Our Mission Is Simple:<br><span><?php the_field('bot_img_cap'); ?></span></h6>
 				<img src="<?php bloginfo( 'template_url' ); ?>/images/about_gif_border_bot.png">
 			</div>
 			<div class="large_10 small_15 col">

@@ -358,3 +358,14 @@ require get_template_directory() . '/inc/page-css.php';
  */
 require get_template_directory() . '/inc/page-js.php';
 
+add_action( 'admin_menu', 'my_option_menu' );
+
+function my_option_menu() {
+	add_options_page( 'My Options', 'Theme Options', 'manage_options', 'my-unique-identifier', 'my_options' );
+}
+
+function my_options() {
+	if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+}

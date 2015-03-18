@@ -140,7 +140,7 @@ header .icon-menu:before {
 /* line 24, app/widgets/_buttons.scss */
 .btn span {
   display: block;
-  padding: 12px 20px;
+  padding: 11px 20px;
 }
 /* line 29, app/widgets/_buttons.scss */
 .btn span:hover {
@@ -783,16 +783,17 @@ footer button {
 /* line 54, app/layout/_footer.scss */
 footer button span {
   display: block;
-  padding: 1px 5px 0;
+  padding: 4px 10px 0;
+  margin: -1px -5px;
   font-size: 20px;
   color: #757E28;
   background-color: #B8C341;
 }
-/* line 62, app/layout/_footer.scss */
+/* line 63, app/layout/_footer.scss */
 footer button:hover {
   cursor: pointer;
 }
-/* line 65, app/layout/_footer.scss */
+/* line 66, app/layout/_footer.scss */
 footer button:hover span {
   color: #fff;
   text-align: center;

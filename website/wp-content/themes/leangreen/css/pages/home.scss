@@ -126,6 +126,7 @@ section {
 			@include breakpoint(small) {
 
 				min-height: 0;
+				height: auto;
 
 			}
 		}

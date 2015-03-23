@@ -82,7 +82,13 @@ a {
 
 .table { display: table; }
 
-.table-cell { display: table-cell; vertical-align: middle; }
+.table-cell {
+  display: table-cell; vertical-align: middle;
+
+  img {
+    width: 100%;
+  }
+}
 
 footer {
 

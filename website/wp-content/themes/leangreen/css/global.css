@@ -905,33 +905,37 @@ a {
   display: table-cell;
   vertical-align: middle;
 }
+/* line 88, app/layout/_wrapper.scss */
+.table-cell img {
+  width: 100%;
+}
 
-/* line 116, app/layout/_wrapper.scss */
+/* line 122, app/layout/_wrapper.scss */
 .colorGreen {
   color: #707928;
 }
 
-/* line 119, app/layout/_wrapper.scss */
+/* line 125, app/layout/_wrapper.scss */
 .colorPurple {
   color: #764968;
 }
 
-/* line 122, app/layout/_wrapper.scss */
+/* line 128, app/layout/_wrapper.scss */
 .colorGold {
   color: #D1AB5C;
 }
 
-/* line 125, app/layout/_wrapper.scss */
+/* line 131, app/layout/_wrapper.scss */
 .colorLtGreen {
   color: #98AA33;
 }
 
-/* line 128, app/layout/_wrapper.scss */
+/* line 134, app/layout/_wrapper.scss */
 .colorOrange {
   color: #E4A314;
 }
 
-/* line 132, app/layout/_wrapper.scss */
+/* line 138, app/layout/_wrapper.scss */
 .social > span {
   float: left;
   padding-top: 40px;
@@ -939,40 +943,40 @@ a {
   font-size: 15px;
 }
 @media (max-width: 767px) {
-  /* line 132, app/layout/_wrapper.scss */
+  /* line 138, app/layout/_wrapper.scss */
   .social > span {
     display: none;
   }
 }
 
-/* line 143, app/layout/_wrapper.scss */
+/* line 149, app/layout/_wrapper.scss */
 .text-center {
   text-align: center;
   font-size: 0;
 }
 
 /* Default Page Template Styles */
-/* line 150, app/layout/_wrapper.scss */
+/* line 156, app/layout/_wrapper.scss */
 .defaultPage h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 154, app/layout/_wrapper.scss */
+/* line 160, app/layout/_wrapper.scss */
 .defaultPage h3 {
   text-align: left;
 }
-/* line 157, app/layout/_wrapper.scss */
+/* line 163, app/layout/_wrapper.scss */
 .defaultPage p {
   text-align: left;
   margin-bottom: 40px;
 }
-/* line 161, app/layout/_wrapper.scss */
+/* line 167, app/layout/_wrapper.scss */
 .defaultPage ul {
   list-style: initial;
   list-style-position: outside;
   margin: -30px 0 20px 5%;
 }
-/* line 167, app/layout/_wrapper.scss */
+/* line 173, app/layout/_wrapper.scss */
 .defaultPage ul li ul {
   margin-top: 0;
   margin-bottom: 0;

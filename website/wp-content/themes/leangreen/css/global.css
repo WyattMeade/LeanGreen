@@ -676,12 +676,18 @@ header nav div.socialHeader {
   top: -20px;
   right: 0px;
 }
-/* line 234, app/layout/_header.scss */
+/* line 233, app/layout/_header.scss */
 header .logoHome {
   position: relative;
   z-index: 99;
 }
-/* line 239, app/layout/_header.scss */
+@media all and (-ms-high-contrast: none) {
+  /* line 233, app/layout/_header.scss */
+  header .logoHome {
+    top: -25px;
+  }
+}
+/* line 242, app/layout/_header.scss */
 header .logoHome a {
   display: block;
   position: relative;
@@ -701,27 +707,27 @@ header .logoHome a {
   background-position: center 1.5em;
 }
 @media (max-width: 1189px) {
-  /* line 239, app/layout/_header.scss */
+  /* line 242, app/layout/_header.scss */
   header .logoHome a {
     top: -30px;
     background-position: center 1.75em;
   }
 }
 @media (max-width: 1024px) {
-  /* line 239, app/layout/_header.scss */
+  /* line 242, app/layout/_header.scss */
   header .logoHome a {
     top: -15px;
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 239, app/layout/_header.scss */
+  /* line 242, app/layout/_header.scss */
   header .logoHome a {
     background-position: center 1.5em;
   }
 }
 @media (max-width: 767px) {
-  /* line 234, app/layout/_header.scss */
+  /* line 233, app/layout/_header.scss */
   header .logoHome {
     display: none;
   }

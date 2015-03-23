@@ -356,6 +356,7 @@ require get_template_directory() . '/inc/page-css.php';
  *
  * @since Twenty Fifteen 1.0
  */
+require get_template_directory() . '/inc/page-js.php';
 
 /* Options Page */
 if( function_exists('acf_add_options_page') ) {

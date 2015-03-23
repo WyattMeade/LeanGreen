@@ -78,6 +78,10 @@ nav {
 .logoHome {
 	margin-top: -45px;
 
+	@media all and (-ms-high-contrast:none) {
+		top: -45px !important;
+	}
+
 	a {
 		width: 6.7em !important;
 	}

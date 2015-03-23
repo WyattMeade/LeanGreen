@@ -230,11 +230,14 @@
 		top: -20px;
 		right: 0px;
 	}
-
 	.logoHome {
 
 		position: relative;
 		z-index: 99;
+
+		@media all and (-ms-high-contrast:none) {
+	     	top: -25px;
+	    }
 
 		a {
 
